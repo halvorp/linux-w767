@@ -118,11 +118,37 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 
+		/*
+		 * iter-32: port full connector endpoint graph (ports + HS/SS
+		 * endpoints) from sc8180x-lenovo-flex-5g.dts. Without this,
+		 * modern dwc3-qcom can't determine orientation/role for the URS
+		 * controllers and fails at dwc3 core init.  SBU mux endpoints
+		 * skipped — only needed for DP altmode which we don't have yet.
+		 */
 		connector@0 {
 			compatible = "usb-c-connector";
 			reg = <0>;
 			power-role = "dual";
 			data-role = "dual";
+
+			ports {
+				#address-cells = <1>;
+				#size-cells = <0>;
+
+				port@0 {
+					reg = <0>;
+					pmic_glink_con0_hs: endpoint {
+						remote-endpoint = <&usb_prim_dwc3_hs>;
+					};
+				};
+
+				port@1 {
+					reg = <1>;
+					pmic_glink_con0_ss: endpoint {
+						remote-endpoint = <&usb_prim_qmpphy_out>;
+					};
+				};
+			};
 		};
 
 		connector@1 {
@@ -130,6 +156,25 @@
 			reg = <1>;
 			power-role = "dual";
 			data-role = "dual";
+
+			ports {
+				#address-cells = <1>;
+				#size-cells = <0>;
+
+				port@0 {
+					reg = <0>;
+					pmic_glink_con1_hs: endpoint {
+						remote-endpoint = <&usb_sec_dwc3_hs>;
+					};
+				};
+
+				port@1 {
+					reg = <1>;
+					pmic_glink_con1_ss: endpoint {
+						remote-endpoint = <&usb_sec_qmpphy_out>;
+					};
+				};
+			};
 		};
 	};
 
@@ -1208,11 +1253,13 @@
 
 	vdda-phy-supply = <&vreg_l3c_1p2>;
 	vdda-pll-supply = <&vreg_l5e_0p88>;
+
+	orientation-switch;
 };
 
-// &usb_prim_qmp_switch {
-// 	remote-endpoint = <&ucsi_port_0_switch>;
-// };
+&usb_prim_qmpphy_out {
+	remote-endpoint = <&pmic_glink_con0_ss>;
+};
 
 &usb_prim {
 	status = "okay";
@@ -1220,6 +1267,10 @@
 
 &usb_prim_dwc3 {
 	dr_mode = "host";
+};
+
+&usb_prim_dwc3_hs {
+	remote-endpoint = <&pmic_glink_con0_hs>;
 };
 
 &usb_sec_hsphy {
@@ -1235,11 +1286,13 @@
 
 	vdda-phy-supply = <&vreg_l3c_1p2>;
 	vdda-pll-supply = <&vreg_l5e_0p88>;
+
+	orientation-switch;
 };
 
-// &usb_sec_qmp_switch {
-// 	remote-endpoint = <&ucsi_port_1_switch>;
-// };
+&usb_sec_qmpphy_out {
+	remote-endpoint = <&pmic_glink_con1_ss>;
+};
 
 &usb_sec {
 	status = "okay";
@@ -1247,6 +1300,10 @@
 
 &usb_sec_dwc3 {
 	dr_mode = "host";
+};
+
+&usb_sec_dwc3_hs {
+	remote-endpoint = <&pmic_glink_con1_hs>;
 };
 
 &wifi {
