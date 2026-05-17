@@ -98,8 +98,12 @@ for frame in $(seq 1 30); do
     done
     echo "--- Deferred:   " ; grep -cE '' /sys/kernel/debug/devices_deferred 2>/dev/null || echo "0"
     echo
-    echo "=== filtered dmesg (last 30 matching) ==="
-    dmesg | grep -iE 'pdc|dwc3|usb|hub|hid|qmp|hsphy|gcc|rpmh|rsc|interconnect|deferred|probe|ramoops|panel|edp|drm|ath10k|wifi|wlan|wcn|qcom_q6v5|qrtr|mhi|remoteproc|regulator' | tail -30
+    echo "=== q6v5/remoteproc/adsp/cdsp dmesg ==="
+    dmesg | grep -iE 'q6v5|remoteproc|adsp|cdsp' | head -10
+    echo "=== ath10k/wcn/wlan/qrtr/mhi dmesg ==="
+    dmesg | grep -iE 'ath10k|wcn|wlan|qrtr|mhi' | head -10
+    echo "=== drivers present:" ; ls /sys/bus/platform/drivers/ 2>/dev/null | grep -iE 'q6v5|ath10k|wcnss|aoss' | tr '\n' ' ' ; echo
+    echo "=== rproc/wifi devices:" ; ls /sys/bus/platform/devices/ 2>/dev/null | grep -E '17300000|8300000|4080000|18800000|af00000|18200000' | tr '\n' ' ' ; echo
     echo
     echo "(frame ${frame}/30, drops to shell at 30)"
     sleep 3
