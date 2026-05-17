@@ -1115,10 +1115,73 @@
 
 &usb_mp {
 	status = "okay";
+
+	/*
+	 * iter-26: brother's USB-MP probe-failure analysis
+	 * (research/2026-05-17-claude-usb-mp-vs-sec-deep.md):
+	 *
+	 * Mainline sc8180x.dtsi declares 10 interrupts for usb_mp, ending
+	 * with `ss_phy_1` (pdc 7) and `ss_phy_2` (pdc 30) -- the SuperSpeed
+	 * PHY wake IRQs.  Brother decoded the DSDT's \_SB.USB2._CRS and
+	 * confirmed it lists only 9 IRQs: 1 core + 4 Level-SharedAndWake
+	 * (pwr_event x2, hs_phy x2) + 4 Edge-SharedAndWake (dp_hs_phy x2,
+	 * dm_hs_phy x2).  The two ss_phy_* IRQs are NOT wired on W767 --
+	 * Samsung-specific simplification, presumably because the internal
+	 * MCU (SPACE v57) is a HS-only device.
+	 *
+	 * Without this override, dwc3-qcom-legacy's platform_get_irq_byname
+	 * lookup for ss_phy_1/ss_phy_2 either returns phantom IRQs or
+	 * fails, which is a plausible cause for the probe never reaching
+	 * the point of registering with the interconnect (no sync_state
+	 * pending line ever mentions a4f8800.usb in iter-25's dmesg).
+	 *
+	 * Trim to the 8 wake IRQs that actually exist + drop the matching
+	 * names.  pwr_event_1/2 + hs_phy_1/2 + dp_hs_phy_1/2 + dm_hs_phy_1/2.
+	 */
+	interrupts-extended = <&intc GIC_SPI 656 IRQ_TYPE_LEVEL_HIGH>,
+			      <&intc GIC_SPI 655 IRQ_TYPE_LEVEL_HIGH>,
+			      <&intc GIC_SPI 658 IRQ_TYPE_LEVEL_HIGH>,
+			      <&intc GIC_SPI 657 IRQ_TYPE_LEVEL_HIGH>,
+			      <&pdc 59 IRQ_TYPE_EDGE_BOTH>,
+			      <&pdc 46 IRQ_TYPE_EDGE_BOTH>,
+			      <&pdc 71 IRQ_TYPE_EDGE_BOTH>,
+			      <&pdc 68 IRQ_TYPE_EDGE_BOTH>;
+	interrupt-names = "pwr_event_1", "pwr_event_2",
+			  "hs_phy_1",    "hs_phy_2",
+			  "dp_hs_phy_1", "dm_hs_phy_1",
+			  "dp_hs_phy_2", "dm_hs_phy_2";
 };
 
 &usb_mp_dwc3 {
 	dr_mode = "host";
+};
+
+/*
+ * iter-26: the smoking gun for usb_mp not probing on Linux.
+ *
+ * DSDT declares \_SB.USB2.HSEI as a GpioIo on \_SB.GIO0 pin 0x23 (=35),
+ * plus a 1-bit Field MOD1 over it.  Brother grep'd the entire DSDT --
+ * nothing in AML writes MOD1.  On Windows, QcXhciFilter8180.sys (a
+ * mandatory lower-filter, FeatureScore=80) asserts MOD1=1 to bring the
+ * USB2 HS PHY out of reset.  Mainline dwc3-qcom-legacy doesn't know
+ * this GPIO exists, so the PHY stays gated and USB never enumerates.
+ *
+ * USB0 (usb_prim) and USB1 (usb_sec) have NO equivalent GPIO declared
+ * in DSDT -- they don't need it.  This is usb_mp specific.
+ *
+ * Asserting pin 35 high at boot via gpio-hog is the cheapest test for
+ * this hypothesis.  If it works, the internal MCU enumerates and the
+ * internal keyboard + touchpad come online (per brother's prior round
+ * SPACE v57 is a stock USB-HID composite -- usbhid/hid-multitouch
+ * bind with no further Linux changes).
+ */
+&tlmm {
+	usb_mp_hsei_hog {
+		gpio-hog;
+		gpios = <35 GPIO_ACTIVE_HIGH>;
+		output-high;
+		line-name = "usb_mp_hs_phy_enable";
+	};
 };
 
 &usb_prim_hsphy {
