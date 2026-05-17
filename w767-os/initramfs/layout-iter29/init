@@ -1,0 +1,113 @@
+#!/bin/busybox sh
+# w767 iter-29 minimal initramfs /init
+# Same refresh-loop visibility model as iter-24, extended with:
+#   - WiFi / ath10k / remoteproc / regulator dumps in the on-screen state
+#   - dmesg filter widened to catch ath10k_snoc, qcom_q6v5_pas, qrtr, mhi
+#   - 30-frame countdown then exec /bin/sh so the user can type interactively
+#     (keyboard works as of iter-28; we can finally drive the shell)
+# The ESP write-back loop now runs because iter-29 has USB_STORAGE=y +
+# VFAT_FS=y built into the kernel — for the first time we should get a real
+# dmesg.txt landed on the drive.
+
+/bin/busybox --install -s /bin
+
+mount -t proc     proc     /proc
+mount -t sysfs    sys      /sys
+mount -t devtmpfs devtmpfs /dev 2>/dev/null
+mkdir -p /dev/pts /mnt/esp /lib/firmware
+mount -t devpts   devpts   /dev/pts 2>/dev/null
+mount -t tmpfs    tmpfs    /run
+mount -t tmpfs    tmpfs    /tmp
+mount -t pstore   none     /sys/fs/pstore 2>/dev/null
+mount -t debugfs  none     /sys/kernel/debug 2>/dev/null
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export HOSTNAME=w767
+
+log() {
+    echo "$1" > /dev/kmsg 2>/dev/null
+    echo "$(cat /proc/uptime | cut -d. -f1)s $1" > /dev/pmsg0 2>/dev/null
+}
+
+log "iter-29 init: starting, WiFi stack should now be built-in"
+
+# Background: ESP retry loop. With iter-29's USB_STORAGE=y this should
+# actually succeed and land dmesg on the drive for offline analysis.
+(
+    for i in $(seq 1 60); do
+        sleep 2
+        for dev in /dev/disk/by-label/W767-ESP /dev/sda1 /dev/sdb1 /dev/sdc1; do
+            [ -b "$dev" ] || continue
+            mount -t vfat -o rw,noatime "$dev" /mnt/esp 2>/dev/null || continue
+            D=/mnt/esp/iter29-snap-try$i
+            mkdir -p "$D"
+            dmesg                            > "$D/dmesg.txt"
+            cat /proc/cmdline                > "$D/cmdline.txt"
+            uname -a                         > "$D/uname.txt"
+            ls /sys/bus/usb/devices/         > "$D/usb.txt"           2>/dev/null
+            ls /sys/bus/hid/devices/         > "$D/hid.txt"           2>/dev/null
+            ls /sys/bus/i2c/devices/         > "$D/i2c.txt"           2>/dev/null
+            ls /sys/class/drm/               > "$D/drm.txt"           2>/dev/null
+            ls /sys/class/spi_master/        > "$D/spi.txt"           2>/dev/null
+            ls /sys/class/remoteproc/        > "$D/remoteproc.txt"    2>/dev/null
+            ls /sys/class/net/               > "$D/net.txt"           2>/dev/null
+            for rp in /sys/class/remoteproc/*/; do
+                [ -d "$rp" ] || continue
+                name=$(basename "$rp")
+                {
+                    echo "=== $name ==="
+                    echo "state:    $(cat "$rp/state"    2>/dev/null)"
+                    echo "name:     $(cat "$rp/name"     2>/dev/null)"
+                    echo "firmware: $(cat "$rp/firmware" 2>/dev/null)"
+                } >> "$D/remoteproc-detail.txt"
+            done
+            grep -r "" /sys/kernel/debug/devices_deferred 2>/dev/null > "$D/deferred.txt"
+            grep -r "" /sys/kernel/debug/regulator/regulator_summary 2>/dev/null > "$D/regulator.txt"
+            [ -d /sys/fs/pstore ] && cp /sys/fs/pstore/* "$D/" 2>/dev/null
+            sync
+            log "iter-29: snapshot $D landed (try=$i)"
+            umount /mnt/esp
+            exit 0
+        done
+    done
+    log "iter-29: gave up retrying ESP after 60 tries (~120s)"
+) &
+
+# Foreground: refresh loop, 30 frames @ 3s = ~90s of on-screen state,
+# then drop to interactive shell so user can poke around.
+exec > /dev/tty0 2>&1 < /dev/tty0
+for frame in $(seq 1 30); do
+    up=$(cat /proc/uptime | cut -d. -f1)s
+    clear 2>/dev/null
+    printf '\033[2J\033[H' 2>/dev/null
+    echo "=== w767 iter-29 — frame $frame/30 at $up ==="
+    echo "Drops to /bin/sh after frame 30. Photograph anytime."
+    echo
+    echo "--- USB:        " ; ls /sys/bus/usb/devices/  2>/dev/null | tr '\n' ' '; echo
+    echo "--- HID:        " ; ls /sys/bus/hid/devices/  2>/dev/null | tr '\n' ' '; echo
+    echo "--- I2C:        " ; ls /sys/bus/i2c/devices/  2>/dev/null | tr '\n' ' '; echo
+    echo "--- DRM:        " ; ls /sys/class/drm/        2>/dev/null | tr '\n' ' '; echo
+    echo "--- NET:        " ; ls /sys/class/net/        2>/dev/null | tr '\n' ' '; echo
+    echo "--- remoteproc: " ; ls /sys/class/remoteproc/ 2>/dev/null | tr '\n' ' '; echo
+    for rp in /sys/class/remoteproc/*/; do
+        [ -d "$rp" ] || continue
+        name=$(basename "$rp")
+        st=$(cat "$rp/state" 2>/dev/null)
+        nm=$(cat "$rp/name"  2>/dev/null)
+        echo "    $name ($nm): $st"
+    done
+    echo "--- Deferred:   " ; grep -cE '' /sys/kernel/debug/devices_deferred 2>/dev/null || echo "0"
+    echo
+    echo "=== filtered dmesg (last 30 matching) ==="
+    dmesg | grep -iE 'pdc|dwc3|usb|hub|hid|qmp|hsphy|gcc|rpmh|rsc|interconnect|deferred|probe|ramoops|panel|edp|drm|ath10k|wifi|wlan|wcn|qcom_q6v5|qrtr|mhi|remoteproc|regulator' | tail -30
+    echo
+    echo "(frame ${frame}/30, drops to shell at 30)"
+    sleep 3
+done
+
+# Keyboard works as of iter-28 — drop to interactive sh so the user can
+# poke around (run `dmesg`, `ip`, `iw`, `lsmod`, whatever).
+clear 2>/dev/null
+echo "=== iter-29: dropping to /bin/sh — keyboard is yours ==="
+echo "Try: dmesg | grep -i ath10k   /   cat /sys/class/remoteproc/*/state"
+exec /bin/sh
