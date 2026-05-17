@@ -1,0 +1,216 @@
+#!/bin/busybox sh
+# w767 iter-37 minimal initramfs /init
+# Same refresh-loop visibility model as iter-24, extended with:
+#   - WiFi / ath10k / remoteproc / regulator dumps in the on-screen state
+#   - dmesg filter widened to catch ath10k_snoc, qcom_q6v5_pas, qrtr, mhi
+#   - 30-frame countdown then exec /bin/sh so the user can type interactively
+#     (keyboard works as of iter-28; we can finally drive the shell)
+# The ESP write-back loop now runs because iter-37 has USB_STORAGE=y +
+# VFAT_FS=y built into the kernel — for the first time we should get a real
+# dmesg.txt landed on the drive.
+
+/bin/busybox --install -s /bin
+
+mount -t proc     proc     /proc
+mount -t sysfs    sys      /sys
+mount -t devtmpfs devtmpfs /dev 2>/dev/null
+mkdir -p /dev/pts /mnt/esp /lib/firmware
+mount -t devpts   devpts   /dev/pts 2>/dev/null
+mount -t tmpfs    tmpfs    /run
+mount -t tmpfs    tmpfs    /tmp
+mount -t pstore   none     /sys/fs/pstore 2>/dev/null
+mount -t debugfs  none     /sys/kernel/debug 2>/dev/null
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export HOSTNAME=w767
+
+log() {
+    echo "$1" > /dev/kmsg 2>/dev/null
+    echo "$(cat /proc/uptime | cut -d. -f1)s $1" > /dev/pmsg0 2>/dev/null
+}
+
+log "iter-37 init: starting, WiFi stack should now be built-in"
+
+# Bring up the QRTR userspace daemons that MPSS firmware depends on.
+# Brother's Q8 reply (commit 0d017d2): \_SB.AMSS has _DEP on \_SB.RFS0
+# (QCOM0417, Remote File System). Without rmtfs answering RFSA QMI
+# calls, MPSS times out and crashes every ~40s. pd-mapper registers the
+# protection-domain services from .jsn files (modemuw.jsn declares the
+# WLAN QMI service ath10k_snoc needs to bind wlan0). tqftpserv handles
+# runtime firmware fetches. qrtr name-service is in-kernel
+# (CONFIG_QRTR=y, net/qrtr/ns.c) so no userspace qrtr-ns needed.
+#
+# Daemons are Alpine aarch64 musl-linked. Loader at /lib/, libs at
+# /usr/lib/. PATH and LD_LIBRARY_PATH set below for completeness.
+mkdir -p /var/lib/rmtfs /var/log /boot
+# iter-37 fix: rmtfs defaults to file-based storage at /boot/modem_fs{1,2,3}.
+# iter-36 log: "[storage] failed to open '/boot/modem_fs1': No such file".
+touch /boot/modem_fs1 /boot/modem_fs2 /boot/modem_fs3
+# iter-37 fix: pd-mapper looks at /lib/firmware/ root for .jsn files.
+# iter-36 log: "no pd maps available". Symlink the W767 .jsn files.
+for j in adspr adspua cdspr modemuw battmgr; do
+    ln -sf /lib/firmware/qcom/samsung/w767/$j.jsn /lib/firmware/$j.jsn 2>/dev/null
+done
+echo "/lib/firmware/qcom/samsung/w767" > /sys/module/firmware_class/parameters/path 2>/dev/null || true
+export LD_LIBRARY_PATH=/usr/lib:/lib
+log "iter-37: starting pd-mapper, rmtfs, tqftpserv"
+/usr/bin/pd-mapper          >/var/log/pd-mapper.log   2>&1 &
+/usr/bin/rmtfs              >/var/log/rmtfs.log       2>&1 &
+/usr/bin/tqftpserv          >/var/log/tqftpserv.log   2>&1 &
+# rmtfs may need a few seconds for /dev/rmtfs_mem0 to appear after kernel
+# probes qcom_rmtfs_mem. Retry once if it failed quickly.
+(
+    sleep 5
+    if ! pgrep -f rmtfs >/dev/null 2>&1; then
+        log "iter-37: rmtfs died, retrying without -P/-s/-r flags"
+        /usr/bin/rmtfs   >/var/log/rmtfs.log.2  2>&1 &
+    fi
+    sleep 3
+    if ! pgrep -f pd-mapper >/dev/null 2>&1; then
+        log "iter-37: pd-mapper died, retrying"
+        /usr/bin/pd-mapper  >/var/log/pd-mapper.log.2 2>&1 &
+    fi
+) &
+
+# Background: MPSS auto-start.  The qcom_q6v5_pas driver hardcodes
+# sc8180x_mpss_resource.auto_boot = false, so MPSS sits offline unless
+# something writes 'start' to its sysfs.  W767 WLAN is MPSS-managed
+# (qcwlan QCMS child of QCOM041E per brother's dossier 02-pnp-drivers),
+# so no wlan0 ever appears without this kick.
+(
+    for i in $(seq 1 30); do
+        sleep 1
+        for rp in /sys/class/remoteproc/*/; do
+            [ -d "$rp" ] || continue
+            if [ "$(cat "$rp/name" 2>/dev/null)" = "modem" ]; then
+                state=$(cat "$rp/state" 2>/dev/null)
+                if [ "$state" = "offline" ]; then
+                    echo start > "$rp/state" 2>/dev/null
+                    new_state=$(cat "$rp/state" 2>/dev/null)
+                    log "iter-37: kicked MPSS at $(basename "$rp") (was=$state, now=$new_state)"
+                    exit 0
+                fi
+            fi
+        done
+    done
+    log "iter-37: gave up waiting for modem remoteproc after 30 tries"
+) &
+
+# Background: ESP retry loop. With iter-37's USB_STORAGE=y this should
+# actually succeed and land dmesg on the drive for offline analysis.
+(
+    for i in $(seq 1 60); do
+        sleep 2
+        for dev in /dev/disk/by-label/W767-ESP /dev/sda1 /dev/sdb1 /dev/sdc1; do
+            [ -b "$dev" ] || continue
+            mount -t vfat -o rw,noatime "$dev" /mnt/esp 2>/dev/null || continue
+            D=/mnt/esp/iter-37-snap-try$i
+            mkdir -p "$D"
+            dmesg                            > "$D/dmesg.txt"
+            cat /proc/cmdline                > "$D/cmdline.txt"
+            uname -a                         > "$D/uname.txt"
+            ls /sys/bus/usb/devices/         > "$D/usb.txt"           2>/dev/null
+            ls /sys/bus/hid/devices/         > "$D/hid.txt"           2>/dev/null
+            ls /sys/bus/i2c/devices/         > "$D/i2c.txt"           2>/dev/null
+            ls /sys/class/drm/               > "$D/drm.txt"           2>/dev/null
+            ls /sys/class/spi_master/        > "$D/spi.txt"           2>/dev/null
+            ls /sys/class/remoteproc/        > "$D/remoteproc.txt"    2>/dev/null
+            ls /sys/class/net/               > "$D/net.txt"           2>/dev/null
+            for rp in /sys/class/remoteproc/*/; do
+                [ -d "$rp" ] || continue
+                name=$(basename "$rp")
+                {
+                    echo "=== $name ==="
+                    echo "state:    $(cat "$rp/state"    2>/dev/null)"
+                    echo "name:     $(cat "$rp/name"     2>/dev/null)"
+                    echo "firmware: $(cat "$rp/firmware" 2>/dev/null)"
+                } >> "$D/remoteproc-detail.txt"
+            done
+            grep -r "" /sys/kernel/debug/devices_deferred 2>/dev/null > "$D/deferred.txt"
+            grep -r "" /sys/kernel/debug/regulator/regulator_summary 2>/dev/null > "$D/regulator.txt"
+            [ -d /sys/fs/pstore ] && cp /sys/fs/pstore/* "$D/" 2>/dev/null
+            sync
+            log "iter-37: snapshot $D landed (try=$i)"
+            umount /mnt/esp
+            exit 0
+        done
+    done
+    log "iter-37: gave up retrying ESP after 60 tries (~120s)"
+) &
+
+# Foreground: refresh loop, 30 frames @ 3s = ~90s of on-screen state,
+# then drop to interactive shell so user can poke around.
+exec > /dev/tty0 2>&1 < /dev/tty0
+for frame in $(seq 1 30); do
+    up=$(cat /proc/uptime | cut -d. -f1)s
+    clear 2>/dev/null
+    printf '\033[2J\033[H' 2>/dev/null
+    echo "=== w767 iter-37 — frame $frame/30 at $up ==="
+    echo "Drops to /bin/sh after frame 30. Photograph anytime."
+    echo
+    echo "--- USB:        " ; ls /sys/bus/usb/devices/  2>/dev/null | tr '\n' ' '; echo
+    echo "--- HID:        " ; ls /sys/bus/hid/devices/  2>/dev/null | tr '\n' ' '; echo
+    echo "--- I2C:        " ; ls /sys/bus/i2c/devices/  2>/dev/null | tr '\n' ' '; echo
+    echo "--- DRM:        " ; ls /sys/class/drm/        2>/dev/null | tr '\n' ' '; echo
+    echo "--- NET:        " ; ls /sys/class/net/        2>/dev/null | tr '\n' ' '; echo
+    echo "--- remoteproc: " ; ls /sys/class/remoteproc/ 2>/dev/null | tr '\n' ' '; echo
+    for rp in /sys/class/remoteproc/*/; do
+        [ -d "$rp" ] || continue
+        name=$(basename "$rp")
+        st=$(cat "$rp/state" 2>/dev/null)
+        nm=$(cat "$rp/name"  2>/dev/null)
+        echo "    $name ($nm): $st"
+    done
+    echo "--- Deferred:   " ; grep -cE '' /sys/kernel/debug/devices_deferred 2>/dev/null || echo "0"
+    echo
+    echo "=== q6v5/remoteproc/adsp/cdsp dmesg ==="
+    dmesg | grep -iE 'q6v5|remoteproc|adsp|cdsp' | head -6
+    echo "=== ath10k/wcn/wlan/qrtr/mhi dmesg ==="
+    dmesg | grep -iE 'ath10k|wcn|wlan|qrtr|mhi' | head -4
+    echo "=== DWC3-CORE-W767 dmesg (step-by-step probe) ==="
+    dmesg | grep "DWC3-CORE-W767" | tail -10
+    echo "=== rmtfs/qrtr state + daemon logs ==="
+    echo "  /dev/rmtfs* :  $(ls /dev/rmtfs* 2>/dev/null | tr '\n' ' ')"
+    echo "  /dev/qrtr* :   $(ls /dev/qrtr* 2>/dev/null | tr '\n' ' ')"
+    echo "  pgrep:        $(pgrep -l -f 'rmtfs|pd-mapper|tqftpserv' 2>/dev/null | tr '\n' ' | ')"
+    echo "  --- pd-mapper.log (head) ---"
+    head -3 /var/log/pd-mapper.log 2>/dev/null
+    echo "  --- rmtfs.log (head) ---"
+    head -3 /var/log/rmtfs.log 2>/dev/null
+    echo "  --- tqftpserv.log (head) ---"
+    head -3 /var/log/tqftpserv.log 2>/dev/null
+    echo "=== smem/hwspinlock/smp2p dmesg ==="
+    dmesg | grep -iE 'smem|hwspinlock|smp2p' | head -6
+    echo "=== pmic_glink/typec/ucsi dmesg ==="
+    dmesg | grep -iE 'pmic_glink|typec|ucsi' | head -6
+    echo "=== auxiliary devices:" ; ls /sys/bus/auxiliary/devices/ 2>/dev/null | tr '\n' ' ' ; echo
+    echo "=== typec class:    " ; ls /sys/class/typec/ 2>/dev/null | tr '\n' ' ' ; echo
+    echo "=== drivers present:" ; ls /sys/bus/platform/drivers/ 2>/dev/null | grep -iE 'q6v5|ath10k|wcnss|aoss|smp2p|pmic_glink|typec' | tr '\n' ' ' ; echo
+    echo "=== deferred list:"
+    cat /sys/kernel/debug/devices_deferred 2>/dev/null | head -12
+    echo
+    echo "(frame ${frame}/30, drops to shell at 30)"
+    sleep 3
+done
+
+# Keyboard works as of iter-28 — drop to interactive sh so the user can
+# poke around (run `dmesg`, `ip`, `iw`, `lsmod`, whatever).
+clear 2>/dev/null
+echo "=== iter-37: dropping to /bin/sh — keyboard is yours ==="
+echo
+echo "Per brother (DSDT walk, commits 31e3bbe + 201cc5e):"
+echo "  W767 has ONE USB-C on each side (one LEFT, one RIGHT)."
+echo "  Keyboard MCU is on usb_mp (internal, no port)."
+echo "  External USB-C ports are usb_prim + usb_sec (one each side)."
+echo "  iter-37 brought up only ONE of the URS controllers."
+echo
+echo "If you don't see /dev/sda, try unplugging and plugging the boot"
+echo "drive into the OTHER side USB-C port, then 'ls /dev/sd*'."
+echo
+echo "Useful greps:"
+echo "  dmesg | grep -iE 'smp2p|q6v5|remoteproc|adsp'"
+echo "  dmesg | grep -iE 'ath10k|wlan|wcn|qrtr'"
+echo "  cat /sys/class/remoteproc/*/state"
+echo "  ip link"
+echo
+exec /bin/sh
