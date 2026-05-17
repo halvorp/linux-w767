@@ -119,36 +119,28 @@
 		#size-cells = <0>;
 
 		/*
-		 * iter-32: port full connector endpoint graph (ports + HS/SS
-		 * endpoints) from sc8180x-lenovo-flex-5g.dts. Without this,
-		 * modern dwc3-qcom can't determine orientation/role for the URS
-		 * controllers and fails at dwc3 core init.  SBU mux endpoints
-		 * skipped — only needed for DP altmode which we don't have yet.
+		 * iter-33: REVERT iter-32's connector port graph.  Brother's
+		 * Q6/Q7 DSDT walk (commit 035a854) showed W767 has NO TLMM
+		 * orientation GPIOs — CC status routes via Samsung's EmuEC
+		 * OperationRegion → SafiDrv UCSI emulator, which Linux's
+		 * pmic_glink_ucsi can't reach.  Without an orientation source,
+		 * pmic_glink_altmode deferred forever and the URS dwc3 cores
+		 * never finished init.  Windows itself leaves the URS hubs
+		 * dormant unless a USB-C device is plugged in (Q7 finding).
+		 *
+		 * Keep pmic-glink + altmode + power-supply + ucsi for battery
+		 * / PD-charging telemetry that the PMIC firmware handles
+		 * directly, but skip the connector port graph and the
+		 * orientation-switch on QMP PHYs.  dwc3 will then come up as
+		 * plain xhci host (dr_mode = "host").  Trade-off: no DP
+		 * altmode, no Linux-side PD renegotiation, ~50% of USB-C
+		 * plug-ins land on the wrong SS lane (flip the cable).
 		 */
 		connector@0 {
 			compatible = "usb-c-connector";
 			reg = <0>;
 			power-role = "dual";
 			data-role = "dual";
-
-			ports {
-				#address-cells = <1>;
-				#size-cells = <0>;
-
-				port@0 {
-					reg = <0>;
-					pmic_glink_con0_hs: endpoint {
-						remote-endpoint = <&usb_prim_dwc3_hs>;
-					};
-				};
-
-				port@1 {
-					reg = <1>;
-					pmic_glink_con0_ss: endpoint {
-						remote-endpoint = <&usb_prim_qmpphy_out>;
-					};
-				};
-			};
 		};
 
 		connector@1 {
@@ -156,25 +148,6 @@
 			reg = <1>;
 			power-role = "dual";
 			data-role = "dual";
-
-			ports {
-				#address-cells = <1>;
-				#size-cells = <0>;
-
-				port@0 {
-					reg = <0>;
-					pmic_glink_con1_hs: endpoint {
-						remote-endpoint = <&usb_sec_dwc3_hs>;
-					};
-				};
-
-				port@1 {
-					reg = <1>;
-					pmic_glink_con1_ss: endpoint {
-						remote-endpoint = <&usb_sec_qmpphy_out>;
-					};
-				};
-			};
 		};
 	};
 
@@ -1253,12 +1226,6 @@
 
 	vdda-phy-supply = <&vreg_l3c_1p2>;
 	vdda-pll-supply = <&vreg_l5e_0p88>;
-
-	orientation-switch;
-};
-
-&usb_prim_qmpphy_out {
-	remote-endpoint = <&pmic_glink_con0_ss>;
 };
 
 &usb_prim {
@@ -1267,10 +1234,6 @@
 
 &usb_prim_dwc3 {
 	dr_mode = "host";
-};
-
-&usb_prim_dwc3_hs {
-	remote-endpoint = <&pmic_glink_con0_hs>;
 };
 
 &usb_sec_hsphy {
@@ -1286,12 +1249,6 @@
 
 	vdda-phy-supply = <&vreg_l3c_1p2>;
 	vdda-pll-supply = <&vreg_l5e_0p88>;
-
-	orientation-switch;
-};
-
-&usb_sec_qmpphy_out {
-	remote-endpoint = <&pmic_glink_con1_ss>;
 };
 
 &usb_sec {
@@ -1300,10 +1257,6 @@
 
 &usb_sec_dwc3 {
 	dr_mode = "host";
-};
-
-&usb_sec_dwc3_hs {
-	remote-endpoint = <&pmic_glink_con1_hs>;
 };
 
 &wifi {
