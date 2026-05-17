@@ -1,0 +1,133 @@
+﻿oem0.inf	C:\Windows\System32\DriverStore\FileRepository\appnodeenum.inf_arm64_ce09fe3309ee325c\appnodeenum.inf	Samsung Electronics Co., Ltd.	2019-08-02	1.0.0.13	System	System devices	True
+oem11.inf	C:\Windows\System32\DriverStore\FileRepository\axusbeth.inf_arm64_24e767040bb5ff7c\axusbeth.inf	ASIX	2024-06-07	3.22.2.0	Net	Network adapters	False
+oem1.inf	C:\Windows\System32\DriverStore\FileRepository\bh1733als.inf_arm64_d466fef88041da7b\bh1733als.inf	Samsung Electronics Co., Ltd.	2019-12-17	1.0.3.8	Sensor	Sensors	False
+oem2.inf	C:\Windows\System32\DriverStore\FileRepository\dax3_ext_qc_dolbyatmos_vlldp1.2.inf_arm64_39d14c8a42d07ec3\dax3_ext_qc_dolbyatmos_vlldp1.2.inf	Dolby	2019-08-26	3.0.4.1	Extension	Extensions	False
+oem3.inf	C:\Windows\System32\DriverStore\FileRepository\dax3_ext_qc_dolbyaudiopremium.inf_arm64_496f4ceb51db0623\dax3_ext_qc_dolbyaudiopremium.inf	Dolby	2019-09-05	3.20201.231.0	Extension	Extensions	False
+oem4.inf	C:\Windows\System32\DriverStore\FileRepository\dax3_swc_aposvc_arm64.inf_arm64_176dab40de72412a\dax3_swc_aposvc_arm64.inf	Dolby	2019-04-08	3.20301.325.0	SoftwareComponent	Software components	False
+oem5.inf	C:\Windows\System32\DriverStore\FileRepository\dax3_swc_aposvc_arm64.inf_arm64_6ee23deafbc32a5f\dax3_swc_aposvc_arm64.inf	Dolby	2019-09-24	3.20403.443.10	SoftwareComponent	Software components	False
+oem6.inf	C:\Windows\System32\DriverStore\FileRepository\dax3_swc_hsa_arm64.inf_arm64_410dcbe2e8150484\dax3_swc_hsa_arm64.inf	Dolby	2019-03-12	3.20301.311.0	SoftwareComponent	Software components	False
+oem7.inf	C:\Windows\System32\DriverStore\FileRepository\dax3_swc_hsa_arm64.inf_arm64_7042d6a72eee5620\dax3_swc_hsa_arm64.inf	Dolby	2019-08-26	3.20402.409.1	SoftwareComponent	Software components	False
+oem8.inf	C:\Windows\System32\DriverStore\FileRepository\egistouchfpwoa.inf_arm64_08226995965a4ba7\egistouchfpwoa.inf	Egis Technology Inc.	2019-07-29	1.0.15.0	Biometric	Biometric devices	False
+oem9.inf	C:\Windows\System32\DriverStore\FileRepository\emuec.inf_arm64_e75e3cf0be3c7ddc\emuec.inf	Samsung Electronics Co,.Ltd.	2020-02-04	15.2.40.590	System	System devices	True
+oem10.inf	C:\Windows\System32\DriverStore\FileRepository\galaxybookdriver_space.inf_arm64_1cd9ca61872e1d01\galaxybookdriver_space.inf	Samsung Electronics Co., Ltd.	2019-05-17	1.0.0.0	System	System devices	True
+oem12.inf	C:\Windows\System32\DriverStore\FileRepository\halextqcwdogtimer8180.inf_arm64_e38ccb14f6c3f57f\halextqcwdogtimer8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	Computer	Computer	True
+oem13.inf	C:\Windows\System32\DriverStore\FileRepository\helloface.inf_arm64_2e81d66835eba4da\helloface.inf	Windows Hello Face	2018-06-01	10.0.19041.1889	Biometric	Biometric devices	False
+oem23.inf	C:\Windows\System32\DriverStore\FileRepository\hhddmsserial.inf_arm64_2d9be54d705ce60e\hhddmsserial.inf	HHD Software Ltd.	2025-10-07	10.1.0.2237	Ports	Ports (COM & LPT)	True
+oem22.inf	C:\Windows\System32\DriverStore\FileRepository\hhddmsusb.inf_arm64_4a187d425be47604\hhddmsusb.inf	HHD Software Ltd.	2025-10-07	10.1.0.2237	USB	Universal Serial Bus controllers	True
+oem20.inf	C:\Windows\System32\DriverStore\FileRepository\hhdnet.inf_arm64_9bec1483b0e34704\hhdnet.inf	HHD Software Ltd.	2025-10-07	10.1.0.2237	NetService	Network Service	False
+oem15.inf	C:\Windows\System32\DriverStore\FileRepository\kbdhelper.inf_arm64_595714e89baf9a68\kbdhelper.inf	Samsung Electronics Co.,Ltd.	2019-11-25	1.0.0.3	Keyboard	Keyboards	True
+oem16.inf	C:\Windows\System32\DriverStore\FileRepository\mcfg_subsys_ext8180.inf_arm64_c5178b40afe40a5e\mcfg_subsys_ext8180.inf	Samsung Electronics Co., Ltd.	2020-07-28	4.23.52.0	Extension	Extensions	False
+oem17.inf	C:\Windows\System32\DriverStore\FileRepository\modemctrl.arm64.inf_arm64_7354aea7fdba77ae\modemctrl.arm64.inf	Samsung Electronics Co., Ltd.	2020-07-27	13.24.21.688	System	System devices	True
+oem18.inf	C:\Windows\System32\DriverStore\FileRepository\monitor_space.inf_arm64_e31d7f08b12d5367\monitor_space.inf	Samsung Electronics Co., Ltd.	2020-01-10	15.1.1.1	Monitor	Monitors	False
+oem19.inf	C:\Windows\System32\DriverStore\FileRepository\paneldriver.inf_arm64_7cd3a695b9ab839b\paneldriver.inf	Samsung Electronics Co., Ltd.	2020-03-03	0.1.0.5	System	System devices	True
+oem21.inf	C:\Windows\System32\DriverStore\FileRepository\prnms001.inf_arm64_b5cf559a6da50414\prnms001.inf	Microsoft	2006-06-21	10.0.19041.1806	Printer	Printers	False
+oem162.inf	C:\Windows\System32\DriverStore\FileRepository\prnms009.inf_arm64_e77dc6a3f97b016b\prnms009.inf	Microsoft	2006-06-21	10.0.22621.1	Printer	Printers	False
+oem26.inf	C:\Windows\System32\DriverStore\FileRepository\qcabd.inf_arm64_1bc598df9c484f15\qcabd.inf	Qualcomm Technologies Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem28.inf	C:\Windows\System32\DriverStore\FileRepository\qcacsp_cls8180.inf_arm64_8aa66d2c7dec0b61\qcacsp_cls8180.inf	Qualcomm Technologies, Inc.	2019-11-28	1.0.770.9	Extension	Extensions	False
+oem30.inf	C:\Windows\System32\DriverStore\FileRepository\qcadc8180.inf_arm64_cd1e036774a7b09f\qcadc8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem31.inf	C:\Windows\System32\DriverStore\FileRepository\qcadcm8180.inf_arm64_6c0af01b459513d1\qcadcm8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem33.inf	C:\Windows\System32\DriverStore\FileRepository\qcadsprpc8180.inf_arm64_7eb12ec577b8add2\qcadsprpc8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem34.inf	C:\Windows\System32\DriverStore\FileRepository\qcadsprpcd8180.inf_arm64_4ec85079ef7eb24a\qcadsprpcd8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem35.inf	C:\Windows\System32\DriverStore\FileRepository\qcauddev8180.inf_arm64_e690e0253f1a5c3c\qcauddev8180.inf	Qualcomm	2019-09-13	1.0.770.0	Media	Sound, video and game controllers	False
+oem36.inf	C:\Windows\System32\DriverStore\FileRepository\qcauddev8180_ss.inf_arm64_6080a9338434daca\qcauddev8180_ss.inf	Samsung Electronics Co., Ltd.	2020-02-11	1.0.960.1	Media	Sound, video and game controllers	False
+oem37.inf	C:\Windows\System32\DriverStore\FileRepository\qcaudminiport_ss.inf_arm64_df27788dfb77a0db\qcaudminiport_ss.inf	Samsung Electronics Co., Ltd.	2020-07-14	1.0.1000.4	MEDIA	Sound, video and game controllers	False
+oem38.inf	C:\Windows\System32\DriverStore\FileRepository\qcbattminiclass850.inf_arm64_e4faeead58dc45ab\qcbattminiclass850.inf	Qualcomm Incorporated	2018-09-17	1.0.9260.0	Battery	Batteries	True
+oem39.inf	C:\Windows\System32\DriverStore\FileRepository\qcbtaddvscregistry8180.inf_arm64_adf5782018385f6f\qcbtaddvscregistry8180.inf	Qualcomm Incorporated	2021-03-24	1.0.1520.0	Bluetooth	Bluetooth	False
+oem41.inf	C:\Windows\System32\DriverStore\FileRepository\qcbtfmuart_ext8180.inf_arm64_05f8f87c5463edab\qcbtfmuart_ext8180.inf	Qualcomm Atheros Communications Inc.	2019-06-13	1.0.640.0	Extension	Extensions	False
+oem42.inf	C:\Windows\System32\DriverStore\FileRepository\qcbtfmuart8180.inf_arm64_96d9d71023361ae6\qcbtfmuart8180.inf	Qualcomm Atheros Communications Inc.	2019-10-25	1.0.830.0	Bluetooth	Bluetooth	False
+oem43.inf	C:\Windows\System32\DriverStore\FileRepository\qcbtfmuart8180.inf_arm64_ba0b068654fae2c1\qcbtfmuart8180.inf	Qualcomm Atheros Communications Inc.	2021-03-24	1.0.1520.0	Bluetooth	Bluetooth	False
+oem165.inf	C:\Windows\System32\DriverStore\FileRepository\qccamavscls8180.inf_arm64_1e9f33a65c8089e4\qccamavscls8180.inf	Qualcomm	2023-07-23	4231.62.0.0	CAMERA	Cameras	False
+oem44.inf	C:\Windows\System32\DriverStore\FileRepository\qccamavscls8180.inf_arm64_7833832eda6ab8e8\qccamavscls8180.inf	Qualcomm	2020-06-30	3110.540.0.0	CAMERA	Cameras	False
+oem166.inf	C:\Windows\System32\DriverStore\FileRepository\qccamfrontsensor8180.inf_arm64_56e5e17b8daabd57\qccamfrontsensor8180.inf	Qualcomm Incorporated	2023-07-23	4231.62.0.0	Camera	Cameras	False
+oem45.inf	C:\Windows\System32\DriverStore\FileRepository\qccamfrontsensor8180.inf_arm64_d0c47d9f8823b4a5\qccamfrontsensor8180.inf	Qualcomm Incorporated	2020-06-30	3110.540.0.0	Camera	Cameras	False
+oem167.inf	C:\Windows\System32\DriverStore\FileRepository\qccamisp8180.inf_arm64_2affce7660da49bc\qccamisp8180.inf	Qualcomm Inc.	2023-07-23	4231.60.0.0	Camera	Cameras	False
+oem47.inf	C:\Windows\System32\DriverStore\FileRepository\qccamisp8180.inf_arm64_7a7bba7a25967af9\qccamisp8180.inf	Qualcomm Inc.	2020-06-30	3110.539.0.0	Camera	Cameras	False
+oem168.inf	C:\Windows\System32\DriverStore\FileRepository\qccamjpege8180.inf_arm64_4dd9ba00259384d4\qccamjpege8180.inf	Qualcomm	2023-07-23	4231.60.0.0	Camera	Cameras	False
+oem49.inf	C:\Windows\System32\DriverStore\FileRepository\qccamjpege8180.inf_arm64_dda07be52dd9df09\qccamjpege8180.inf	Qualcomm	2020-06-30	3110.539.0.0	Camera	Cameras	False
+oem51.inf	C:\Windows\System32\DriverStore\FileRepository\qccammipicsi8180.inf_arm64_71b9638a74e4a47a\qccammipicsi8180.inf	Qualcomm Inc.	2020-06-30	3110.539.0.0	Camera	Cameras	False
+oem169.inf	C:\Windows\System32\DriverStore\FileRepository\qccammipicsi8180.inf_arm64_d157d6a7ea76367a\qccammipicsi8180.inf	Qualcomm Inc.	2023-07-23	4231.60.0.0	Camera	Cameras	False
+oem170.inf	C:\Windows\System32\DriverStore\FileRepository\qccamplatform8180.inf_arm64_a093d1464b53a42a\qccamplatform8180.inf	Qualcomm Inc.	2023-07-23	4231.62.0.0	Camera	Cameras	False
+oem53.inf	C:\Windows\System32\DriverStore\FileRepository\qccamplatform8180.inf_arm64_ead6f5f6168690c9\qccamplatform8180.inf	Qualcomm Inc.	2020-06-30	3110.540.0.0	Camera	Cameras	False
+oem54.inf	C:\Windows\System32\DriverStore\FileRepository\qcccidbridge8180.inf_arm64_1a9251b37d88e71e\qcccidbridge8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	System	System devices	True
+oem55.inf	C:\Windows\System32\DriverStore\FileRepository\qccdi8180.inf_arm64_6e252fa2a809d576\qccdi8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem57.inf	C:\Windows\System32\DriverStore\FileRepository\qcdiagbridge.inf_arm64_75b8857531ad692e\qcdiagbridge.inf	Qualcomm Incorporated	2019-09-18	1.0.760.1	System	System devices	True
+oem58.inf	C:\Windows\System32\DriverStore\FileRepository\qcdiagcsi8180.inf_arm64_43d991d43f7ce91c\qcdiagcsi8180.inf	Qualcomm Incorporated	2020-02-27	1.0.1000.0	SYSTEM	System devices	True
+oem59.inf	C:\Windows\System32\DriverStore\FileRepository\qcdiagrouter8180.inf_arm64_7b854c7b9cc26599\qcdiagrouter8180.inf	Qualcomm Incorporated	2020-02-27	1.0.1000.0	SYSTEM	System devices	True
+oem60.inf	C:\Windows\System32\DriverStore\FileRepository\qcdx8180.inf_arm64_a6eeb0588aa111aa\qcdx8180.inf	Qualcomm Incorporated	2020-03-20	26.18.1040.0	Display	Display adapters	False
+oem61.inf	C:\Windows\System32\DriverStore\FileRepository\qcdx8180.inf_arm64_c1c5f5f4255a7d2a\qcdx8180.inf	Qualcomm Incorporated	2021-09-24	27.20.1640.0	Display	Display adapters	False
+oem62.inf	C:\Windows\System32\DriverStore\FileRepository\qcfgbcl8180.inf_arm64_679d16e7f69fb4f5\qcfgbcl8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem63.inf	C:\Windows\System32\DriverStore\FileRepository\qcfgbclext8180.inf_arm64_76b926ed35cd2b0b\qcfgbclext8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	Extension	Extensions	False
+oem65.inf	C:\Windows\System32\DriverStore\FileRepository\qcglink8180.inf_arm64_b4aa0854ab832fbf\qcglink8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem66.inf	C:\Windows\System32\DriverStore\FileRepository\qcgnss8180.inf_arm64_bd6a5ace5a6011ac\qcgnss8180.inf	Qualcomm	2020-03-06	1.0.1020.0	Sensor	Sensors	False
+oem68.inf	C:\Windows\System32\DriverStore\FileRepository\qcgpi8180.inf_arm64_677d19d847fc9fa0\qcgpi8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem70.inf	C:\Windows\System32\DriverStore\FileRepository\qcgpio8180.inf_arm64_b5119664ee6a2a12\qcgpio8180.inf	CompanyName	2019-10-25	1.0.830.0	System	System devices	True
+oem73.inf	C:\Windows\System32\DriverStore\FileRepository\qcgsi8180.inf_arm64_b88a67768a981657\qcgsi8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem74.inf	C:\Windows\System32\DriverStore\FileRepository\qchwnled8180.inf_arm64_5056fd42f3359957\qchwnled8180.inf	Samsung Electronics Co., Ltd.	2019-09-26	1.0.0.1	HIDClass	Human Interface Devices	True
+oem76.inf	C:\Windows\System32\DriverStore\FileRepository\qci2c8180.inf_arm64_191d0a2751394008\qci2c8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem77.inf	C:\Windows\System32\DriverStore\FileRepository\qciommu8180.inf_arm64_dadbf66530aeae57\qciommu8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem78.inf	C:\Windows\System32\DriverStore\FileRepository\qcipa8180.inf_arm64_e342ad05e1346d1e\qcipa8180.inf	Qualcomm Inc.	2020-03-06	1.0.1020.0	System	System devices	True
+oem81.inf	C:\Windows\System32\DriverStore\FileRepository\qcipcrouter8180.inf_arm64_643f7ab71eb08928\qcipcrouter8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem83.inf	C:\Windows\System32\DriverStore\FileRepository\qckmbam8180.inf_arm64_f093cc571bb889d9\qckmbam8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem84.inf	C:\Windows\System32\DriverStore\FileRepository\qclistensm_swc_ext8180.inf_arm64_a70d95a794e79c2e\qclistensm_swc_ext8180.inf	Qualcomm Technologies, Inc.	2019-10-16	1.0.730.3000	Extension	Extensions	False
+oem85.inf	C:\Windows\System32\DriverStore\FileRepository\qclistensm_swc8180.inf_arm64_576fec5698798fd3\qclistensm_swc8180.inf	Qualcomm Technologies, Inc.	2019-08-26	1.0.730.2000	SoftwareComponent	Software components	False
+oem86.inf	C:\Windows\System32\DriverStore\FileRepository\qclistensm_swc8180.inf_arm64_7355747d0a7d9fe3\qclistensm_swc8180.inf	Qualcomm Technologies, Inc.	2019-08-02	1.0.710.0	SoftwareComponent	Software components	False
+oem87.inf	C:\Windows\System32\DriverStore\FileRepository\qclistensm8180.inf_arm64_569da907f38feeb6\qclistensm8180.inf	Qualcomm Technologies, Inc.	2019-08-26	1.0.730.2000	Extension	Extensions	False
+oem89.inf	C:\Windows\System32\DriverStore\FileRepository\qcltecoexmgr8180.inf_arm64_60cfb50a1c41c6d1\qcltecoexmgr8180.inf	Qualcomm, Inc.	2020-03-06	1.0.1020.0	SYSTEM	System devices	True
+oem90.inf	C:\Windows\System32\DriverStore\FileRepository\qcmbb8180.inf_arm64_22789785ec438bbe\qcmbb8180.inf	Qualcomm Inc.	2021-02-22	3347.49.0.0	Net	Network adapters	False
+oem92.inf	C:\Windows\System32\DriverStore\FileRepository\qcmbrg8180.inf_arm64_1591e31bf76fb675\qcmbrg8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	System	System devices	True
+oem93.inf	C:\Windows\System32\DriverStore\FileRepository\qcpdsr.inf_arm64_2fe2834fa04cd590\qcpdsr.inf	Qualcomm Incorporated	2020-03-06	1.0.1020.0	SYSTEM	System devices	True
+oem95.inf	C:\Windows\System32\DriverStore\FileRepository\qcpep.wd8180.inf_arm64_3d6eea98f7848874\qcpep.wd8180.inf	Qualcomm Inc.	2020-03-06	1.0.1020.1	System	System devices	True
+oem97.inf	C:\Windows\System32\DriverStore\FileRepository\qcpil8180.inf_arm64_5c6f76e75ccd8ad4\qcpil8180.inf	Qualcomm Incorporated	2019-09-13	1.0.770.0	System	System devices	True
+oem98.inf	C:\Windows\System32\DriverStore\FileRepository\qcpilext8180.inf_arm64_7bb1f1fb12f584a2\qcpilext8180.inf	Qualcomm Incorporated	2019-09-13	1.0.770.1	Extension	Extensions	False
+oem99.inf	C:\Windows\System32\DriverStore\FileRepository\qcpmic8180.inf_arm64_6323696a46718299\qcpmic8180.inf	Qualcomm Inc.	2020-02-06	1.0.980.0	System	System devices	True
+oem102.inf	C:\Windows\System32\DriverStore\FileRepository\qcpmicapps8180.inf_arm64_acac99f6139ffa7e\qcpmicapps8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem103.inf	C:\Windows\System32\DriverStore\FileRepository\qcpmicglink8180.inf_arm64_a9000585390b699e\qcpmicglink8180.inf	Qualcomm Incorporated	2020-01-25	1.0.960.0	System	System devices	True
+oem104.inf	C:\Windows\System32\DriverStore\FileRepository\qcpmicgpio8180.inf_arm64_37c1f3f97a87a260\qcpmicgpio8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem105.inf	C:\Windows\System32\DriverStore\FileRepository\qcppx8180.inf_arm64_2630a5d50ce5a7f5\qcppx8180.inf	Qualcomm Inc.	2019-08-25	1.0.740.0	System	System devices	True
+oem106.inf	C:\Windows\System32\DriverStore\FileRepository\qcqdss8180.inf_arm64_954edc88b29a9e2b\qcqdss8180.inf	Qualcomm Inc.	2019-09-05	1.0.760.0	System	System devices	True
+oem107.inf	C:\Windows\System32\DriverStore\FileRepository\qcremoteat8180.inf_arm64_0df4ab54d9868e72\qcremoteat8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	System	System devices	True
+oem109.inf	C:\Windows\System32\DriverStore\FileRepository\qcremotefs8180.inf_arm64_8a629fd5db8bab22\qcremotefs8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem110.inf	C:\Windows\System32\DriverStore\FileRepository\qcrevrmnet8180.inf_arm64_0df5d364e3a8ee8c\qcrevrmnet8180.inf	Qualcomm Inc.	2019-09-13	1.0.770.0	NetTrans	Network Protocol	False
+oem111.inf	C:\Windows\System32\DriverStore\FileRepository\qcrmnetbridge8180.inf_arm64_ca8272089f8e4360\qcrmnetbridge8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	System	System devices	True
+oem113.inf	C:\Windows\System32\DriverStore\FileRepository\qcrpen8180.inf_arm64_fb9466cbcb0390a9\qcrpen8180.inf	Qualcomm Incorporated	2020-03-20	1.0.1040.0	System	System devices	True
+oem114.inf	C:\Windows\System32\DriverStore\FileRepository\qcscm8180.inf_arm64_ae8e63e51413685e\qcscm8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem116.inf	C:\Windows\System32\DriverStore\FileRepository\qcsensors8180.inf_arm64_8855ada4d1ac6dc4\qcsensors8180.inf	Qualcomm	2020-03-06	1.0.1020.0	Sensor	Sensors	False
+oem117.inf	C:\Windows\System32\DriverStore\FileRepository\qcsensorsconfigcls8180.inf_arm64_bba805930c9ddcf7\qcsensorsconfigcls8180.inf	Qualcomm Technologies Inc	2020-03-06	1.0.1020.0	Extension	Extensions	False
+oem118.inf	C:\Windows\System32\DriverStore\FileRepository\qcshutdownsvc.inf_arm64_df76377c4a712424\qcshutdownsvc.inf	Qualcomm Technologies, Incorporated	2020-03-06	1.0.1020.0	SYSTEM	System devices	True
+oem119.inf	C:\Windows\System32\DriverStore\FileRepository\qcslimbus8180.inf_arm64_4e26050f56aec0c6\qcslimbus8180.inf	Qualcomm Inc.	2020-03-06	1.0.1020.0	SYSTEM	System devices	True
+oem122.inf	C:\Windows\System32\DriverStore\FileRepository\qcsmmu8180.inf_arm64_a3025ec179111ba9\qcsmmu8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem123.inf	C:\Windows\System32\DriverStore\FileRepository\qcsocpartition.inf_arm64_332be0124b905309\qcsocpartition.inf	Qualcomm Technologies Inc.	2019-08-30	1.0.750.0	SYSTEM	System devices	True
+oem125.inf	C:\Windows\System32\DriverStore\FileRepository\qcspi8180.inf_arm64_5717613b7b0745a7\qcspi8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem126.inf	C:\Windows\System32\DriverStore\FileRepository\qcspi8180_ext.inf_arm64_8b9483f426e19430\qcspi8180_ext.inf	Qualcomm Technologies, Inc.	2019-01-17	1.0.430.0	Extension	Extensions	False
+oem128.inf	C:\Windows\System32\DriverStore\FileRepository\qcspmi8180.inf_arm64_9714d3a3fbcd7965\qcspmi8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem129.inf	C:\Windows\System32\DriverStore\FileRepository\qcsubsys_ext_adsp8180.inf_arm64_78b18c0a325a9166\qcsubsys_ext_adsp8180.inf	Qualcomm Technologies, Incorporated	2019-08-16	1.0.720.2	Extension	Extensions	False
+oem130.inf	C:\Windows\System32\DriverStore\FileRepository\qcsubsys_ext_cdsp8180.inf_arm64_0be39ea09d14bdb6\qcsubsys_ext_cdsp8180.inf	Qualcomm Technologies, Incorporated	2020-03-20	1.0.1040.0	Extension	Extensions	False
+oem163.inf	C:\Windows\System32\DriverStore\FileRepository\qcsubsys_ext_mpss8180.inf_arm64_ec7c4d763349ea77\qcsubsys_ext_mpss8180.inf	Qualcomm Technologies, Incorporated	2020-07-28	2.0.900.4	Extension	Extensions	False
+oem133.inf	C:\Windows\System32\DriverStore\FileRepository\qcsubsys_ext_scss8180.inf_arm64_dcf9b1c49cd7b2fe\qcsubsys_ext_scss8180.inf	Qualcomm Technologies, Incorporated	2020-03-20	1.0.1040.0	Extension	Extensions	False
+oem134.inf	C:\Windows\System32\DriverStore\FileRepository\qcsubsys8180.inf_arm64_4ef6a277bff20c42\qcsubsys8180.inf	Qualcomm Technologies, Incorporated	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem136.inf	C:\Windows\System32\DriverStore\FileRepository\qcsyscache8180.inf_arm64_26b074e21cc3a400\qcsyscache8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	System	System devices	True
+oem137.inf	C:\Windows\System32\DriverStore\FileRepository\qctftpkmdf.inf_arm64_dff73a99dcc99d6a\qctftpkmdf.inf	Qualcomm Technologies, Incorporated	2019-08-02	1.0.710.0	SYSTEM	System devices	True
+oem138.inf	C:\Windows\System32\DriverStore\FileRepository\qctree8180.inf_arm64_7283ac2a8822b459\qctree8180.inf	Qualcomm Inc.	2019-09-13	1.0.770.1	SYSTEM	System devices	True
+oem139.inf	C:\Windows\System32\DriverStore\FileRepository\qcuart8180.inf_arm64_85c0c5bca171dad5\qcuart8180.inf	Qualcomm Technologies, Inc.	2019-07-11	1.0.680.0	Ports	Ports (COM & LPT)	True
+oem140.inf	C:\Windows\System32\DriverStore\FileRepository\qcusbcucsi8180.inf_arm64_7f823b9ed75639bb\qcusbcucsi8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	USBDevice	Universal Serial Bus devices	True
+oem141.inf	C:\Windows\System32\DriverStore\FileRepository\qcusbfn8180.inf_arm64_32257b7f9ea51ee2\qcusbfn8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	USBDevice	Universal Serial Bus devices	True
+oem142.inf	C:\Windows\System32\DriverStore\FileRepository\qcusbfnssfilter8180.inf_arm64_a57e42a150ee2ce9\qcusbfnssfilter8180.inf	Qualcomm Technologies, Inc.	2020-03-20	1.0.1040.0	USBDevice	Universal Serial Bus devices	True
+oem144.inf	C:\Windows\System32\DriverStore\FileRepository\qcwlan8180.inf_arm64_59a3e6c522523a44\qcwlan8180.inf	Qualcomm Inc	2021-04-21	1.0.1540.0	Net	Network adapters	False
+oem145.inf	C:\Windows\System32\DriverStore\FileRepository\qcwlan8180_ext.inf_arm64_b3b98fb721c461b4\qcwlan8180_ext.inf	Qualcomm Inc	2019-07-26	1.0.700.0	Extension	Extensions	False
+oem146.inf	C:\Windows\System32\DriverStore\FileRepository\qcxhcifilter8180.inf_arm64_3086f9445347f120\qcxhcifilter8180.inf	Qualcomm Technologies, Inc.	2019-09-13	1.0.770.0	USB	Universal Serial Bus controllers	True
+oem148.inf	C:\Windows\System32\DriverStore\FileRepository\qsarconfig8180.inf_arm64_c870456333f15fda\qsarconfig8180.inf	Qualcomm Inc.	2020-03-20	1.0.1040.0	Extension	Extensions	False
+oem149.inf	C:\Windows\System32\DriverStore\FileRepository\qsarmgr8180.inf_arm64_428c3295a0ddf764\qsarmgr8180.inf	Qualcomm	2020-03-20	1.0.1040.0	SYSTEM	System devices	True
+oem150.inf	C:\Windows\System32\DriverStore\FileRepository\safidrv.inf_arm64_6b392e5de743cb11\safidrv.inf	Samsung Electronics Co., Ltd.	2020-05-25	11.1.13.591	System	System devices	True
+oem151.inf	C:\Windows\System32\DriverStore\FileRepository\samsungosdservice.inf_arm64_3f053c852a460b82\samsungosdservice.inf	Samsung Electronics Co.,Ltd.	2019-12-21	1.0.0.7	SoftwareComponent	Software components	False
+oem152.inf	C:\Windows\System32\DriverStore\FileRepository\secpmic3p.inf_arm64_839a8b4377736cd9\secpmic3p.inf	Samsung Electronics Co,.Ltd.	2019-09-05	16.46.49.654	System	System devices	True
+oem164.inf	C:\Windows\System32\DriverStore\FileRepository\space_pahp.inf_arm64_9a519109a705633d\space_pahp.inf	Samsung Electronics Co., Ltd.	2021-11-24	1.0.2.0	Firmware	Firmware	True
+oem14.inf	C:\Windows\System32\DriverStore\FileRepository\space_pahp.inf_arm64_aece7e02bcede993\space_pahp.inf	Samsung Electronics Co., Ltd.	2024-12-26	1.0.2.3	Firmware	Firmware	True
+oem154.inf	C:\Windows\System32\DriverStore\FileRepository\sx9360grip.inf_arm64_79e51c9fe44d8c96\sx9360grip.inf	Samsung Electronics Co., Ltd.	2019-10-17	1.0.0.3	Sensor	Sensors	False
+oem155.inf	C:\Windows\System32\DriverStore\FileRepository\tpadfwupdatesrvinstall.inf_arm64_fb0adf4622054fc4\tpadfwupdatesrvinstall.inf	Samsung Electronics Co.,Ltd.	2020-06-21	1.0.0.13	SoftwareComponent	Software components	False
+oem156.inf	C:\Windows\System32\DriverStore\FileRepository\tpadhelper.inf_arm64_09156bfefa33813f\tpadhelper.inf	Samsung Electronics Co.,Ltd.	2019-12-16	1.0.0.6	HIDClass	Human Interface Devices	True
+oem157.inf	C:\Windows\System32\DriverStore\FileRepository\tsphelper.inf_arm64_653c3c1cd5d28adc\tsphelper.inf	Samsung Electronics Co.,Ltd.	2019-08-13	1.0.0.2	HIDClass	Human Interface Devices	True
+oem158.inf	C:\Windows\System32\DriverStore\FileRepository\ucmem.inf_arm64_285604482f92f629\ucmem.inf	Samsung Electronics Co., Ltd.	2019-07-11	10.16.16.68	USB	Universal Serial Bus controllers	True
+oem159.inf	C:\Windows\System32\DriverStore\FileRepository\ufnserialcomposite.inf_arm64_f76f92fc9a614aff\ufnserialcomposite.inf	Qualcomm	2020-03-20	1.0.1040.0	Ports	Ports (COM & LPT)	True
+oem160.inf	C:\Windows\System32\DriverStore\FileRepository\vhidevent.inf_arm64_a755923fe7030295\vhidevent.inf	Samsung Electronics Co.,Ltd.	2019-03-15	1.0.0.1	HIDClass	Human Interface Devices	True
+oem171.inf	C:\Windows\System32\DriverStore\FileRepository\wintun.inf_arm64_6e9942c90dfe5408\wintun.inf	WireGuard LLC	2021-10-13	0.14.0.0	Net	Network adapters	False
+oem161.inf	C:\Windows\System32\DriverStore\FileRepository\wlsar.inf_arm64_8405710f50e1e829\wlsar.inf	Samsung Electronics Co., Ltd.	2019-08-12	16.0.30.81	System	System devices	True
