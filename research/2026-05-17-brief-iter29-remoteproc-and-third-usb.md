@@ -4,6 +4,72 @@
 **Triggered by:** iter-29 boot. WiFi stack is built-in but no `wlan0`. Three reasons we can see, two of which need W11/Ghidra/DSDT visibility you have and I don't.
 **Date:** 2026-05-17
 
+## 2026-05-17 update — Q2 / Q3 / Q4 no longer needed (we found the cause)
+
+A second iter-29 boot photo (with on-screen `dmesg | grep q6v5|remoteproc|...`) showed the actual failure mode:
+
+```
+platform 4080000.remoteproc:  deferred probe pending:
+    platform: wait for supplier /smp2p-mpss/slave-kernel
+platform 8300000.remoteproc:  deferred probe pending:
+    platform: wait for supplier /smp2p-cdsp/slave-kernel
+platform 17300000.remoteproc: deferred probe pending:
+    platform: wait for supplier /smp2p-lpass/slave-kernel
+```
+
+All three remoteprocs defer forever because the SMP2P driver never loads. Mainline `sc8180x.dtsi` lines 670/694/718 define `smp2p-cdsp`/`smp2p-lpass`/`smp2p-mpss` correctly — DTS is fine. The bug is our Fedora-hybrid kernel config:
+
+```
+CONFIG_QCOM_SMP2P=m       # the very driver providing /smp2p-*/slave-kernel
+CONFIG_QCOM_APCS_IPC=m    # the mailbox controller smp2p references
+```
+
+Both `=m`. Our initramfs has no module loader (same pattern that hid the USB issue for 8 iters and the USB-storage issue this iter). iter-30 will flip these to `=y` plus a sweep of related Qualcomm modules — should take just one round.
+
+So your prior asks (Q2 ADSP load sequence, Q3 service order, Q4 ath10k Windows driver deps) are **no longer blocking** on the Linux side. You can punt them.
+
+## Two things still worth your time
+
+### Still-Q1 — USB port → dwc3 controller mapping
+
+Boot drive enumeration is still broken: only 2 of 3 dwc3 controllers bring up root hubs, and the W767's physical USB-A / USB-C port the user plugs the boot drive into is on the controller that didn't. Without this we have to rely on screen photos for every iter (no `dmesg.txt` write-back to `/mnt/esp`).
+
+Original ask: walk DSDT, find `_CRS` for each `\_SB.USB*` device, map memory ranges to `a4f8800` / `a6f8800` / `a8f8800`. For each physical port on the laptop, tell us which dwc3 controller. Plus whether Windows's `_PS0` / `_INI` does GPIO toggles to bring the port up.
+
+If you can also run `Get-PnpDevice -Class USB | Format-List InstanceId,Status,FriendlyName` and dump ACPI via `acpidump`, that's even faster.
+
+### New-Q5 — does Windows wire `vdd-3.3-ch1` for the WCN3990 wifi?
+
+Iter-29 boot also showed:
+
+```
+ath10k_snoc 18800000.wifi: supply vdd-3.3-ch1 not found, using dummy regulator
+```
+
+Our W767 DTS has:
+
+```
+//vdd-3.3-ch1-supply = <&vreg_l10c_3p3>; not used?
+```
+
+We commented it out earlier with that "not used?" question. The driver wants it. If Windows actually drives that 3.3 V rail (LDO10 on the C-side PMIC) when WCN3990 powers up, we should re-enable the line in DTS. Check the DSDT for any `\_SB.WLAN.*._PS0` or PMIC OpRegion writes that touch LDO10 (search for `regulator` references to `l10c` or `LDOC10`).
+
+Quickest answer: boot Windows, open Device Manager → properties on the Qualcomm 802.11 adapter → Resources tab. If a 3.3 V power rail is listed there, it's needed.
+
+## What's coming on the Linux side
+
+Iter-30 will flip these to `=y` in a single sweep:
+- `QCOM_SMP2P` (the actual blocker)
+- `QCOM_APCS_IPC` (mailbox for smp2p)
+- `QCOM_IPCC` (newer IPCC mailbox)
+- `QCOM_PDR_HELPERS`, `QCOM_PD_MAPPER` (Protection Domain Restart — ath10k_snoc uses these)
+- `QCOM_PMIC_GLINK` (Type-C / UCSI, related to your USB question)
+- `QCOM_SOCINFO` (cosmetic)
+
+If the dmesg after iter-30 shows ADSP firmware load attempt + outcome, we'll know if there's anything else to debug. If it shows the same defer message, we missed a config flip.
+
+So the ask collapses to: **Q1 (USB port map)** and **Q5 (does Windows enable LDO10 for wifi)**. Both are DSDT walks, no Ghidra needed.
+
 ## What iter-29 was
 
 - Built Linux 7.0.0 + Fedora hybrid config with EVERYTHING WiFi/remoteproc/USB-storage flipped from `=m` to `=y` (full list in commit `f768c58`: `ATH10K`, `ATH10K_SNOC`, `QCOM_Q6V5_PAS`, `QCOM_AOSS_QMP`, `QCOM_SMEM`, `RPMSG_QCOM_GLINK_SMEM`, `MHI_BUS`, `QRTR`, `USB_STORAGE`, `VFAT_FS`, etc.)
