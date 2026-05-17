@@ -1,0 +1,112 @@
+diff --git a/drivers/usb/dwc3/dwc3-qcom-legacy.c b/drivers/usb/dwc3/dwc3-qcom-legacy.c
+index d3fad0fcf..734c5f9fe 100644
+--- a/drivers/usb/dwc3/dwc3-qcom-legacy.c
++++ b/drivers/usb/dwc3/dwc3-qcom-legacy.c
+@@ -739,50 +739,74 @@ static int dwc3_qcom_probe(struct platform_device *pdev)
+ 	bool			ignore_pipe_clk;
+ 	bool			wakeup_source;
+ 
++	/* W767-iter28: instrumentation -- every entry, every step, every return. */
++	pr_emerg("DWC3-W767: ===== probe BEGIN for %s =====\n", dev_name(dev));
++
+ 	qcom = devm_kzalloc(&pdev->dev, sizeof(*qcom), GFP_KERNEL);
+-	if (!qcom)
++	if (!qcom) {
++		pr_emerg("DWC3-W767: %s STEP0 devm_kzalloc -> -ENOMEM\n", dev_name(dev));
+ 		return -ENOMEM;
++	}
+ 
+ 	platform_set_drvdata(pdev, qcom);
+ 	qcom->dev = &pdev->dev;
+ 
++	pr_emerg("DWC3-W767: %s STEP1 reset_control_array_get_optional...\n", dev_name(dev));
+ 	qcom->resets = devm_reset_control_array_get_optional_exclusive(dev);
+ 	if (IS_ERR(qcom->resets)) {
++		pr_emerg("DWC3-W767: %s STEP1 FAIL: %ld\n", dev_name(dev), PTR_ERR(qcom->resets));
+ 		return dev_err_probe(&pdev->dev, PTR_ERR(qcom->resets),
+ 				     "failed to get resets\n");
+ 	}
++	pr_emerg("DWC3-W767: %s STEP1 OK\n", dev_name(dev));
+ 
++	pr_emerg("DWC3-W767: %s STEP2 reset_assert...\n", dev_name(dev));
+ 	ret = reset_control_assert(qcom->resets);
+ 	if (ret) {
++		pr_emerg("DWC3-W767: %s STEP2 FAIL: %d\n", dev_name(dev), ret);
+ 		dev_err(&pdev->dev, "failed to assert resets, err=%d\n", ret);
+ 		return ret;
+ 	}
++	pr_emerg("DWC3-W767: %s STEP2 OK\n", dev_name(dev));
+ 
+ 	usleep_range(10, 1000);
+ 
++	pr_emerg("DWC3-W767: %s STEP3 reset_deassert...\n", dev_name(dev));
+ 	ret = reset_control_deassert(qcom->resets);
+ 	if (ret) {
++		pr_emerg("DWC3-W767: %s STEP3 FAIL: %d\n", dev_name(dev), ret);
+ 		dev_err(&pdev->dev, "failed to deassert resets, err=%d\n", ret);
+ 		goto reset_assert;
+ 	}
++	pr_emerg("DWC3-W767: %s STEP3 OK\n", dev_name(dev));
+ 
++	pr_emerg("DWC3-W767: %s STEP4 clk_init (count=%d)...\n", dev_name(dev),
++		 of_clk_get_parent_count(np));
+ 	ret = dwc3_qcom_clk_init(qcom, of_clk_get_parent_count(np));
+ 	if (ret) {
++		pr_emerg("DWC3-W767: %s STEP4 FAIL: %d\n", dev_name(dev), ret);
+ 		dev_err_probe(dev, ret, "failed to get clocks\n");
+ 		goto reset_assert;
+ 	}
++	pr_emerg("DWC3-W767: %s STEP4 OK (got %d clocks)\n", dev_name(dev), qcom->num_clocks);
+ 
++	pr_emerg("DWC3-W767: %s STEP5 ioremap qscratch...\n", dev_name(dev));
+ 	qcom->qscratch_base = devm_platform_ioremap_resource(pdev, 0);
+ 	if (IS_ERR(qcom->qscratch_base)) {
+ 		ret = PTR_ERR(qcom->qscratch_base);
++		pr_emerg("DWC3-W767: %s STEP5 FAIL: %d\n", dev_name(dev), ret);
+ 		goto clk_disable;
+ 	}
++	pr_emerg("DWC3-W767: %s STEP5 OK\n", dev_name(dev));
+ 
++	pr_emerg("DWC3-W767: %s STEP6 setup_irq...\n", dev_name(dev));
+ 	ret = dwc3_qcom_setup_irq(pdev);
+ 	if (ret) {
++		pr_emerg("DWC3-W767: %s STEP6 FAIL: %d\n", dev_name(dev), ret);
+ 		dev_err(dev, "failed to setup IRQs, err=%d\n", ret);
+ 		goto clk_disable;
+ 	}
++	pr_emerg("DWC3-W767: %s STEP6 OK (num_ports=%d)\n", dev_name(dev), qcom->num_ports);
+ 
+ 	/*
+ 	 * Disable pipe_clk requirement if specified. Used when dwc3
+@@ -793,15 +817,22 @@ static int dwc3_qcom_probe(struct platform_device *pdev)
+ 	if (ignore_pipe_clk)
+ 		dwc3_qcom_select_utmi_clk(qcom);
+ 
++	pr_emerg("DWC3-W767: %s STEP7 of_register_core...\n", dev_name(dev));
+ 	ret = dwc3_qcom_of_register_core(pdev);
+ 	if (ret) {
++		pr_emerg("DWC3-W767: %s STEP7 FAIL: %d\n", dev_name(dev), ret);
+ 		dev_err(dev, "failed to register DWC3 Core, err=%d\n", ret);
+ 		goto clk_disable;
+ 	}
++	pr_emerg("DWC3-W767: %s STEP7 OK\n", dev_name(dev));
+ 
++	pr_emerg("DWC3-W767: %s STEP8 interconnect_init...\n", dev_name(dev));
+ 	ret = dwc3_qcom_interconnect_init(qcom);
+-	if (ret)
++	if (ret) {
++		pr_emerg("DWC3-W767: %s STEP8 FAIL: %d\n", dev_name(dev), ret);
+ 		goto depopulate;
++	}
++	pr_emerg("DWC3-W767: %s STEP8 OK\n", dev_name(dev));
+ 
+ 	qcom->mode = usb_get_dr_mode(&qcom->dwc3->dev);
+ 
+@@ -823,6 +854,7 @@ static int dwc3_qcom_probe(struct platform_device *pdev)
+ 	pm_runtime_enable(dev);
+ 	pm_runtime_forbid(dev);
+ 
++	pr_emerg("DWC3-W767: ===== probe SUCCESS for %s =====\n", dev_name(dev));
+ 	return 0;
+ 
+ interconnect_exit:

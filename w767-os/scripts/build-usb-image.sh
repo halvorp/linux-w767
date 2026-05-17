@@ -140,14 +140,17 @@ editor  yes
 EOF
 
 # BLS entry. Cmdline merges pmOS-canonical SC8180X family quirks + Phase 2
-# initramfs-distro essentials.
+# initramfs-distro essentials + iter-24 visibility flags (nomodeset keeps
+# simpledrm console alive, earlycon=efifb gives early framebuffer console,
+# consoleblank=0 stops the kernel from blanking the screen).
 sudo tee "$MNT/loader/entries/w767-initramfs.conf" > /dev/null <<'EOF'
-title    Samsung Galaxy Book S (W767) — Phase 2 initramfs distro
-version  iter-19
+title    Samsung Galaxy Book S (W767) — iter-28 dwc3 instrumentation
+version  iter-28
 linux    /Image
 initrd   /w767-initramfs.img
 devicetree /sc8180x-samsung-w767.dtb
-options  console=tty0 loglevel=7 rdinit=/init net.ifnames=0 panic=10 \
+options  console=tty0 loglevel=8 consoleblank=0 nomodeset rdinit=/init \
+         earlycon=efifb keep_bootcon net.ifnames=0 panic=10 \
          clk_ignore_unused pd_ignore_unused arm64.nopauth efi=noruntime \
          iommu.passthrough=0 iommu.strict=0 pcie_aspm.policy=powersupersave
 EOF
