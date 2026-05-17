@@ -10,7 +10,7 @@ Qualcomm Snapdragon SC8180X (Snapdragon 8cx Gen 1).
 iter-19 baseline:
  * Display (eDP 1920x1080) + Adreno 680 GPU work
  * UFS storage, USB host
- * Touchpad on &i2c1 (DSDT TSC1 / I2C2 / addr 0x02 / GPIO 113)
+ * Touchpad on &i2c1 (DSDT TSC1 / I2C2 / addr 0x49 / hid-descr 0xAB / GPIO 113)
  * &spi0 + &spi3 enabled for future CS35L41 amp child nodes
  * Remoteproc nodes for ADSP / CDSP / MPSS firmware
 
@@ -20,8 +20,8 @@ and the sc8180x-mainline community tree.
 Signed-off-by: Peter Koczka <mg.peter.koczka@gmail.com>
 ---
  arch/arm64/boot/dts/qcom/Makefile             |    1 +
- .../boot/dts/qcom/sc8180x-samsung-w767.dts    | 1183 +++++++++++++++++
- 2 files changed, 1184 insertions(+)
+ .../boot/dts/qcom/sc8180x-samsung-w767.dts    | 1190 +++++++++++++++++
+ 2 files changed, 1191 insertions(+)
  create mode 100644 arch/arm64/boot/dts/qcom/sc8180x-samsung-w767.dts
 
 diff --git a/arch/arm64/boot/dts/qcom/Makefile b/arch/arm64/boot/dts/qcom/Makefile
@@ -38,7 +38,7 @@ new file mode 100644
 index 000000000..e5cc03177
 --- /dev/null
 +++ b/arch/arm64/boot/dts/qcom/sc8180x-samsung-w767.dts
-@@ -0,0 +1,1183 @@
+@@ -0,0 +1,1190 @@
 +// SPDX-License-Identifier: BSD-3-Clause
 +/*
 + * Copyright (c) 2022, The Linux Foundation. All rights reserved.
@@ -502,17 +502,25 @@ index 000000000..e5cc03177
 +	pinctrl-0 = <&i2c1_active>;
 +
 +	/*
-+	 * iter-19: corrected from earlier "touchscreen@49" guess to the
-+	 * touchpad's actual ACPI-derived spec (DSDT TSC1: I2C2 / addr 0x02 /
-+	 * STMT1234 / GpioInt 113).  ACPI \_SB.I2C2 has Memory32Fixed
-+	 * 0x00884000, which is DT &i2c1 (sc8180x.dtsi:1199), so this stays
-+	 * on &i2c1 — only the slave address and HID descriptor offset change.
-+	 * Same GPIO 113 IRQ pin as the prior guess, so they can't coexist.
++	 * DSDT TSC1 (_HID = "STMT1234"):
++	 *   _CRS: I2cSerialBusV2 (0x0049, ControllerInitiated, 0x00061A80,
++	 *                          AddressingMode7Bit, "\\_SB.I2C2", ...)
++	 *         GpioInt (Level, ActiveLow, ..., "\\_SB.GIO0", { 0x0071 })
++	 *   _DSM Function 1 (HID descriptor address): Return (0xAB)
++	 *
++	 * ACPI \_SB.I2C2 has Memory32Fixed 0x00884000, which is DT &i2c1
++	 * (sc8180x.dtsi:1199), so this stays on &i2c1.
++	 *
++	 * 2026-05-17 correction: the prior iter-19 values (reg=0x02 +
++	 * hid-descr-addr=0x0001) were NOT DSDT-derived and would not have
++	 * probed. The original "touchscreen@49" placeholder had the right
++	 * chip params (0x49 + 0xAB); only the regulator/HID-driver wiring
++	 * was wrong. Restoring DSDT-canonical values here.
 +	 */
-+	touchpad@2 {
++	touchpad@49 {
 +		compatible = "hid-over-i2c";
-+		reg = <0x02>;
-+		hid-descr-addr = <0x0001>;
++		reg = <0x49>;
++		hid-descr-addr = <0x00ab>;
 +		vddl-supply = <&vreg_l12e_1p8>;
 +
 +		interrupt-parent = <&tlmm>;

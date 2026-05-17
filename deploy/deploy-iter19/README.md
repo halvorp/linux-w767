@@ -1,6 +1,6 @@
 # iter-19 DTB deploy kit
 
-**Goal:** Boot the existing iter-17 Fedora kernel on the Galaxy Book S with the new DTB that adds (1) the correct touchpad node on `&i2c1`, (2) `&spi0` and `&spi3` enables for the future CS35L40 amp control path.
+**Goal:** Boot the existing iter-17 Fedora kernel on the Galaxy Book S with the new DTB that adds (1) the DSDT-canonical touchpad node on `&i2c1` (`touchpad@49`, hid-descr-addr 0xAB), (2) `&spi0` and `&spi3` enables for the future CS35L41 amp control path.
 
 **Risk:** Low. Same kernel as iter-17, additive DTS changes only. iter-17 rollback DTB included.
 
@@ -78,10 +78,10 @@ iter-17 already produced display + GPU via the eDP path. iter-19 should preserve
 uptime
 uname -a                  # should be 7.0.0-62.fc45.aarch64 (same as iter-17)
 
-# 2. Touchpad: should appear as an i2c-hid device on i2c1 at address 0x02.
+# 2. Touchpad: should appear as an i2c-hid device on i2c1 at address 0x49.
 ls /sys/bus/i2c/devices/ | grep -i 'i2c1\|hid'
-# Look for something like  i2c-HID0001:00  or  0-0002
-dmesg | grep -iE 'hid|touchpad|i2c.*0002|i2c-1' | head -20
+# Look for something like  i2c-HID0001:00  or  0-0049
+dmesg | grep -iE 'hid|touchpad|i2c.*0049|i2c-1' | head -20
 
 # 3. SPI buses: confirm they came up (they have no codec children yet, so they'll be quiet).
 ls /sys/class/spi_master/
@@ -103,7 +103,7 @@ journalctl -b -u systemd-udevd > /tmp/iter19-boot-udev.log
 | Outcome | Action |
 |---|---|
 | 🎉 Display still works, touchpad enumerates and moves the cursor | Confirmed bus-map fix. Save the journal logs, snapshot the working state, move on to enabling SPI codec child nodes. |
-| Display still works, touchpad enumerates but doesn't respond | Touchpad probe succeeded but the HID descriptor at offset `0x0001` may need adjustment (the existing broken `touchscreen@49` guess used `0x00ab`). Save `dmesg | grep hid`. |
+| Display still works, touchpad enumerates but doesn't respond | Touchpad probe succeeded but downstream HID issues remain. `hid-descr-addr = 0x00ab` is DSDT-canonical (`_DSM` Function 1 returns 0xAB); if needed, double-check it against `dmesg | grep hid` and the dsdt.dsl. |
 | Display still works, touchpad doesn't enumerate | Either GPIO 113 is wrong, `&i2c1` clock is wrong, or there's a regulator dependency the DSDT-derived spec didn't capture. Compare with `i2cdetect -y 1` if available. |
 | Display fails to come up (black screen) | Regression — the new DTB broke eDP. Roll back: boot Live USB again, restore the backup with `cp /mnt/w767/boot/dtb-w767/qcom/sc8180x-samsung-w767.dtb.iter17-bak /mnt/w767/boot/dtb-w767/qcom/sc8180x-samsung-w767.dtb`. The Phase 2 entry (initramfs distro) is also there as a fallback. |
 | Kernel panic / no boot at all | Roll back via Live USB as above. The `early-dmesg.service` from `galaxybook-s/fixes/` should have captured the early dmesg into `/boot/efi/early_dmesg_*.txt` if userspace got that far; check ramoops at `/sys/fs/pstore/dmesg-ramoops-0` if it didn't. |
@@ -114,10 +114,18 @@ journalctl -b -u systemd-udevd > /tmp/iter19-boot-udev.log
 
 Only two DTS deltas, both additive (with one replacement of a broken iter-17 placeholder):
 
-1. **`&i2c1`** — Replaced the non-functional `touchscreen@49` placeholder (which had a wrong slave address and HID descriptor offset, plus a still-pending PMIC regulator issue) with `touchpad@2` using the DSDT-verified spec:
-   - reg = `0x02`
-   - hid-descr-addr = `0x0001`
-   - interrupts = GPIO 113 (same as before — that part was correct)
-2. **`&spi0` and `&spi3` enabled** — The two SPI buses that carry CS35L40 amp control (per ACPI `\_SB.SPI1` at MMIO `0x00880000` and `\_SB.SPI4` at `0x0088C000`). No child codec nodes yet — buses are just available for future binding.
+1. **`&i2c1`** — `touchpad@49` using the DSDT-canonical spec:
+   - reg = `0x49`            (DSDT `_CRS`: `I2cSerialBusV2 (0x0049, ..., "\\_SB.I2C2", ...)`)
+   - hid-descr-addr = `0x00ab` (DSDT `_DSM` Function 1: `Return (0xAB)`)
+   - interrupts = GPIO 113   (DSDT `_CRS`: `GpioInt (..., { 0x0071 })`)
+
+   **Note (2026-05-17 correction):** an interim version of this iter-19 kit
+   used `touchpad@2` / `reg = 0x02` / `hid-descr-addr = 0x0001`. Those values
+   were NOT DSDT-derived and would not have probed. The original
+   `touchscreen@49` placeholder actually had the right chip params; only the
+   regulator/HID-driver wiring was wrong. If you built a DTB before this
+   correction, rebuild from the current `dts/sc8180x-samsung-w767.dts`.
+
+2. **`&spi0` and `&spi3` enabled** — The two SPI buses that carry CS35L41 amp control (per ACPI `\_SB.SPI1` at MMIO `0x00880000` and `\_SB.SPI4` at `0x0088C000`). No child codec nodes yet — buses are just available for future binding.
 
 Nothing else changed. If iter-17 booted, iter-19 should boot.

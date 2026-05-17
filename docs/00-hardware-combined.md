@@ -60,7 +60,7 @@ These are the things that changed when we left the Gemini-only loop and brought 
 | **Display** eDP | SAM0101 | — | initramfs has `msm` + `drm-dp-aux-bus` + `phy-qcom-edp` + `panel-edp` | working (iter-17 VICTORY: eDP-1 connected 1920×1080) | `mdss_edp` + aux-bus in DTSI | ✅ Working |
 | **GPU** Adreno 680 | QCOM043A | — | uses `mesa-vulkan-freedreno` | working (msm/dpu/a3xx_ops bound) | mainline `msm` driver | ✅ Working |
 | **Backlight** | — | — | initramfs has `leds-qcom-lpg` + `pwm-bl` | partial (eDP backlight) | LPG driver | ⚠️ DPCD-based via eDP aux-bus per V7; needs DT panel node verification |
-| **Touchpad** TSC1 | STMT1234 | I2C2 (MMIO 0x00884000) @ 0x02, GpioInt 113 | initramfs has `i2c-hid-of`, `i2c-hid-acpi`, `hid-generic` | iter-19 adds `touchpad@2` on `&i2c1` | not upstream | 🟡 **iter-19** — DTB built, pending boot test |
+| **Touchpad** TSC1 | STMT1234 | I2C2 (MMIO 0x00884000) @ 0x49, hid-descr-addr 0xAB, GpioInt 113 | initramfs has `i2c-hid-of`, `i2c-hid-acpi`, `hid-generic` | iter-19 (post-2026-05-17 correction) adds `touchpad@49` on `&i2c1` | not upstream | 🟡 **iter-19** — DTB built, pending boot test |
 | **Keyboard** SVBI | SAMM0901 | virtual scancodes via ACPI Notify, not a bus device | — | not implemented | not upstream | ❌ Needs custom EmuEC driver |
 | **EmuEC** | SAM0604 | Multi-bus I²C: IC10/IC12/IC19/IC20 (DT `&i2c9/&i2c11/&i2c18/&i2c19`), slaves 0x33/0x25/0x1A/0x09/0x0B; OperationRegion 0x9C | iter-17 enables i2c9/11/19; iter-19 adds i2c18 | not implemented | not upstream | ❌ Driver work: see §9 |
 | **Lid switch** LID0 | PNP0C0D | LIDR field in `\_SB.GIO0` OpRegion; Notify(LID0, 0x80) | — | not implemented | not upstream | ❌ Depends on EmuEC driver — surface as SW_LID via input subsystem |
@@ -81,7 +81,7 @@ Verified against DSDT `Memory32Fixed` + `sc8180x.dtsi` node base addresses. **Th
 
 | ACPI | _HID | MMIO base | DT phandle | Used for |
 |---|---|---|---|---|
-| `\_SB.I2C2` | QCOM0411 | `0x00884000` | `&i2c1` | Touchpad (`touchpad@2`) — iter-19 |
+| `\_SB.I2C2` | QCOM0411 | `0x00884000` | `&i2c1` | Touchpad (`touchpad@49`, hid-descr-addr 0xAB) — iter-19 (corrected 2026-05-17) |
 | `\_SB.IC10` | QCOM0411 | `0x00A84000` | `&i2c9` | EmuEC reach (0x33, 0x25, 0x1A) — iter-17 enables |
 | `\_SB.IC12` | QCOM0411 | `0x00A8C000` | `&i2c11` | EmuEC reach (0x1A) — iter-17 enables |
 | `\_SB.IC19` | QCOM0411 | `0x00C84000` | `&i2c18` | EmuEC reach (0x33, 0x25) — iter-19 enables |
@@ -234,7 +234,7 @@ For posterity — these are the V1–V7 claims that surfaced as wrong during cro
 
 | Round | Claim | Wrong because | Resolution |
 |---|---|---|---|
-| V1 | Touchpad on `&i2c2` at addr 0x02 | ACPI I2C2 maps to DT `&i2c1` by MMIO base | Fixed in V5 (touchpad@2 on `&i2c1`) |
+| V1 | Touchpad on `&i2c2` at addr 0x02 | ACPI I2C2 maps to DT `&i2c1` by MMIO base; address 0x02 was also wrong (real is 0x49 per DSDT `_CRS`) | Bus fixed in V5; address regressed back to 0x02 in iter-19 and re-corrected to 0x49 on 2026-05-17 |
 | V1 | Lid switch on `gpios = <&tlmm 50>` | LIDR is an OpRegion field, not a TLMM pin | Fixed in V2/V3 |
 | V1 | Audio amps CS35L41 on I²C 0x40/0x41 | No such ACPI device exists | Replaced with SLIMbus+SPI story in V3 |
 | V1 | `pm8150c.dtsi` included | File doesn't exist | Removed in V2 |
@@ -242,6 +242,7 @@ For posterity — these are the V1–V7 claims that surfaced as wrong during cro
 | V2 | Audio "SoundWire SAMM0802" | AUDD is on SLIMbus, not SoundWire | Fixed in V3 |
 | V3 | `IC19 → &i2c19` | MMIO 0x00C84000 is `&i2c18` | Fixed in V4 |
 | V4 | Touchpad bus `&i2c2` re-asserted | Same as V1 — base 0x00888000 is wrong (real is 0x00884000) | Fixed in V5 |
+| iter-19 | Touchpad `reg = 0x02 / hid-descr-addr = 0x0001` (claimed DSDT-derived) | DSDT TSC1 `_CRS` says 0x49; `_DSM` Fn 1 returns 0xAB. The 0x02 value's provenance is unclear — likely confused with `_ADR=Zero`. | Corrected to `reg = 0x49 / hid-descr-addr = 0x00ab` on 2026-05-17 |
 | V4 | SPI1→`&spi1`, SPI4→`&spi4` | MMIO bases map to `&spi0`/`&spi3` | Fixed in V5 |
 | V4 | EmuEC "16-byte struct, SOC@offset 0x06" | Real length is 8 bytes; "0x06" is field ID, not byte offset | Fixed in V5 |
 | V4–V7 | Audio amp is CS35L40 | DEVID 0x35a40 = CS35L41 silicon per `include/sound/cs35l41.h:747`. Windows codename misled. | **Resolved in this combined doc** |
