@@ -1,0 +1,2 @@
+PLACEHOLDER — replace at build time
+# build-initramfs.sh generates a fresh random token per build.

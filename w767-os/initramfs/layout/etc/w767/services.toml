@@ -1,0 +1,2 @@
+# Informational. w767_init's DAG is compile-time constant; edit main.rs to change.
+daemons = ["w767_netd", "dropbear", "w767_ctl"]

@@ -1,0 +1,57 @@
+=== iter-17 FINAL WORKING STATE snapshot ===
+Fri Apr 24 10:50:46 AM UTC 2026
+7.0.0-62.fc45.aarch64
+ 10:50:46 up 3 min,  5 users,  load average: 2.37, 1.44, 0.59
+
+--- loaded modules (relevant) ---
+dispcc_sm8250          36864  16
+drm_display_helper    294912  2 msm,panel_edp
+drm_dp_aux_bus         16384  2 msm,panel_edp
+drm_exec               12288  2 msm,drm_gpuvm
+drm_gpuvm              45056  1 msm
+gpucc_sm8150           20480  5
+gpu_sched              65536  1 msm
+llcc_qcom              53248  1 msm
+mdt_loader             16384  2 msm,qcom_q6v5_pas
+msm                  1638400  1
+ocmem                  20480  1 msm
+panel_edp              45056  0
+qcom_aoss              36864  3 qcom_stats,msm,qcom_q6v5
+ubwc_config            24576  1 msm
+
+--- drm + backlight ---
+/sys/class/backlight/:
+dp_aux_backlight
+
+/sys/class/drm/:
+card1
+card1-eDP-1
+card1-Writeback-1
+renderD128
+version
+
+--- eDP-1 ---
+connected
+1920x1080
+
+--- key dmesg moments ---
+[   27.397682] qcom-edp-phy aec2a00.phy: supply vdda-phy not found, using dummy regulator
+[   27.481582] qcom-edp-phy aec2a00.phy: supply vdda-pll not found, using dummy regulator
+[   30.009852] (udev-worker)[514]: panel-edp: Processing device (SEQNUM=4073, ACTION=add)
+[   30.010603] (udev-worker)[514]: panel-edp: Device processed (SEQNUM=4073, ACTION=add)
+[   30.010634] (udev-worker)[514]: panel-edp: sd-device-monitor(worker): Passed 171 byte to netlink monitor.
+[   30.160639] WARNING: drivers/gpu/drm/panel/panel-edp.c:814 at generic_edp_panel_probe+0x13c/0x280 [panel_edp], CPU#2: (udev-worker)/504
+[   30.235254] (udev-worker)[499]: dp_aux_backlight: Processing device (SEQNUM=4081, ACTION=add)
+[   30.247813] (udev-worker)[499]: dp_aux_backlight: /usr/lib/udev/rules.d/71-seat.rules:75 IMPORT{builtin}="path_id": Importing properties from results of builtin command "path_id".
+[   30.269501] (udev-worker)[499]: dp_aux_backlight: /usr/lib/udev/rules.d/99-systemd.rules:73 IMPORT{builtin}="path_id": Builtin command "path_id" has already run, skipping.
+[   30.276746] (udev-worker)[499]: dp_aux_backlight: sd-device: Created database file '/run/udev/data/+backlight:dp_aux_backlight' for '/devices/platform/soc@0/ae00000.display-subsystem/ae9a000.displayport-controller/aux-ae9a000.displayport-controller/backlight/dp_aux_backlight'.
+[   30.277267] (udev-worker)[499]: dp_aux_backlight: sd-device: Created database file '/run/udev/data/+backlight:dp_aux_backlight' for '/devices/platform/soc@0/ae00000.display-subsystem/ae9a000.displayport-controller/aux-ae9a000.displayport-controller/backlight/dp_aux_backlight'.
+[   30.277374] (udev-worker)[499]: dp_aux_backlight: Device processed (SEQNUM=4081, ACTION=add)
+[   30.277503] (udev-worker)[499]: dp_aux_backlight: sd-device-monitor(worker): Passed 561 byte to netlink monitor.
+[   61.618054] msm_dpu ae01000.display-controller: bound ae9a000.displayport-controller (ops msm_dp_display_comp_ops [msm])
+[   61.658223] msm_dpu ae01000.display-controller: bound 2c00000.gpu (ops a3xx_ops [msm])
+[   62.022536] msm_dpu ae01000.display-controller: [drm:adreno_request_fw [msm]] loaded qcom/a630_sqe.fw from new location
+[   62.039511] msm_dpu ae01000.display-controller: [drm:adreno_request_fw [msm]] loaded qcom/a640_gmu.bin from new location
+[   62.688381] msm_dpu ae01000.display-controller: [drm] fb0: msmdrmfb frame buffer device
+[   79.071754] systemd-udevd[1022]: card1: Device is queued (SEQNUM=5600, ACTION=add, UUID=d3599a9a-e1a3-47c7-8a90-e74da2a51d97)
+[   79.074965] systemd-udevd[1022]: card1-Writeback-1: Device is queued (SEQNUM=5601, ACTION=add, UUID=01bc2f6a-723c-4455-8a03-6acf9a92d9fc)

@@ -1,0 +1,9 @@
+[Unit]
+Description=Galaxy Book S quick hot-files audit
+ConditionPathExists=/usr/local/bin/gbs-audit-quick
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/gbs-audit-quick
+Nice=15
+IOSchedulingClass=idle

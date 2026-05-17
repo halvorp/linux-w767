@@ -1,0 +1,49 @@
+# Build artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+.*.cmd
+*.symvers
+Module.symvers
+modules.order
+
+# Kernel build outputs
+w767-os/kernel/out/
+
+# Initramfs build outputs
+w767-os/kernel/out/w767-initramfs.img
+w767-os/kernel/out/w767-usb.img
+
+# Initramfs layout: provisioned binaries (busybox + dropbear + Rust w767_*)
+# These are fetched/built at build time, never committed
+w767-os/initramfs/layout/opt/w767/bin/busybox
+w767-os/initramfs/layout/opt/w767/bin/dropbear*
+w767-os/initramfs/layout/opt/w767/bin/w767_*
+w767-os/initramfs/layout/lib/firmware/
+w767-os/initramfs/layout/lib/modules/
+w767-os/initramfs/layout/lib/ld-musl-*
+w767-os/initramfs/layout/lib/libstdc++*
+w767-os/initramfs/layout/usr/
+
+# Real secrets: ctl.token + authorized_keys are generated per build
+w767-os/initramfs/layout/etc/w767/ctl.token
+w767-os/initramfs/layout/root/.ssh/authorized_keys
+
+# Rust build outputs
+w767-os/rust/target/
+**/Cargo.lock.bak
+
+# DTS build intermediates
+**/*.dtb.dts.tmp
+**/*.dtb.dts.pre.tmp
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+*~

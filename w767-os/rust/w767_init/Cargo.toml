@@ -1,0 +1,17 @@
+[package]
+name = "w767_init"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "w767_init"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+nix = { workspace = true }
+libc = { workspace = true }
+w767_paths = { workspace = true }

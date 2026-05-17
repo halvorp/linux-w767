@@ -1,0 +1,13 @@
+[Unit]
+Description=Run gbs-audit-quick every 5 minutes
+After=multi-user.target
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+AccuracySec=15s
+Unit=gbs-audit-quick.service
+Persistent=false
+
+[Install]
+WantedBy=timers.target

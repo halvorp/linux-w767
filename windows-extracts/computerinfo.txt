@@ -1,0 +1,190 @@
+﻿
+
+WindowsBuildLabEx                                       : 22621.1.arm64fre.ni_release.220506-1250
+WindowsCurrentVersion                                   : 6.3
+WindowsEditionId                                        : Core
+WindowsInstallationType                                 : Client
+WindowsInstallDateFromRegistry                          : 23/01/2024 09:50:07
+WindowsProductId                                        : 00356-02516-36881-AAOEM
+WindowsProductName                                      : Windows 10 Home
+WindowsRegisteredOrganization                           : 
+WindowsRegisteredOwner                                  : peter.koczka@me.com
+WindowsSystemRoot                                       : C:\Windows
+WindowsVersion                                          : 2009
+OSDisplayVersion                                        : 22H2
+BiosCharacteristics                                     : {32, 41, 42}
+BiosBIOSVersion                                         : {QCOM   - 8180, P02AHP.003.241226.WY.1518, American 
+                                                          Megatrends - 5000D}
+BiosBuildNumber                                         : 
+BiosCaption                                             : P02AHP.003.241226.WY.1518
+BiosCodeSet                                             : 
+BiosCurrentLanguage                                     : 
+BiosDescription                                         : P02AHP.003.241226.WY.1518
+BiosEmbeddedControllerMajorVersion                      : 255
+BiosEmbeddedControllerMinorVersion                      : 255
+BiosFirmwareType                                        : Uefi
+BiosIdentificationCode                                  : 
+BiosInstallableLanguages                                : 
+BiosInstallDate                                         : 
+BiosLanguageEdition                                     : 
+BiosListOfLanguages                                     : 
+BiosManufacturer                                        : SAMSUNG ELECTRONICS CO., LTD.
+BiosName                                                : P02AHP.003.241226.WY.1518
+BiosOtherTargetOS                                       : 
+BiosPrimaryBIOS                                         : True
+BiosReleaseDate                                         : 26/12/2024 00:00:00
+BiosSeralNumber                                         : 40JMRF2R10000D
+BiosSMBIOSBIOSVersion                                   : P02AHP.003.241226.WY.1518
+BiosSMBIOSMajorVersion                                  : 3
+BiosSMBIOSMinorVersion                                  : 1
+BiosSMBIOSPresent                                       : True
+BiosSoftwareElementState                                : Running
+BiosStatus                                              : OK
+BiosSystemBiosMajorVersion                              : 5
+BiosSystemBiosMinorVersion                              : 13
+BiosTargetOperatingSystem                               : 0
+BiosVersion                                             : QCOM   - 8180
+CsAdminPasswordStatus                                   : Unknown
+CsAutomaticManagedPagefile                              : True
+CsAutomaticResetBootOption                              : True
+CsAutomaticResetCapability                              : True
+CsBootOptionOnLimit                                     : 
+CsBootOptionOnWatchDog                                  : 
+CsBootROMSupported                                      : True
+CsBootStatus                                            : 
+CsBootupState                                           : Normal boot
+CsCaption                                               : IDIOT
+CsChassisBootupState                                    : Other
+CsChassisSKUNumber                                      : 
+CsCurrentTimeZone                                       : 60
+CsDaylightInEffect                                      : True
+CsDescription                                           : ARM processor family
+CsDNSHostName                                           : idiot
+CsDomain                                                : WORKGROUP
+CsDomainRole                                            : StandaloneWorkstation
+CsEnableDaylightSavingsTime                             : True
+CsFrontPanelResetStatus                                 : Unknown
+CsHypervisorPresent                                     : True
+CsInfraredSupported                                     : False
+CsInitialLoadInfo                                       : 
+CsInstallDate                                           : 
+CsKeyboardPasswordStatus                                : Unknown
+CsLastLoadInfo                                          : 
+CsManufacturer                                          : SAMSUNG ELECTRONICS CO., LTD.
+CsModel                                                 : Galaxy Book S
+CsName                                                  : IDIOT
+CsNetworkAdapters                                       : {Bluetooth Network Connection, Tailscale, Cellular, Wi-Fi}
+CsNetworkServerModeEnabled                              : True
+CsNumberOfLogicalProcessors                             : 8
+CsNumberOfProcessors                                    : 1
+CsProcessors                                            : {Snapdragon (TM) 8cx @ 2.84 GHz}
+CsOEMStringArray                                        : {OEM String 1, 2021/03/12, OEM String 3, SM-W767...}
+CsPartOfDomain                                          : False
+CsPauseAfterReset                                       : -1
+CsPCSystemType                                          : Mobile
+CsPCSystemTypeEx                                        : Slate
+CsPowerManagementCapabilities                           : 
+CsPowerManagementSupported                              : 
+CsPowerOnPasswordStatus                                 : Unknown
+CsPowerState                                            : Unknown
+CsPowerSupplyState                                      : Other
+CsPrimaryOwnerContact                                   : 
+CsPrimaryOwnerName                                      : peter.koczka@me.com
+CsResetCapability                                       : Other
+CsResetCount                                            : -1
+CsResetLimit                                            : -1
+CsRoles                                                 : {LM_Workstation, LM_Server, NT}
+CsStatus                                                : OK
+CsSupportContactDescription                             : 
+CsSystemFamily                                          : Galaxy Book Series
+CsSystemSKUNumber                                       : GALAXY A5A5-PAHP
+CsSystemType                                            : ARM64-based PC
+CsThermalState                                          : Other
+CsTotalPhysicalMemory                                   : 8088150016
+CsPhyicallyInstalledMemory                              : 8388608
+CsUserName                                              : idiot\peter
+CsWakeUpType                                            : PowerSwitch
+CsWorkgroup                                             : WORKGROUP
+OsName                                                  : Microsoft Windows 11 Home
+OsType                                                  : WINNT
+OsOperatingSystemSKU                                    : WindowsHome
+OsVersion                                               : 10.0.22621
+OsCSDVersion                                            : 
+OsBuildNumber                                           : 22621
+OsHotFixes                                              : {KB5044033, KB5026039, KB5033055, KB5044285...}
+OsBootDevice                                            : \Device\HarddiskVolume1
+OsSystemDevice                                          : \Device\HarddiskVolume3
+OsSystemDirectory                                       : C:\Windows\system32
+OsSystemDrive                                           : C:
+OsWindowsDirectory                                      : C:\Windows
+OsCountryCode                                           : 1
+OsCurrentTimeZone                                       : 60
+OsLocaleID                                              : 0409
+OsLocale                                                : en-US
+OsLocalDateTime                                         : 23/04/2026 17:29:03
+OsLastBootUpTime                                        : 23/04/2026 17:27:20
+OsUptime                                                : 00:01:43.1461583
+OsBuildType                                             : Multiprocessor Free
+OsCodeSet                                               : 1252
+OsDataExecutionPreventionAvailable                      : False
+OsDataExecutionPrevention32BitApplications              : False
+OsDataExecutionPreventionDrivers                        : False
+OsDataExecutionPreventionSupportPolicy                  : OptIn
+OsDebug                                                 : False
+OsDistributed                                           : False
+OsEncryptionLevel                                       : 256
+OsForegroundApplicationBoost                            : Maximum
+OsTotalVisibleMemorySize                                : 7898584
+OsFreePhysicalMemory                                    : 3944736
+OsTotalVirtualMemorySize                                : 12355032
+OsFreeVirtualMemory                                     : 8878320
+OsInUseVirtualMemory                                    : 3476712
+OsTotalSwapSpaceSize                                    : 
+OsSizeStoredInPagingFiles                               : 4456448
+OsFreeSpaceInPagingFiles                                : 4456448
+OsPagingFiles                                           : {C:\pagefile.sys}
+OsHardwareAbstractionLayer                              : 10.0.22621.2506
+OsInstallDate                                           : 23/01/2024 09:50:07
+OsManufacturer                                          : Microsoft Corporation
+OsMaxNumberOfProcesses                                  : 4294967295
+OsMaxProcessMemorySize                                  : 137438953344
+OsMuiLanguages                                          : {en-US}
+OsNumberOfLicensedUsers                                 : 0
+OsNumberOfProcesses                                     : 118
+OsNumberOfUsers                                         : 2
+OsOrganization                                          : 
+OsArchitecture                                          : ARM 64-bit Processor
+OsLanguage                                              : en-US
+OsProductSuites                                         : {TerminalServicesSingleSession, HomeEdition}
+OsOtherTypeDescription                                  : 
+OsPAEEnabled                                            : 
+OsPortableOperatingSystem                               : False
+OsPrimary                                               : True
+OsProductType                                           : WorkStation
+OsRegisteredUser                                        : peter.koczka@me.com
+OsSerialNumber                                          : 00356-02516-36881-AAOEM
+OsServicePackMajorVersion                               : 0
+OsServicePackMinorVersion                               : 0
+OsStatus                                                : OK
+OsSuites                                                : {TerminalServices, TerminalServicesSingleSession, 
+                                                          HomeEdition}
+OsServerLevel                                           : 
+KeyboardLayout                                          : en-GB
+TimeZone                                                : (UTC+00:00) Dublin, Edinburgh, Lisbon, London
+LogonServer                                             : \\IDIOT
+PowerPlatformRole                                       : Slate
+HyperVisorPresent                                       : True
+HyperVRequirementDataExecutionPreventionAvailable       : 
+HyperVRequirementSecondLevelAddressTranslation          : 
+HyperVRequirementVirtualizationFirmwareEnabled          : 
+HyperVRequirementVMMonitorModeExtensions                : 
+DeviceGuardSmartStatus                                  : Off
+DeviceGuardRequiredSecurityProperties                   : {BaseVirtualizationSupport}
+DeviceGuardAvailableSecurityProperties                  : {BaseVirtualizationSupport, DMAProtection, 5, 7}
+DeviceGuardSecurityServicesConfigured                   : {HypervisorEnforcedCodeIntegrity}
+DeviceGuardSecurityServicesRunning                      : {HypervisorEnforcedCodeIntegrity, 3}
+DeviceGuardCodeIntegrityPolicyEnforcementStatus         : EnforcementMode
+DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus : Off
+
+
+

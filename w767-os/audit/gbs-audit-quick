@@ -1,0 +1,99 @@
+#!/bin/bash
+# gbs-audit-quick — fast hot-files audit, meant for 5-minute systemd timer.
+# Outputs to /var/log/gbs-audit/quick/latest/ (overwritten each run) and appends
+# a one-line state digest to /var/log/gbs-audit/quick/timeline.log.
+# Designed to be cheap (no journalctl, no lspci -vvv).
+
+set +e
+set -u
+
+TS=$(date -u +%Y%m%d-%H%M%SZ)
+QUICK=/var/log/gbs-audit/quick
+LATEST=$QUICK/latest
+mkdir -p "$LATEST"
+
+dmesg -T 2>/dev/null | tail -200                                   > "$LATEST/dmesg-tail.txt"
+dmesg 2>/dev/null | grep -iE 'ath10k|wcn|wlan|qmi|wlfw|adsp|q6v5' \
+                  | tail -60                                       > "$LATEST/wifi-adsp-dmesg.txt"
+ip -br link 2>&1                                                   > "$LATEST/ip-link.txt"
+rfkill list 2>&1                                                   > "$LATEST/rfkill.txt"
+iw dev 2>&1                                                        > "$LATEST/iw-dev.txt"
+
+{
+  for d in /sys/class/remoteproc/*; do
+    [ -d "$d" ] || continue
+    name=$(cat "$d/name" 2>/dev/null)
+    state=$(cat "$d/state" 2>/dev/null)
+    fw=$(cat "$d/firmware" 2>/dev/null)
+    printf '%-8s %-10s %s\n' "$name" "$state" "$fw"
+  done
+} > "$LATEST/remoteproc.txt"
+
+# Backlight + brightness
+{
+  for d in /sys/class/backlight/*; do
+    [ -d "$d" ] || continue
+    bn=$(basename "$d")
+    br=$(cat "$d/brightness" 2>/dev/null)
+    mb=$(cat "$d/max_brightness" 2>/dev/null)
+    bp=$(cat "$d/bl_power" 2>/dev/null)
+    printf '%-30s br=%s/%s bl_power=%s\n' "$bn" "$br" "$mb" "$bp"
+  done
+} > "$LATEST/backlight.txt"
+
+# ath10k debugfs (small files only)
+{
+  for d in /sys/kernel/debug/ath10k/*; do
+    [ -d "$d" ] || continue
+    for name in fw_stats wmi_services htt_stats_mask fw_dbglog chip_id board_id; do
+      f="$d/$name"
+      [ -f "$f" ] && [ -r "$f" ] || continue
+      sz=$(stat -c%s "$f" 2>/dev/null)
+      [ "${sz:-99999}" -lt 8192 ] || continue
+      echo "=== $f ==="
+      cat "$f" 2>&1
+      echo
+    done
+  done
+} > "$LATEST/ath10k-debugfs.txt"
+
+# Audio cards (one line)
+{
+  cat /proc/asound/cards 2>&1
+  echo "--- pcm devices ---"
+  ls /proc/asound/ 2>&1 | grep -E '^card'
+} > "$LATEST/audio.txt"
+
+# Battery snapshot
+{
+  for d in /sys/class/power_supply/*; do
+    [ -d "$d" ] || continue
+    bn=$(basename "$d")
+    cap=$(cat "$d/capacity" 2>/dev/null)
+    st=$(cat "$d/status" 2>/dev/null)
+    pr=$(cat "$d/present" 2>/dev/null)
+    printf '%-20s present=%s capacity=%s status=%s\n' "$bn" "$pr" "$cap" "$st"
+  done
+} > "$LATEST/battery.txt"
+
+# One-line digest into timeline
+{
+  WLAN=$(ip -br link 2>/dev/null | awk '/^wl/{print $1; exit}')
+  ADSP=$(cat /sys/class/remoteproc/remoteproc*/state 2>/dev/null | grep -c '^running')
+  RPROC_RUN=$(cat /sys/class/remoteproc/remoteproc*/state 2>/dev/null | grep -c running)
+  RPROC_TOT=$(ls -d /sys/class/remoteproc/remoteproc* 2>/dev/null | wc -l)
+  BL=$(cat /sys/class/backlight/*/brightness 2>/dev/null | head -1)
+  BAT=$(cat /sys/class/power_supply/*/capacity 2>/dev/null | head -1)
+  UPT=$(cut -d. -f1 /proc/uptime)
+  printf '%s up=%ss rproc=%s/%s wlan=%s bl=%s bat=%s\n' \
+    "$TS" "$UPT" "$RPROC_RUN" "$RPROC_TOT" "${WLAN:-none}" "${BL:-?}" "${BAT:-?}"
+} >> "$QUICK/timeline.log"
+
+# Cap timeline.log to 2000 lines (~7 days at 5-min cadence)
+if [ "$(wc -l < "$QUICK/timeline.log" 2>/dev/null || echo 0)" -gt 2000 ]; then
+  tail -1500 "$QUICK/timeline.log" > "$QUICK/timeline.log.new" && \
+    mv "$QUICK/timeline.log.new" "$QUICK/timeline.log"
+fi
+
+echo "$TS" > "$LATEST/_timestamp"
+sync

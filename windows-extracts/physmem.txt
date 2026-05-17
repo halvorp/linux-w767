@@ -1,0 +1,45 @@
+﻿
+
+Caption               : Physical Memory
+Description           : Physical Memory
+InstallDate           : 
+Name                  : Physical Memory
+Status                : 
+CreationClassName     : Win32_PhysicalMemory
+Manufacturer          : Samsung
+Model                 : 
+OtherIdentifyingInfo  : 
+PartNumber            : 6
+PoweredOn             : 
+SerialNumber          : 4
+SKU                   : 
+Tag                   : Physical Memory 0
+Version               : 
+HotSwappable          : 
+Removable             : 
+Replaceable           : 
+FormFactor            : 9
+BankLabel             : Bank 0
+Capacity              : 8589934592
+DataWidth             : 16
+InterleavePosition    : 
+MemoryType            : 0
+PositionInRow         : 
+Speed                 : 1805
+TotalWidth            : 16
+Attributes            : 0
+ConfiguredClockSpeed  : 1804
+ConfiguredVoltage     : 800
+DeviceLocator         : Top - on board
+InterleaveDataDepth   : 
+MaxVoltage            : 856
+MinVoltage            : 348
+SMBIOSMemoryType      : 30
+TypeDetail            : 0
+PSComputerName        : 
+CimClass              : root/cimv2:Win32_PhysicalMemory
+CimInstanceProperties : {Caption, Description, InstallDate, Name...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+

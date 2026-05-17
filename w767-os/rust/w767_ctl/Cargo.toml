@@ -1,0 +1,25 @@
+[package]
+name = "w767_ctl"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "w767_ctl"
+path = "src/lib.rs"
+
+[[bin]]
+name = "w767_ctl"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { workspace = true }
+tokio = { workspace = true }
+tarpc = { workspace = true }
+serde = { workspace = true }
+libc = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+sol_ipc = { workspace = true }
+w767_paths = { workspace = true }
+futures = { workspace = true }

@@ -1,0 +1,195 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}]
+"Class"="Display"
+"ClassDesc"="@c_display.inf,%ClassDesc%;Display adapters"
+"IconPath"=hex(7):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,\
+  00,65,00,74,00,75,00,70,00,61,00,70,00,69,00,2e,00,64,00,6c,00,6c,00,2c,00,\
+  2d,00,31,00,00,00,00,00
+"LowerLogoVersion"="6.0"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
+"DriverDesc"="Qualcomm(R) Adreno(TM) 680 GPU"
+"ProviderName"="Qualcomm Incorporated"
+"DriverDateData"=hex:00,00,17,1e,d7,b0,d7,01
+"DriverDate"="9-24-2021"
+"DriverVersion"="27.20.1640.0"
+"InfPath"="oem61.inf"
+"InfSection"="QCDX_Inst_CLS_8180.NT"
+"MatchingDeviceId"="ACPI\\VEN_QCOM&DEV_043A&SUBSYS_CLS08180"
+"InstalledDisplayDrivers"=hex(7):71,00,63,00,64,00,78,00,31,00,31,00,61,00,72,\
+  00,6d,00,36,00,34,00,78,00,75,00,6d,00,38,00,31,00,38,00,30,00,00,00,71,00,\
+  63,00,64,00,78,00,31,00,31,00,61,00,72,00,6d,00,36,00,34,00,78,00,75,00,6d,\
+  00,38,00,31,00,38,00,30,00,00,00,71,00,63,00,64,00,78,00,31,00,31,00,61,00,\
+  72,00,6d,00,36,00,34,00,78,00,75,00,6d,00,38,00,31,00,38,00,30,00,00,00,71,\
+  00,63,00,64,00,78,00,31,00,32,00,61,00,72,00,6d,00,36,00,34,00,78,00,75,00,\
+  6d,00,38,00,31,00,38,00,30,00,00,00,00,00
+"VgaCompatible"=dword:00000000
+"UserModeDriverName"=hex(7):3c,00,3e,00,00,00,43,00,3a,00,5c,00,57,00,69,00,6e,\
+  00,64,00,6f,00,77,00,73,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,\
+  32,00,5c,00,44,00,72,00,69,00,76,00,65,00,72,00,53,00,74,00,6f,00,72,00,65,\
+  00,5c,00,46,00,69,00,6c,00,65,00,52,00,65,00,70,00,6f,00,73,00,69,00,74,00,\
+  6f,00,72,00,79,00,5c,00,71,00,63,00,64,00,78,00,38,00,31,00,38,00,30,00,2e,\
+  00,69,00,6e,00,66,00,5f,00,61,00,72,00,6d,00,36,00,34,00,5f,00,63,00,31,00,\
+  63,00,35,00,66,00,35,00,66,00,34,00,32,00,35,00,35,00,61,00,37,00,64,00,32,\
+  00,61,00,5c,00,71,00,63,00,64,00,78,00,31,00,31,00,61,00,72,00,6d,00,36,00,\
+  34,00,78,00,75,00,6d,00,38,00,31,00,38,00,30,00,2e,00,64,00,6c,00,6c,00,00,\
+  00,43,00,3a,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,5c,00,53,00,\
+  79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,72,00,69,00,76,00,65,\
+  00,72,00,53,00,74,00,6f,00,72,00,65,00,5c,00,46,00,69,00,6c,00,65,00,52,00,\
+  65,00,70,00,6f,00,73,00,69,00,74,00,6f,00,72,00,79,00,5c,00,71,00,63,00,64,\
+  00,78,00,38,00,31,00,38,00,30,00,2e,00,69,00,6e,00,66,00,5f,00,61,00,72,00,\
+  6d,00,36,00,34,00,5f,00,63,00,31,00,63,00,35,00,66,00,35,00,66,00,34,00,32,\
+  00,35,00,35,00,61,00,37,00,64,00,32,00,61,00,5c,00,71,00,63,00,64,00,78,00,\
+  31,00,31,00,61,00,72,00,6d,00,36,00,34,00,78,00,75,00,6d,00,38,00,31,00,38,\
+  00,30,00,2e,00,64,00,6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,00,69,00,6e,00,\
+  64,00,6f,00,77,00,73,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,\
+  00,5c,00,44,00,72,00,69,00,76,00,65,00,72,00,53,00,74,00,6f,00,72,00,65,00,\
+  5c,00,46,00,69,00,6c,00,65,00,52,00,65,00,70,00,6f,00,73,00,69,00,74,00,6f,\
+  00,72,00,79,00,5c,00,71,00,63,00,64,00,78,00,38,00,31,00,38,00,30,00,2e,00,\
+  69,00,6e,00,66,00,5f,00,61,00,72,00,6d,00,36,00,34,00,5f,00,63,00,31,00,63,\
+  00,35,00,66,00,35,00,66,00,34,00,32,00,35,00,35,00,61,00,37,00,64,00,32,00,\
+  61,00,5c,00,71,00,63,00,64,00,78,00,31,00,32,00,61,00,72,00,6d,00,36,00,34,\
+  00,78,00,75,00,6d,00,38,00,31,00,38,00,30,00,2e,00,64,00,6c,00,6c,00,00,00,\
+  00,00
+"UserModeDriverNameWow"=hex(7):3c,00,3e,00,00,00,71,00,63,00,64,00,78,00,31,00,\
+  31,00,78,00,38,00,36,00,75,00,6d,00,38,00,31,00,38,00,30,00,2e,00,64,00,6c,\
+  00,6c,00,00,00,71,00,63,00,64,00,78,00,31,00,31,00,78,00,38,00,36,00,75,00,\
+  6d,00,38,00,31,00,38,00,30,00,2e,00,64,00,6c,00,6c,00,00,00,71,00,63,00,64,\
+  00,78,00,31,00,32,00,78,00,38,00,36,00,75,00,6d,00,38,00,31,00,38,00,30,00,\
+  2e,00,64,00,6c,00,6c,00,00,00,00,00
+"UserModeDriverNameWow2"=hex(7):3c,00,3e,00,00,00,43,00,3a,00,5c,00,57,00,69,\
+  00,6e,00,64,00,6f,00,77,00,73,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,\
+  33,00,32,00,5c,00,44,00,72,00,69,00,76,00,65,00,72,00,53,00,74,00,6f,00,72,\
+  00,65,00,5c,00,46,00,69,00,6c,00,65,00,52,00,65,00,70,00,6f,00,73,00,69,00,\
+  74,00,6f,00,72,00,79,00,5c,00,71,00,63,00,64,00,78,00,38,00,31,00,38,00,30,\
+  00,2e,00,69,00,6e,00,66,00,5f,00,61,00,72,00,6d,00,36,00,34,00,5f,00,63,00,\
+  31,00,63,00,35,00,66,00,35,00,66,00,34,00,32,00,35,00,35,00,61,00,37,00,64,\
+  00,32,00,61,00,5c,00,71,00,63,00,64,00,78,00,31,00,31,00,61,00,72,00,6d,00,\
+  33,00,32,00,75,00,6d,00,38,00,31,00,38,00,30,00,2e,00,64,00,6c,00,6c,00,00,\
+  00,43,00,3a,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,5c,00,53,00,\
+  79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,72,00,69,00,76,00,65,\
+  00,72,00,53,00,74,00,6f,00,72,00,65,00,5c,00,46,00,69,00,6c,00,65,00,52,00,\
+  65,00,70,00,6f,00,73,00,69,00,74,00,6f,00,72,00,79,00,5c,00,71,00,63,00,64,\
+  00,78,00,38,00,31,00,38,00,30,00,2e,00,69,00,6e,00,66,00,5f,00,61,00,72,00,\
+  6d,00,36,00,34,00,5f,00,63,00,31,00,63,00,35,00,66,00,35,00,66,00,34,00,32,\
+  00,35,00,35,00,61,00,37,00,64,00,32,00,61,00,5c,00,71,00,63,00,64,00,78,00,\
+  31,00,31,00,61,00,72,00,6d,00,33,00,32,00,75,00,6d,00,38,00,31,00,38,00,30,\
+  00,2e,00,64,00,6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,00,69,00,6e,00,64,00,\
+  6f,00,77,00,73,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,\
+  00,44,00,72,00,69,00,76,00,65,00,72,00,53,00,74,00,6f,00,72,00,65,00,5c,00,\
+  46,00,69,00,6c,00,65,00,52,00,65,00,70,00,6f,00,73,00,69,00,74,00,6f,00,72,\
+  00,79,00,5c,00,71,00,63,00,64,00,78,00,38,00,31,00,38,00,30,00,2e,00,69,00,\
+  6e,00,66,00,5f,00,61,00,72,00,6d,00,36,00,34,00,5f,00,63,00,31,00,63,00,35,\
+  00,66,00,35,00,66,00,34,00,32,00,35,00,35,00,61,00,37,00,64,00,32,00,61,00,\
+  5c,00,71,00,63,00,64,00,78,00,31,00,32,00,61,00,72,00,6d,00,33,00,32,00,75,\
+  00,6d,00,38,00,31,00,38,00,30,00,2e,00,64,00,6c,00,6c,00,00,00,00,00
+"UserModeDriverNameX64"=hex(7):00,00
+"ContentProtectionDriverName"="qchdcpumd8180.dll"
+"GpuStatisticsDriverName"="C:\\Windows\\System32\\DriverStore\\FileRepository\\qcdx8180.inf_arm64_c1c5f5f4255a7d2a\\qcdxsdarm64x.dll"
+"GpuStatisticsDriverNameWow"="qcdxsdx86.dll"
+"GpuStatisticsDriverNameWow2"="C:\\Windows\\System32\\DriverStore\\FileRepository\\qcdx8180.inf_arm64_c1c5f5f4255a7d2a\\qcdxsdarm32.dll"
+"FeatureScore"=dword:000000d1
+"HardwareInformation.ChipType"="Adreno 680"
+"HardwareInformation.AdapterString"="Adreno 680"
+"HardwareInformation.DacType"="InternalDAC"
+"HardwareInformation.BiosString"="Version 72.41"
+"HardwareInformation.MemorySize"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\Miniport]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\Miniport\DISPLAY]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\Miniport\DISPLAY\Config]
+"PanelCfg1BrightnessMinLuminance"=dword:000000c8
+"PanelCfg1BrightnessMaxLuminance"=dword:0004e1e2
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\VolatileSettings]
+"{5b45201d-f2f2-4f3b-85bb-30ff1f953599}"=hex:5c,00,3f,00,3f,00,5c,00,41,00,43,\
+  00,50,00,49,00,23,00,56,00,45,00,4e,00,5f,00,51,00,43,00,4f,00,4d,00,26,00,\
+  44,00,45,00,56,00,5f,00,30,00,34,00,33,00,41,00,26,00,53,00,55,00,42,00,53,\
+  00,59,00,53,00,5f,00,43,00,4c,00,53,00,30,00,38,00,31,00,38,00,30,00,26,00,\
+  52,00,45,00,56,00,5f,00,30,00,44,00,31,00,32,00,23,00,30,00,23,00,7b,00,35,\
+  00,62,00,34,00,35,00,32,00,30,00,31,00,64,00,2d,00,66,00,32,00,66,00,32,00,\
+  2d,00,34,00,66,00,33,00,62,00,2d,00,38,00,35,00,62,00,62,00,2d,00,33,00,30,\
+  00,66,00,66,00,31,00,66,00,39,00,35,00,33,00,35,00,39,00,39,00,7d,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Control]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Control\Video]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Control\Video\$VideoId]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Control\Video\$VideoId\Video]
+"Service"="$Service"
+"DeviceDesc"="$DeviceDesc"
+"FeatureScore"="$FeatureScore"
+"Driver"="$Driver"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Device]
+"VideoID"="$VideoId"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Driver]
+"FeatureScore"="$FeatureScore"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Services]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Services\$Service]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Services\$Service\Video]
+"Service"="$Service"
+"DeviceDesc"="$DeviceDesc"
+"FeatureScore"="$FeatureScore"
+"VideoID"="$VideoId"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\CurrentVideoId]
+@="KeyValue"
+"KeyRoot"="Device"
+"ValueName"="VideoId"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\DeviceDesc]
+@="DeviceProperty"
+"PropertyGuid"="{a45c254e-df1c-4efd-8020-67d146a850e0}"
+"PropertyId"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\Driver]
+@="DeviceProperty"
+"PropertyGuid"="{a45c254e-df1c-4efd-8020-67d146a850e0}"
+"PropertyId"=dword:0000000b
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\DriverRank]
+@="DeviceProperty"
+"PropertyGuid"="{a8b865dd-2e3d-4094-ad97-e593a70c75d6}"
+"PropertyId"=dword:0000000e
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\FeatureScore]
+@="Expression"
+"Tokens"=hex(7):44,00,72,00,69,00,76,00,65,00,72,00,52,00,61,00,6e,00,6b,00,00,\
+  00,46,00,65,00,61,00,74,00,75,00,72,00,65,00,53,00,63,00,6f,00,72,00,65,00,\
+  4d,00,61,00,73,00,6b,00,00,00,26,00,00,00,31,00,36,00,00,00,3e,00,3e,00,00,\
+  00,00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\FeatureScoreMask]
+@="Constant"
+"Value"=dword:00ff0000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\NewVideoId]
+@="GenerateGuid"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\Service]
+@="DeviceProperty"
+"PropertyGuid"="{a45c254e-df1c-4efd-8020-67d146a850e0}"
+"PropertyId"=dword:00000006
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\Configuration\Variables\VideoId]
+@="Expression"
+"Tokens"=hex(7):43,00,75,00,72,00,72,00,65,00,6e,00,74,00,56,00,69,00,64,00,65,\
+  00,6f,00,49,00,64,00,00,00,43,00,75,00,72,00,72,00,65,00,6e,00,74,00,56,00,\
+  69,00,64,00,65,00,6f,00,49,00,64,00,00,00,4e,00,65,00,77,00,56,00,69,00,64,\
+  00,65,00,6f,00,49,00,64,00,00,00,3f,00,3a,00,00,00,00,00
+

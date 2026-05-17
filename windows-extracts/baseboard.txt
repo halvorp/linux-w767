@@ -1,0 +1,38 @@
+﻿
+
+Status                  : OK
+Name                    : Base Board
+PoweredOn               : True
+Caption                 : Base Board
+Description             : Base Board
+InstallDate             : 
+CreationClassName       : Win32_BaseBoard
+Manufacturer            : SAMSUNG ELECTRONICS CO., LTD.
+Model                   : 
+OtherIdentifyingInfo    : 
+PartNumber              : 
+SerialNumber            : 123490EN400015
+SKU                     : 
+Tag                     : Base Board
+Version                 : SGLA125A6I-C01-G001-S0001+10.0.19041
+Depth                   : 
+Height                  : 
+HotSwappable            : False
+Removable               : False
+Replaceable             : False
+Weight                  : 
+Width                   : 
+HostingBoard            : True
+RequirementsDescription : 
+RequiresDaughterBoard   : False
+SlotLayout              : 
+SpecialRequirements     : 
+ConfigOptions           : 
+Product                 : SM-W767NZNABTU
+PSComputerName          : 
+CimClass                : root/cimv2:Win32_BaseBoard
+CimInstanceProperties   : {Caption, Description, InstallDate, Name...}
+CimSystemProperties     : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+

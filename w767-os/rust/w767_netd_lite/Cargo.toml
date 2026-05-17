@@ -1,0 +1,18 @@
+[package]
+name = "w767_netd_lite"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "w767_netd_lite"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+coral_net = { workspace = true }
+sol_ipc = { workspace = true }
+w767_paths = { workspace = true }

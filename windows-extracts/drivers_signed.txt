@@ -1,0 +1,3010 @@
+﻿
+
+DeviceID           : SWD\PRINTENUM\{DD590CD5-4036-4A52-B4C4-CAFBF018959D}
+DeviceName         : Local Print Queue
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : printqueue.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\PRINTENUM\PRINTQUEUES
+DeviceName         : Local Print Queue
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : printqueue.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\WINTUN\{37217669-42DA-4657-A55B-0D995D328250}
+DeviceName         : Tailscale Tunnel
+DriverProviderName : WireGuard LLC
+DriverVersion      : 0.14.0.0
+DriverDate         : 13/10/2021 01:00:00
+InfName            : oem171.inf
+Location           : 
+Manufacturer       : WireGuard LLC
+
+DeviceID           : SWD\MMDEVAPI\MICROSOFTGSWAVETABLESYNTH
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\RADIO\{5B2AF391-CC78-48E6-B68C-1934BA455CEE}
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\RADIO\BLUETOOTH_1CE61DD1EC9F
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\RADIO\{CC75F028-18EF-40A9-9767-EC12C8B6C83E}
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\RADIO\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2}
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\DAFUPNPPROVIDER\UUID:320D1177-E6F5-6E81-5C06-DC66CBEDF4B1
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : http://192.168.1.220:8008/ssdp/device-desc.xml
+Manufacturer       : Google
+
+DeviceID           : SWD\MSDAS\{CE958E9A-424F-4C88-86F4-11314821E75A}
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\COMPUTER\MFG_SAMSUNG_ELECTRONICS_CO.__LTD.&FAM_GALAXY_BOOK_SERIES&PROD_GALAXY_BOOK_S&SKU_GALAXY_A5A5-PAHP
+DeviceName         : Computer Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : compdev.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\RDPBUS\0000
+DeviceName         : Remote Desktop Device Redirector Bus
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : rdpbus.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SW\{96E080C7-143C-11D1-B40F-00A0C9223196}\{3C0D501A-140B-11D1-B40F-00A0C9223196}
+DeviceName         : Microsoft Streaming Service Proxy
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : ksfilter.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\SYSTEM\0000
+DeviceName         : Plug and Play Software Device Enumerator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 05/06/2022 01:00:00
+InfName            : swenum.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ROOT\MSSMBIOS\0000
+DeviceName         : Microsoft System Management BIOS Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : mssmbios.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ROOT\NDISVIRTUALBUS\0000
+DeviceName         : NDIS Virtual Network Adapter Enumerator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : ndisvirtualbus.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\STORVSP\0000
+DeviceName         : Microsoft Hyper-V Virtual Disk Server
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : wstorvsp.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\BASICRENDER\0000
+DeviceName         : Microsoft Basic Render Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : basicrender.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\VPCIVSP\0000
+DeviceName         : Microsoft Hyper-V PCI Server
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : wvpcivsp.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : UEFI\RES_{77812D78-1108-4754-8673-BBA67AA80D75}\0
+DeviceName         : SAMSUNG ELECTRONICS System Firmware
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.2.3
+DriverDate         : 26/12/2024 00:00:00
+InfName            : oem14.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI_HAL\UEFI\0
+DeviceName         : Microsoft UEFI-Compliant System
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : uefi.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ACPI\QCOM0412\2
+DeviceName         : Qualcomm(R) Hexagon(TM) 690 DSP
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem30.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0412\1
+DeviceName         : Qualcomm(R) Hexagon(TM) 690 DSP
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem30.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0412\0
+DeviceName         : Qualcomm(R) Hexagon(TM) 690 DSP
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem30.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : BTH\MS_BTHLE\4&1FD30F8B&0&3
+DeviceName         : Microsoft Bluetooth LE Enumerator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3958
+DriverDate         : 21/06/2006 01:00:00
+InfName            : bthleenum.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTH\MS_BTHPAN\4&1FD30F8B&0&2
+DeviceName         : Bluetooth Device (Personal Area Network)
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : bthpan.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTHENUM\DEV_0009A775FE58\5&36906BF3&0&BLUETOOTHDEVICE_0009A775FE58
+DeviceName         : Bluetooth Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4317
+DriverDate         : 21/06/2006 01:00:00
+InfName            : bth.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTHENUM\{0000180F-0000-1000-8000-00805F9B34FB}_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Bluetooth Peripheral Device
+DriverProviderName : 
+DriverVersion      : 
+DriverDate         : 
+InfName            : 
+Location           : 
+Manufacturer       : 
+
+DeviceID           : BTHENUM\{0000180A-0000-1000-8000-00805F9B34FB}_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Bluetooth Peripheral Device
+DriverProviderName : 
+DriverVersion      : 
+DriverDate         : 
+InfName            : 
+Location           : 
+Manufacturer       : 
+
+DeviceID           : BTHENUM\{00001800-0000-1000-8000-00805F9B34FB}_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Bluetooth Peripheral Device
+DriverProviderName : 
+DriverVersion      : 
+DriverDate         : 
+InfName            : 
+Location           : 
+Manufacturer       : 
+
+DeviceID           : BTHENUM\{0000111E-0000-1000-8000-00805F9B34FB}_HCIBYPASS_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Microsoft Bluetooth Hands-Free Profile AudioGateway role
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 05/06/2022 01:00:00
+InfName            : microsoft_bluetooth_hfp_ag.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTHENUM\{0000110E-0000-1000-8000-00805F9B34FB}_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Microsoft Bluetooth Avrcp Transport Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : microsoft_bluetooth_avrcptransport.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTHENUM\{0000110C-0000-1000-8000-00805F9B34FB}_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Microsoft Bluetooth Avrcp Transport Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : microsoft_bluetooth_avrcptransport.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Microsoft Bluetooth A2dp Source
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 05/06/2022 01:00:00
+InfName            : microsoft_bluetooth_a2dp_src.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTHENUM\{00000000-DECA-FADE-DECA-DEAFDECACAFF}_VID&00010103_PID&101E\5&36906BF3&0&0009A775FE58_C00000000
+DeviceName         : Bluetooth Peripheral Device
+DriverProviderName : 
+DriverVersion      : 
+DriverDate         : 
+InfName            : 
+Location           : 
+Manufacturer       : 
+
+DeviceID           : BTH\MS_BTHBRB\4&1FD30F8B&0&1
+DeviceName         : Microsoft Bluetooth Enumerator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4317
+DriverDate         : 21/06/2006 01:00:00
+InfName            : bth.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : BTH\MS_RFCOMM\4&1FD30F8B&0&0
+DeviceName         : Bluetooth Device (RFCOMM Protocol TDI)
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : tdibth.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : QCA_SHB\UART_H4\3&181E29F6&0&4097
+DeviceName         : Qualcomm(R) Bluetooth Radio Driver
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.1520.0
+DriverDate         : 24/03/2021 00:00:00
+InfName            : oem39.inf
+Location           : Serial HCI Bus - Bluetooth Function
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM0471\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Bluetooth UART Transport Driver
+DriverProviderName : Qualcomm Atheros Communications Inc.
+DriverVersion      : 1.0.1520.0
+DriverDate         : 24/03/2021 00:00:00
+InfName            : oem43.inf
+Location           : 
+Manufacturer       : Qualcomm Atheros Communications Inc.
+
+DeviceID           : ACPI\QCOM0413\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.1000.0
+DriverDate         : 27/02/2020 00:00:00
+InfName            : oem58.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : HID\CONVERTEDDEVICE&COL03\5&1E52E2E1&0&0002
+DeviceName         : HID-compliant system controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\CONVERTEDDEVICE&COL02\5&1E52E2E1&0&0001
+DeviceName         : HID-compliant consumer control device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidserv.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\CONVERTEDDEVICE&COL01\5&1E52E2E1&0&0000
+DeviceName         : HID Keyboard Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : keyboard.inf
+Location           : 
+Manufacturer       : (Standard keyboards)
+
+DeviceID           : BUTTONCONVERTER\CONVERTEDDEVICE\4&18057223&0&0
+DeviceName         : Converted Portable Device Control device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : buttonconverter.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\ACPI0011\3&1F273C3D&0&0000
+DeviceName         : Portable Device Control device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : buttonconverter.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ACPI\ACPI0011\0
+DeviceName         : HID Button over Interrupt Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidinterrupt.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL02\3&34B59208&0&0001
+DeviceName         : HID-compliant vendor-defined device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL01\3&34B59208&0&0000
+DeviceName         : TspHelper Device
+DriverProviderName : Samsung Electronics Co.,Ltd.
+DriverVersion      : 1.0.0.2
+DriverDate         : 13/08/2019 01:00:00
+InfName            : oem157.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co.,Ltd.
+
+DeviceID           : ACPI\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001\2&DABA3FF&0
+DeviceName         : I2C HID Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidi2c.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\SAMM0901&COL03\3&38C7CA7E&0&0002
+DeviceName         : HID-compliant system controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\SAMM0901&COL02\3&38C7CA7E&0&0001
+DeviceName         : HID-compliant consumer control device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidserv.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\SAMM0901&COL01\3&38C7CA7E&0&0000
+DeviceName         : HID Keyboard Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : keyboard.inf
+Location           : 
+Manufacturer       : (Standard keyboards)
+
+DeviceID           : ACPI\SAMM0901\2&DABA3FF&0
+DeviceName         : Samsung VHIDEvent Device
+DriverProviderName : Samsung Electronics Co.,Ltd.
+DriverVersion      : 1.0.0.1
+DriverDate         : 15/03/2019 00:00:00
+InfName            : oem160.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co.,Ltd.
+
+DeviceID           : {30EBFBF8-DF5F-4D4D-9FC5-A26C7FD1DF4A}\GPIO_BUTTONS\3&104AF128&0&0
+DeviceName         : Sideband GPIO Buttons Injection Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : msgpiowin32.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\POWR1234&COL03\3&104AF128&0&0002
+DeviceName         : HID-compliant system controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\POWR1234&COL02\3&104AF128&0&0001
+DeviceName         : HID-compliant consumer control device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidserv.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\POWR1234&COL01\3&104AF128&0&0000
+DeviceName         : HID Keyboard Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : keyboard.inf
+Location           : 
+Manufacturer       : (Standard keyboards)
+
+DeviceID           : ACPI\POWR1234\2&DABA3FF&0
+DeviceName         : GPIO Buttons Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : msgpiowin32.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ACPI\CONT1234\2&DABA3FF&0
+DeviceName         : GPIO Laptop or Slate Indicator Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : msgpiowin32.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ACPI\SAMM0610\1
+DeviceName         : Samsung System Manager Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.0.1
+DriverDate         : 26/09/2019 01:00:00
+InfName            : oem74.inf
+Location           : 
+Manufacturer       : Samsung
+
+DeviceID           : ACPI\QCOM045E\64
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM045F\1
+DeviceName         : Qualcomm(R) Data Device
+DriverProviderName : Qualcomm, Inc.
+DriverVersion      : 1.0.1020.0
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem89.inf
+Location           : 
+Manufacturer       : Qualcomm, Inc.
+
+DeviceID           : ACPI\QCOM044C\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM046B\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0467\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM046A\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0466\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0463\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0469\1
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0469\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0465\1
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0465\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0462\1
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0462\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM049E\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0450\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM049D\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM045D\1
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM045D\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM045C\1
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM045C\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\ACPI000C\2&DABA3FF&0
+DeviceName         : ACPI Processor Aggregator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : acpipagr.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_02&COL04\6&DFA5DBA&0&0003
+DeviceName         : HID-compliant vendor-defined device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_02&COL03\6&DFA5DBA&0&0002
+DeviceName         : HID-compliant device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_02&COL02\6&DFA5DBA&0&0001
+DeviceName         : HID-compliant wireless radio controls
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_02&COL01\6&DFA5DBA&0&0000
+DeviceName         : HID-compliant consumer control device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidserv.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : USB\VID_04E8&PID_A055&MI_02\5&3ADD7E15&0&0002
+DeviceName         : USB Input Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 0000.0000.0000.001.000.000.000.000.000
+Manufacturer       : (Standard system devices)
+
+DeviceID           : SWD\DRIVERENUM\KBDHELPER_SAMSUNGOSDSVCINSTALL&7&16F10779&0
+DeviceName         : SamsungOSDService Device
+DriverProviderName : Samsung Electronics Co.,Ltd.
+DriverVersion      : 1.0.0.7
+DriverDate         : 21/12/2019 00:00:00
+InfName            : oem151.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co.,Ltd.
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_01\6&15DCE008&0&0000
+DeviceName         : kbdHelper Device
+DriverProviderName : Samsung Electronics Co.,Ltd.
+DriverVersion      : 1.0.0.3
+DriverDate         : 25/11/2019 00:00:00
+InfName            : oem15.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co.,Ltd.
+
+DeviceID           : USB\VID_04E8&PID_A055&MI_01\5&3ADD7E15&0&0001
+DeviceName         : USB Input Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 0000.0000.0000.001.000.000.000.000.000
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_00&COL04\6&39B41DCA&0&0003
+DeviceName         : HID-compliant vendor-defined device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : SWD\DRIVERENUM\TPADHELPER_TPADFWUPDATESVCINSTALL&7&35AC12D1&0
+DeviceName         : TPadFWUpdateService Device
+DriverProviderName : Samsung Electronics Co.,Ltd.
+DriverVersion      : 1.0.0.13
+DriverDate         : 21/06/2020 01:00:00
+InfName            : oem155.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co.,Ltd.
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_00&COL03\6&39B41DCA&0&0002
+DeviceName         : TPadHelper Device
+DriverProviderName : Samsung Electronics Co.,Ltd.
+DriverVersion      : 1.0.0.6
+DriverDate         : 16/12/2019 00:00:00
+InfName            : oem156.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co.,Ltd.
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_00&COL02\6&39B41DCA&0&0001
+DeviceName         : Microsoft Input Configuration Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : mtconfig.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HID\VID_04E8&PID_A055&MI_00&COL01\6&39B41DCA&0&0000
+DeviceName         : HID-compliant mouse
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : msmouse.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : USB\VID_04E8&PID_A055&MI_00\5&3ADD7E15&0&0000
+DeviceName         : USB Input Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 0000.0000.0000.001.000.000.000.000.000
+Manufacturer       : (Standard system devices)
+
+DeviceID           : USB\VID_04E8&PID_A055\2081368E4D50
+DeviceName         : USB Composite Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : usb.inf
+Location           : Port_#0001.Hub_#0001
+Manufacturer       : (Standard USB Host Controller)
+
+DeviceID           : USB\ROOT_HUB30\3&8D55026&0&0
+DeviceName         : USB Root Hub (USB 3.0)
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : usbhub3.inf
+Location           : 
+Manufacturer       : (Standard USB HUBs)
+
+DeviceID           : ACPI\QCOM04A6\2
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.770.0
+DriverDate         : 13/09/2019 01:00:00
+InfName            : oem146.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : SCSI\DISK&VEN_INTEGRAL&PROD_PORTABLE_SSD_3.0\6&20213343&0&000000
+DeviceName         : Disk drive
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : disk.inf
+Location           : Bus Number 0, Target Id 0, LUN 0
+Manufacturer       : (Standard disk drives)
+
+DeviceID           : USB\VID_26BD&PID_9917\MSFT30511200727044DAAE002E
+DeviceName         : USB Attached SCSI (UAS) Mass Storage Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : uaspstor.inf
+Location           : Port_#0001.Hub_#0002
+Manufacturer       : USB Attached SCSI (UAS) Compatible Device
+
+DeviceID           : USB\ROOT_HUB30\4&29F06F0&0&0
+DeviceName         : USB Root Hub (USB 3.0)
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : usbhub3.inf
+Location           : 
+Manufacturer       : (Standard USB HUBs)
+
+DeviceID           : URS\VEN_QCOM&DEV_0497&SUBSYS_CLS08180&HOST\3&252BAFA3&0&0
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.770.0
+DriverDate         : 13/09/2019 01:00:00
+InfName            : oem146.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0497\1
+DeviceName         : Synopsys USB 3.0 Dual-Role Controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : urssynopsys.inf
+Location           : 
+Manufacturer       : Synopsys
+
+DeviceID           : HID\VID_0BDA&PID_1100\7&18BBFF6C&0&0000
+DeviceName         : HID-compliant vendor-defined device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : USB\VID_0BDA&PID_1100\6&255F29DC&0&5
+DeviceName         : USB Input Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : Port_#0005.Hub_#0005
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_05AC&PID_1393\7&13E1BCC9&0&0000
+DeviceName         : HID-compliant vendor-defined device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : USB\VID_05AC&PID_1393\H6QFD1NX0C6L
+DeviceName         : USB Input Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : Port_#0004.Hub_#0005
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_0603&PID_1010&MI_01\9&A5F1D82&0&0000
+DeviceName         : HID-compliant vendor-defined device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : USB\VID_0603&PID_1010&MI_01\8&1FD580B5&0&0001
+DeviceName         : USB Input Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 0000.0000.0000.001.001.004.000.000.000
+Manufacturer       : (Standard system devices)
+
+DeviceID           : HID\VID_0603&PID_1010&MI_00\9&2E365B44&0&0000
+DeviceName         : HID-compliant mouse
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : msmouse.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : USB\VID_0603&PID_1010&MI_00\8&1FD580B5&0&0000
+DeviceName         : USB Input Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.4111
+DriverDate         : 21/06/2006 01:00:00
+InfName            : input.inf
+Location           : 0000.0000.0000.001.001.004.000.000.000
+Manufacturer       : (Standard system devices)
+
+DeviceID           : USB\VID_0603&PID_1010\7&15408CED&0&4
+DeviceName         : USB Composite Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : usb.inf
+Location           : Port_#0004.Hub_#0006
+Manufacturer       : (Standard USB Host Controller)
+
+DeviceID           : USB\VID_25A4&PID_9311\000000000001
+DeviceName         : Billboard Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : winusb.inf
+Location           : Port_#0003.Hub_#0006
+Manufacturer       : WinUsb Device
+
+DeviceID           : USB\VID_1A40&PID_0101\6&255F29DC&0&1
+DeviceName         : Generic USB Hub
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : usbhub3.inf
+Location           : Port_#0001.Hub_#0005
+Manufacturer       : (Standard USB HUBs)
+
+DeviceID           : USB\VID_0BDA&PID_5411\5&2B5B8E5C&0&1
+DeviceName         : Generic USB Hub
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : usbhub3.inf
+Location           : Port_#0001.Hub_#0003
+Manufacturer       : (Standard USB HUBs)
+
+DeviceID           : USB\VID_0B95&PID_1790\00BE3A39
+DeviceName         : ASIX USB to Gigabit Ethernet Family Adapter
+DriverProviderName : ASIX
+DriverVersion      : 3.22.2.0
+DriverDate         : 06/07/2024 01:00:00
+InfName            : oem11.inf
+Location           : Port_#0001.Hub_#0004
+Manufacturer       : ASIX
+
+DeviceID           : USB\VID_0BDA&PID_0411\5&2B5B8E5C&0&2
+DeviceName         : Generic SuperSpeed USB Hub
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : usbhub3.inf
+Location           : Port_#0002.Hub_#0003
+Manufacturer       : (Standard USB HUBs)
+
+DeviceID           : USB\ROOT_HUB30\4&2C2AB107&0&0
+DeviceName         : USB Root Hub (USB 3.0)
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/05/2024 01:00:00
+InfName            : usbhub3.inf
+Location           : 
+Manufacturer       : (Standard USB HUBs)
+
+DeviceID           : URS\VEN_QCOM&DEV_0497&SUBSYS_CLS08180&HOST\3&37E56048&0&0
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.770.0
+DriverDate         : 13/09/2019 01:00:00
+InfName            : oem146.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0497\0
+DeviceName         : Synopsys USB 3.0 Dual-Role Controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : urssynopsys.inf
+Location           : 
+Manufacturer       : Synopsys
+
+DeviceID           : {CA5129FB-B5CA-44BE-8D12-637B5C6C04BA}\GALAXYBOOK\3&87F32F1&0&01
+DeviceName         : GalaxyBookDriver Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.0.0
+DriverDate         : 17/05/2019 01:00:00
+InfName            : oem10.inf
+Location           : GalaxyBook
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAM0603\1
+DeviceName         : AppNodeEnum Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.0.13
+DriverDate         : 08/02/2019 00:00:00
+InfName            : oem0.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : MDMCTRL\SAR02\3&29FBBEC&0&00
+DeviceName         : SAR Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 13.24.21.688
+DriverDate         : 27/07/2020 01:00:00
+InfName            : oem17.inf
+Location           : SAR02
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : MDMCTRL\SRIL02\3&29FBBEC&0&00
+DeviceName         : SRil10 Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 13.24.21.688
+DriverDate         : 27/07/2020 01:00:00
+InfName            : oem17.inf
+Location           : SRIL02
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAM0602\0
+DeviceName         : ModemCtrl Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 13.24.21.688
+DriverDate         : 27/07/2020 01:00:00
+InfName            : oem17.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAM0605\1
+DeviceName         : Samsung UcmEm Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 10.16.16.68
+DriverDate         : 07/11/2019 00:00:00
+InfName            : oem158.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAM0604\0
+DeviceName         : Samsung EmuEC Device
+DriverProviderName : Samsung Electronics Co,.Ltd.
+DriverVersion      : 15.2.40.590
+DriverDate         : 02/04/2020 01:00:00
+InfName            : oem9.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co,.Ltd.
+
+DeviceID           : ACPI\SAM0701\1
+DeviceName         : Samsung Firmware Interface Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 11.1.13.591
+DriverDate         : 25/05/2020 01:00:00
+InfName            : oem150.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAM0101\0
+DeviceName         : Samsung PanelDriver Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 0.1.0.5
+DriverDate         : 03/03/2020 00:00:00
+InfName            : oem19.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\PNP0C0D\2&DABA3FF&0
+DeviceName         : ACPI Lid
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : machine.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ACPI\SAMM0208\4
+DeviceName         : SX9360 Proximity
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.0.3
+DriverDate         : 17/10/2019 01:00:00
+InfName            : oem154.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAMM0208\3
+DeviceName         : SX9360 Proximity
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.0.3
+DriverDate         : 17/10/2019 01:00:00
+InfName            : oem154.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAMM0208\2
+DeviceName         : SX9360 Proximity
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.0.3
+DriverDate         : 17/10/2019 01:00:00
+InfName            : oem154.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAMM0208\1
+DeviceName         : SX9360 Proximity
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.0.3
+DriverDate         : 17/10/2019 01:00:00
+InfName            : oem154.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\SAM0204\1
+DeviceName         : BH1733 Ambient Light Sensor
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.3.8
+DriverDate         : 17/12/2019 00:00:00
+InfName            : oem1.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\QCOM0428\16
+DeviceName         : Qualcomm(R) Spectra(TM) 390 ISP Camera ISP Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 4231.60.0.0
+DriverDate         : 23/07/2023 01:00:00
+InfName            : oem167.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0436\17
+DeviceName         : Qualcomm(R) Spectra(TM) 390 ISP Camera JPEG Encoder Device
+DriverProviderName : Qualcomm
+DriverVersion      : 4231.60.0.0
+DriverDate         : 23/07/2023 01:00:00
+InfName            : oem168.inf
+Location           : 
+Manufacturer       : Qualcomm
+
+DeviceID           : ACPI\QCOM04A4\18
+DeviceName         : Qualcomm(R) Spectra(TM) 390 ISP Camera MipiCsi Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 4231.60.0.0
+DriverDate         : 23/07/2023 01:00:00
+InfName            : oem169.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0406\1A
+DeviceName         : Qualcomm(R) Spectra(TM) 390 ISP Camera Front Sensor Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 4231.62.0.0
+DriverDate         : 23/07/2023 01:00:00
+InfName            : oem166.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM0435\1B
+DeviceName         : Qualcomm(R) Spectra(TM) 390 ISP Camera Platform Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 4231.62.0.0
+DriverDate         : 23/07/2023 01:00:00
+InfName            : oem170.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\SAM0909\0
+DeviceName         : EgisTec Touch Fingerprint Sensor
+DriverProviderName : Egis Technology Inc.
+DriverVersion      : 1.0.15.0
+DriverDate         : 29/07/2019 01:00:00
+InfName            : oem8.inf
+Location           : 
+Manufacturer       : Egis Technology Inc.
+
+DeviceID           : ACPI\QCOM0461\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Data Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.760.1
+DriverDate         : 18/09/2019 01:00:00
+InfName            : oem57.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM04AA\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Technologies Inc.
+DriverVersion      : 1.0.750.0
+DriverDate         : 30/08/2019 01:00:00
+InfName            : oem123.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies Inc.
+
+DeviceID           : ACPI\QCOM0493\2
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem68.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0493\1
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem68.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0493\0
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem68.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0472\0
+DeviceName         : Qualcomm(R) Location
+DriverProviderName : Qualcomm
+DriverVersion      : 1.0.1020.0
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem66.inf
+Location           : 
+Manufacturer       : Qualcomm
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\7
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\6
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\5
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\4
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\3
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\2
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\1
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\QUALCOMM_TECHNOLOGIES_INC_-_ARMV8_(64-BIT)_FAMILY_8_MODEL_805_REVISION_D0E\0
+DeviceName         : Processor
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/04/2009 01:00:00
+InfName            : cpu.inf
+Location           : 
+Manufacturer       : (Standard processor types)
+
+DeviceID           : ACPI\ACPI0010\10
+DeviceName         : ACPI Processor Container Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : machine.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ACPI\ACPI0010\100000
+DeviceName         : ACPI Processor Container Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : machine.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ACPI\QCOM0414\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.1000.0
+DriverDate         : 27/02/2020 00:00:00
+InfName            : oem59.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM0483\0
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem73.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0470\0
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.0
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem78.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0417\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Memory and File System Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem109.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM048A\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Hexagon(TM) 690 DSP
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem34.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0460\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Hexagon(TM) 690 DSP
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem33.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM048D\0
+DeviceName         : Qualcomm(R) Memory and File System Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem65.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040E\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Data Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem81.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM040D\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : CompanyName
+DriverVersion      : 1.0.830.0
+DriverDate         : 25/10/2019 01:00:00
+InfName            : oem70.inf
+Location           : 
+Manufacturer       : CompanyName
+
+DeviceID           : ACPI\QCOM040C\1
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem128.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{F5AEA618-0649-49F4-81EF-F2E0F9EAFFCC}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{F4637010-03C3-42CD-B932-B48ADF3A6A54}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{EB3C7242-1B1A-4D51-AB55-F268F018F860}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{D08CBE90-96EA-4031-9EBD-DA11FC8A8319}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{C28F7046-F72E-4F23-B061-E50421C5404C}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{AE865C08-4A07-404D-BE51-D9A0465E23E5}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{742E7313-2543-4EB8-BBEB-C5B75945063C}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{72F6EF56-CF28-4D19-A027-1C3EC5E7DF4B}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{699AA2F1-A42E-40DF-BABE-3AAAD2BB6A47}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {36DEAA79-C5DD-447C-95E6-B3859589291A}\TREETPM\4&2BB0E5E4&0
+DeviceName         : Trusted Platform Module 2.0
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : tpm.inf
+Location           : 
+Manufacturer       : (Standard)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{36DEAA79-C5DD-447C-95E6-B3859589291A}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : {4E815EE1-20F8-41EF-8CFF-3C283F02D722}\{16A1AB50-7413-4875-893D-2E5AA0B79888}\3&F6A7A6B&0
+DeviceName         : Microsoft Windows Trusted Runtime Secure Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : WindowsTrustedRTProxy.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ACPI\QCOM0476\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.770.1
+DriverDate         : 13/09/2019 01:00:00
+InfName            : oem138.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040B\0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem114.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : DISPLAY\BOE07E7\3&2FAFEF91&0&UID0
+DeviceName         : Samsung Monitor Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 15.1.1.1
+DriverDate         : 01/10/2020 01:00:00
+InfName            : oem18.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : DISPLAY\QCOM_AVSTREAM_8180\3&2FAFEF91&0&UID32768
+DeviceName         : Qualcomm(R) Spectra(TM) 390 ISP Camera AVStream CLS Device
+DriverProviderName : Qualcomm
+DriverVersion      : 4231.62.0.0
+DriverDate         : 23/07/2023 01:00:00
+InfName            : oem165.inf
+Location           : 
+Manufacturer       : Qualcomm
+
+DeviceID           : ACPI\VEN_QCOM&DEV_043A&SUBSYS_CLS08180&REV_0D12\0
+DeviceName         : Qualcomm(R) Adreno(TM) 680 GPU
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 27.20.1640.0
+DriverDate         : 24/09/2021 01:00:00
+InfName            : oem61.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM049B\1
+DeviceName         : Qualcomm(R) Memory and File System Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem77.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM049B\0
+DeviceName         : Qualcomm(R) Memory and File System Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem77.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\VEN_QCOM&DEV_0409&SUBSYS_CLS08180&REV_0002\1
+DeviceName         : Qualcomm(R) Memory and File System Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem122.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\VEN_QCOM&DEV_0409&SUBSYS_CLS08180&REV_0002\0
+DeviceName         : Qualcomm(R) Memory and File System Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem122.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\VEN_QCOM&DEV_048C&SUBSYS_CLS08180&REV_0002\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Memory and File System Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem136.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM048B\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Data Device
+DriverProviderName : Qualcomm Technologies, Incorporated
+DriverVersion      : 1.0.710.0
+DriverDate         : 08/02/2019 00:00:00
+InfName            : oem137.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Incorporated
+
+DeviceID           : ACPI\QCOM0423\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Hexagon(TM) 690 DSP
+DriverProviderName : Qualcomm Technologies, Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem134.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Incorporated
+
+DeviceID           : ACPI\QCOM047C\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.1020.0
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem93.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM04AF\2&DABA3FF&0
+DeviceName         : Qualcomm Modem Limiting Thermal Device
+DriverProviderName : Qualcomm Technologies, Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem134.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Incorporated
+
+DeviceID           : ACPI\QCOM0422\2&DABA3FF&0
+DeviceName         : Qualcomm Subsystem Dependency Device
+DriverProviderName : Qualcomm Technologies, Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem134.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Incorporated
+
+DeviceID           : ACPI\QCOM0420\2&DABA3FF&0
+DeviceName         : Qualcomm Service Manager Device
+DriverProviderName : Qualcomm Technologies, Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem134.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Incorporated
+
+DeviceID           : ACPI\SAM0609\0
+DeviceName         : Samsung WlSar Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 16.0.30.81
+DriverDate         : 08/12/2019 00:00:00
+InfName            : oem161.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ACPI\QCOM045F\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Data Device
+DriverProviderName : Qualcomm, Inc.
+DriverVersion      : 1.0.1020.0
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem89.inf
+Location           : 
+Manufacturer       : Qualcomm, Inc.
+
+DeviceID           : SWD\SMSDEVICE\SMS_DEVICE2_{CC75F028-18EF-40A9-9767-EC12C8B6C83E}
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\MBFW\{CC75F028-18EF-40A9-9767-EC12C8B6C83E}
+DeviceName         : Generic software device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : c_swdevice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : QCMS\VEN_QCOM&DEV_0489&SUBSYS_SSKU_AHP\3&33C1B731&0&0
+DeviceName         : Snapdragon (TM) X24 LTE Modem
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 3347.49.0.0
+DriverDate         : 22/02/2021 00:00:00
+InfName            : oem90.inf
+Location           : AMSS Bus 0
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : {5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\VWIFIMP_WFD\4&31835C9&0&12
+DeviceName         : Microsoft Wi-Fi Direct Virtual Adapter
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : netvwifimp.inf
+Location           : VWiFi Bus 0
+Manufacturer       : Microsoft
+
+DeviceID           : {5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\VWIFIMP_WFD\4&31835C9&0&11
+DeviceName         : Microsoft Wi-Fi Direct Virtual Adapter
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : netvwifimp.inf
+Location           : VWiFi Bus 0
+Manufacturer       : Microsoft
+
+DeviceID           : QCMS\VEN_QCOM&DEV_042B&SUBSYS_SSKU_AHP\3&33C1B731&0&0
+DeviceName         : Qualcomm(R) Wi-Fi B/G/N/AC (2x2) Svc
+DriverProviderName : Qualcomm Inc
+DriverVersion      : 1.0.1540.0
+DriverDate         : 21/04/2021 01:00:00
+InfName            : oem144.inf
+Location           : AMSS Bus 0
+Manufacturer       : Qualcomm Inc
+
+DeviceID           : ACPI\QCOM041E\2&DABA3FF&0
+DeviceName         : Snapdragon (TM) X24 LTE Modem
+DriverProviderName : Qualcomm Technologies, Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem134.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Incorporated
+
+DeviceID           : ADSP\VEN_QCOM&DEV_0410&SUBSYS_CLS08180\3&39BFDC76&0&1
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.0
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem119.inf
+Location           : AMSS Bus 0
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : SWD\MMDEVAPI\{0.0.1.00000000}.{D735DAE6-A977-466F-B01E-231CE8DAA201}
+DeviceName         : Audio Endpoint
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 05/06/2022 01:00:00
+InfName            : audioendpoint.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\MMDEVAPI\{0.0.0.00000000}.{53780DC5-2C82-4DBC-A3CE-BA124D110527}
+DeviceName         : Audio Endpoint
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 05/06/2022 01:00:00
+InfName            : audioendpoint.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\DRIVERENUM\{B13FDCA7-AFA6-46F9-AA28-417E60084CA6}#QCLISTENSOUNDMODEL_SWCOMPONENT&7&27B35E94&0
+DeviceName         : Qualcomm(R) Aqstic(TM)
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.730.2000
+DriverDate         : 26/08/2019 01:00:00
+InfName            : oem85.inf
+Location           : 
+Manufacturer       : QUALCOMM
+
+DeviceID           : SWD\DRIVERENUM\{2C858FB2-0034-47F7-80AD-CD25B207784C}#DOLBYAPO_DAX3HSA&7&27B35E94&0
+DeviceName         : DolbyAPO Software Device (HSA)
+DriverProviderName : Dolby
+DriverVersion      : 3.20402.409.1
+DriverDate         : 26/08/2019 01:00:00
+InfName            : oem7.inf
+Location           : 
+Manufacturer       : Dolby
+
+DeviceID           : SWD\DRIVERENUM\{2C858FB2-0034-47F7-80AD-CD25B207784C}#DOLBYAPO_DAX3APOSVC&7&27B35E94&0
+DeviceName         : DolbyAPO SWC Device
+DriverProviderName : Dolby
+DriverVersion      : 3.20403.443.10
+DriverDate         : 24/09/2019 01:00:00
+InfName            : oem5.inf
+Location           : 
+Manufacturer       : Dolby
+
+DeviceID           : HID\HID_DEVICE_SYSTEM_VHF\8&F9052ED&0&0000
+DeviceName         : HID-compliant consumer control device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidserv.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : VHF\HID_DEVICE_SYSTEM_VHF\7&27B35E94&0&{A0A1C76D-BAFB-541D-81AF-D7B853049D81}
+DeviceName         : Virtual HID Framework (VHF) HID device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hidvhf.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : AUDD\VEN_SAMM&DEV_0801&SUBSYS_C17C144D\6&9E83D21&0&1
+DeviceName         : Qualcomm(R) Aqstic(TM)
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.1000.4
+DriverDate         : 14/07/2020 01:00:00
+InfName            : oem37.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : AUDD\VEN_SAMM&DEV_0803&SUBSYS_C17C144D\6&9E83D21&0&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.960.1
+DriverDate         : 02/11/2020 00:00:00
+InfName            : oem36.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : ADCM\VEN_SAMM&DEV_0802&SUBSYS_C17C144D\5&379C4626&0&0
+DeviceName         : Qualcomm(R) Aqstic(TM)
+DriverProviderName : Samsung Electronics Co., Ltd.
+DriverVersion      : 1.0.960.1
+DriverDate         : 02/11/2020 00:00:00
+InfName            : oem36.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co., Ltd.
+
+DeviceID           : SLM1\VEN_QCOM&DEV_0424&SUBSYS_C17C144D\4&3C37B1&0&1
+DeviceName         : Qualcomm(R) Aqstic(TM)
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem31.inf
+Location           : SLM1 Bus 0
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ADSP\VEN_QCOM&DEV_0410&SUBSYS_CLS08180\3&39BFDC76&0&0
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.0
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem119.inf
+Location           : AMSS Bus 0
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM041D\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Aqstic(TM)
+DriverProviderName : Qualcomm Technologies, Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem134.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Incorporated
+
+DeviceID           : ACPI\QCOM0432\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem55.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM041B\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.770.0
+DriverDate         : 13/09/2019 01:00:00
+InfName            : oem97.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM0433\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem113.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\QCOM040F\4
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem125.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM040F\1
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem125.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0411\14
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\13
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\12
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\10
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\F
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\C
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\A
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\9
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\8
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\6
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\5
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0411\2
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem76.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0418\12
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.680.0
+DriverDate         : 07/11/2019 00:00:00
+InfName            : oem139.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM0418\D
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Technologies, Inc.
+DriverVersion      : 1.0.680.0
+DriverDate         : 07/11/2019 00:00:00
+InfName            : oem139.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies, Inc.
+
+DeviceID           : ACPI\QCOM040A\10
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040A\F
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040A\E
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040A\D
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040A\7
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040A\6
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040A\5
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM040A\1
+DeviceName         : Qualcomm(R) Bus Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem83.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0419\2&DABA3FF&0
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1020.1
+DriverDate         : 03/06/2020 01:00:00
+InfName            : oem95.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0263\2&DABA3FF&0
+DeviceName         : Qualcomm PMIC Battery Miniclass Device
+DriverProviderName : Qualcomm Incorporated
+DriverVersion      : 1.0.9260.0
+DriverDate         : 17/09/2018 01:00:00
+InfName            : oem38.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : ACPI\SAM0606\2&DABA3FF&0
+DeviceName         : Samsung PMIC 3rd Party Driver
+DriverProviderName : Samsung Electronics Co,.Ltd.
+DriverVersion      : 16.46.49.654
+DriverDate         : 09/05/2019 01:00:00
+InfName            : oem152.inf
+Location           : 
+Manufacturer       : Samsung Electronics Co,.Ltd.
+
+DeviceID           : ACPI\ACPI000E\2&DABA3FF&0
+DeviceName         : ACPI Wake Alarm
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : acpitime.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ACPI\QCOM042F\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Power Management
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem102.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0430\1
+DeviceName         : Qualcomm(R) System Manager Device
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem104.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM042E\2&DABA3FF&0
+DeviceName         : Qualcomm(R) Power Management
+DriverProviderName : Qualcomm Inc.
+DriverVersion      : 1.0.980.0
+DriverDate         : 02/06/2020 01:00:00
+InfName            : oem99.inf
+Location           : 
+Manufacturer       : Qualcomm Inc.
+
+DeviceID           : ACPI\QCOM0427\0
+DeviceName         : Qualcomm(R) ACPI Bridge Device
+DriverProviderName : Qualcomm Technologies Inc.
+DriverVersion      : 1.0.1040.0
+DriverDate         : 20/03/2020 00:00:00
+InfName            : oem26.inf
+Location           : 
+Manufacturer       : Qualcomm Technologies Inc.
+
+DeviceID           : ACPI\QCOM2466\1
+DeviceName         : Qualcomm SoC Secure Digital host controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : sdbus.inf
+Location           : 
+Manufacturer       : Qualcomm Incorporated
+
+DeviceID           : SCSI\DISK&VEN_SAMSUNG&PROD_KLUEG8UHDB-C2D1\3&F4F72E8&0&000005
+DeviceName         : Disk drive
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : disk.inf
+Location           : Bus Number 0, Target Id 0, LUN 5
+Manufacturer       : (Standard disk drives)
+
+DeviceID           : SCSI\DISK&VEN_SAMSUNG&PROD_KLUEG8UHDB-C2D1\3&F4F72E8&0&000004
+DeviceName         : Disk drive
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : disk.inf
+Location           : Bus Number 0, Target Id 0, LUN 4
+Manufacturer       : (Standard disk drives)
+
+DeviceID           : SCSI\DISK&VEN_SAMSUNG&PROD_KLUEG8UHDB-C2D1\3&F4F72E8&0&000003
+DeviceName         : Disk drive
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : disk.inf
+Location           : Bus Number 0, Target Id 0, LUN 3
+Manufacturer       : (Standard disk drives)
+
+DeviceID           : SCSI\DISK&VEN_SAMSUNG&PROD_KLUEG8UHDB-C2D1\3&F4F72E8&0&000002
+DeviceName         : Disk drive
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : disk.inf
+Location           : Bus Number 0, Target Id 0, LUN 2
+Manufacturer       : (Standard disk drives)
+
+DeviceID           : SCSI\DISK&VEN_SAMSUNG&PROD_KLUEG8UHDB-C2D1\3&F4F72E8&0&000001
+DeviceName         : Disk drive
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : disk.inf
+Location           : Bus Number 0, Target Id 0, LUN 1
+Manufacturer       : (Standard disk drives)
+
+DeviceID           : SCSI\DISK&VEN_SAMSUNG&PROD_KLUEG8UHDB-C2D1\3&F4F72E8&0&000000
+DeviceName         : Disk drive
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : disk.inf
+Location           : Bus Number 0, Target Id 0, LUN 0
+Manufacturer       : (Standard disk drives)
+
+DeviceID           : ACPI\QCOM24A5\0
+DeviceName         : Qualcomm Universal Flash Storage (UFS) Host Controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : storufs.inf
+Location           : 
+Manufacturer       : Qualcomm
+
+DeviceID           : ACPI_HAL\PNP0C08\0
+DeviceName         : Microsoft ACPI-Compliant System
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3810
+DriverDate         : 21/06/2006 01:00:00
+InfName            : acpi.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\ARM64_HAL\0000
+DeviceName         : ACPI ARM64-based PC
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hal.inf
+Location           : 
+Manufacturer       : (Standard computers)
+
+DeviceID           : ROOT\CAD\0000
+DeviceName         : Charge Arbitration Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : ChargeArbitration.inf
+Location           : 
+Manufacturer       : (Standard system devices)
+
+DeviceID           : ROOT\UMBUS\0000
+DeviceName         : UMBus Root Bus Enumerator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : umbus.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\WINDOWSHELLOFACESOFTWAREDRIVER\0000
+DeviceName         : Facial Recognition (Windows Hello) Software Device
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 06/01/2018 00:00:00
+InfName            : HelloFace.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\KDNIC\0000
+DeviceName         : Microsoft Kernel Debug Network Adapter
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : kdnic630.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\SPACEPORT\0000
+DeviceName         : Microsoft Storage Spaces Controller
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3672
+DriverDate         : 21/06/2006 01:00:00
+InfName            : spaceport.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\VDRVROOT\0000
+DeviceName         : Microsoft Virtual Drive Enumerator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : vdrvroot.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\COMPOSITEBUS\0000
+DeviceName         : Composite Bus Enumerator
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : compositebus.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\VID\0000
+DeviceName         : Microsoft Hyper-V Virtualization Infrastructure Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3880
+DriverDate         : 21/06/2006 01:00:00
+InfName            : wvid.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\HVSERVICE\0000
+DeviceName         : Microsoft Hypervisor Service
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : hvservice.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\BASICDISPLAY\0000
+DeviceName         : Microsoft Basic Display Driver
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : basicdisplay.inf
+Location           : 
+Manufacturer       : (Standard display types)
+
+DeviceID           : ROOT\VMBUS\0000
+DeviceName         : Microsoft Hyper-V Virtual Machine Bus Provider
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.3810
+DriverDate         : 21/06/2006 01:00:00
+InfName            : wvmbusr.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : SWD\WPDBUSENUM\{BB89BC45-B9D3-11EE-819D-806E6F6E6963}#0000000010100000
+DeviceName         : Portable SSD 3.0
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : wpdfs.inf
+Location           : 
+Manufacturer       : Integral
+
+DeviceID           : STORAGE\VOLUME\{BB89BC45-B9D3-11EE-819D-806E6F6E6963}#0000000010100000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BC45-B9D3-11EE-819D-806E6F6E6963}#0000000000100000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC6-B9D3-11EE-819D-806E6F6E6963}#0000000000640000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC6-B9D3-11EE-819D-806E6F6E6963}#0000000000440000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC6-B9D3-11EE-819D-806E6F6E6963}#0000000000240000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC6-B9D3-11EE-819D-806E6F6E6963}#0000000000040000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000080A0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000008080000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000007080000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000006880000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000006860000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000067C0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000067A0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000006420000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000063A0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000062A0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000061A0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000051A0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000005160000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000004960000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000004860000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000004840000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000003840000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000003820000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000003800000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000002800000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000002000000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000001FE0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000001F40000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000001F20000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000001BA0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000001B20000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000001A20000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000001920000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000000920000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000008E0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#00000000008A0000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000000880000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000000840000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000000820000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC4-B9D3-11EE-819D-806E6F6E6963}#0000000000020000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC2-B9D3-11EE-819D-806E6F6E6963}#0000000000060000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC2-B9D3-11EE-819D-806E6F6E6963}#0000000000040000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC0-B9D3-11EE-819D-806E6F6E6963}#0000000000420000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBC0-B9D3-11EE-819D-806E6F6E6963}#0000000000020000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBBE-B9D3-11EE-819D-806E6F6E6963}#0000000000420000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBBE-B9D3-11EE-819D-806E6F6E6963}#0000000000020000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBBC-B9D3-11EE-819D-806E6F6E6963}#0000003B62300000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT4
+DeviceName         : Generic volume shadow copy
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volsnap.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT3
+DeviceName         : Generic volume shadow copy
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volsnap.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT2
+DeviceName         : Generic volume shadow copy
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volsnap.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT1
+DeviceName         : Generic volume shadow copy
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volsnap.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBBC-B9D3-11EE-819D-806E6F6E6963}#0000000013D00000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBBC-B9D3-11EE-819D-806E6F6E6963}#0000000012D00000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : STORAGE\VOLUME\{BB89BBBC-B9D3-11EE-819D-806E6F6E6963}#0000000000100000
+DeviceName         : Volume
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.1
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volume.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : ROOT\VOLMGR\0000
+DeviceName         : Volume Manager
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.22621.2506
+DriverDate         : 21/06/2006 01:00:00
+InfName            : volmgr.inf
+Location           : 
+Manufacturer       : Microsoft
+
+DeviceID           : HTREE\ROOT\0
+DeviceName         : 
+DriverProviderName : 
+DriverVersion      : 
+DriverDate         : 
+InfName            : 
+Location           : 
+Manufacturer       : 
+
+DeviceID           : Microsoft Print to PDF
+DeviceName         : 
+DriverProviderName : 
+DriverVersion      : 2:10.0,2:6.3,2:6.2,2:6.1,2:6.0,2:5.2,2:5.1
+DriverDate         : 
+InfName            : 
+Location           : 
+Manufacturer       : 
+
+
+

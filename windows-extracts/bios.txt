@@ -1,0 +1,40 @@
+﻿
+
+Status                         : OK
+Name                           : P02AHP.003.241226.WY.1518
+Caption                        : P02AHP.003.241226.WY.1518
+SMBIOSPresent                  : True
+Description                    : P02AHP.003.241226.WY.1518
+InstallDate                    : 
+BuildNumber                    : 
+CodeSet                        : 
+IdentificationCode             : 
+LanguageEdition                : 
+Manufacturer                   : SAMSUNG ELECTRONICS CO., LTD.
+OtherTargetOS                  : 
+SerialNumber                   : 40JMRF2R10000D
+SoftwareElementID              : P02AHP.003.241226.WY.1518
+SoftwareElementState           : 3
+TargetOperatingSystem          : 0
+Version                        : QCOM   - 8180
+PrimaryBIOS                    : True
+BiosCharacteristics            : {32, 41, 42}
+BIOSVersion                    : {QCOM   - 8180, P02AHP.003.241226.WY.1518, American Megatrends - 5000D}
+CurrentLanguage                : 
+EmbeddedControllerMajorVersion : 255
+EmbeddedControllerMinorVersion : 255
+InstallableLanguages           : 
+ListOfLanguages                : 
+ReleaseDate                    : 26/12/2024 00:00:00
+SMBIOSBIOSVersion              : P02AHP.003.241226.WY.1518
+SMBIOSMajorVersion             : 3
+SMBIOSMinorVersion             : 1
+SystemBiosMajorVersion         : 5
+SystemBiosMinorVersion         : 13
+PSComputerName                 : 
+CimClass                       : root/cimv2:Win32_BIOS
+CimInstanceProperties          : {Caption, Description, InstallDate, Name...}
+CimSystemProperties            : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+

@@ -1,0 +1,20 @@
+[package]
+name = "sol_ipc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+# Trimmed vendor of sol-os/crates/sol_ipc — only the UDS transport primitives.
+# action, auth, cursor_shm, fast_input, fd_pass, settings, services,
+# subscription, types are dropped.
+
+[dependencies]
+tokio = { workspace = true }
+tarpc = { workspace = true }
+tokio-serde = { workspace = true }
+tokio-util = { workspace = true }
+bincode = { workspace = true }
+serde = { workspace = true }
+libc = { workspace = true }
+tracing = { workspace = true }
+w767_paths = { workspace = true }

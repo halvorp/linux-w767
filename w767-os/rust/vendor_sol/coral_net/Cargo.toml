@@ -1,0 +1,21 @@
+[package]
+name = "coral_net"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+# Trimmed vendor of sol-os/crates/coral_net — only interface.rs + dhcp.rs.
+# WiFi / WireGuard / DNS / netns / zones / browser-policy / socks modules
+# are intentionally omitted.
+
+[dependencies]
+tokio = { workspace = true }
+rtnetlink = { workspace = true }
+netlink-packet-route = { workspace = true }
+futures = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+nix = { workspace = true }
+dhcproto = { workspace = true }
+libc = { workspace = true }
+rand = "0.8"

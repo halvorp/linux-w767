@@ -1,0 +1,149 @@
+#!/bin/bash
+# gbs-audit-full — comprehensive Galaxy Book S diagnostic audit.
+# Runs once (systemd Type=oneshot). Produces:
+#   /var/log/gbs-audit/full/audit-$TS/         — exploded files
+#   /var/log/gbs-audit/full/audit-$TS.tar.gz   — tarball for scp
+#   /var/log/gbs-audit/full/latest -> audit-$TS  (symlink)
+#   /boot/efi/audit-$TS.tar.gz                 — copy on EFI partition (USB-readable)
+# Retains only the last 5 full audits in /var/log/gbs-audit/full/.
+
+set +e
+set -u
+
+TS=$(date -u +%Y%m%d-%H%M%SZ)
+ROOT=/var/log/gbs-audit/full
+OUT="$ROOT/audit-$TS"
+mkdir -p "$OUT"
+cd "$OUT" || { echo "can't cd $OUT"; exit 1; }
+echo "==> Writing full audit to $OUT"
+
+cap() {
+  local name="$1"; shift
+  {
+    printf '>>> %s\n' "$*"
+    "$@" 2>&1
+    printf '[exit=%s]\n' "$?"
+  } > "$name" 2>&1 || true
+}
+capsh() {
+  local name="$1"; shift
+  {
+    printf '>>> %s\n' "$*"
+    bash -c "$*" 2>&1
+    printf '[exit=%s]\n' "$?"
+  } > "$name" 2>&1 || true
+}
+
+# ---- System / boot identity ----
+cap   00-uname.txt                   uname -a
+cap   01-os-release.txt              cat /etc/os-release
+cap   02-cmdline.txt                 cat /proc/cmdline
+cap   03-dt-model.txt                cat /sys/firmware/devicetree/base/model
+capsh 04-dt-compatible.txt           "tr -d '\0' </sys/firmware/devicetree/base/compatible | tr ',' '\n'"
+cap   06-uptime.txt                  uptime
+cap   07-date.txt                    date -u
+
+# ---- Kernel / journal ----
+cap   10-dmesg.txt                   dmesg -T
+capsh 11-dmesg-errors.txt            "dmesg | grep -iE 'err|fail|warn|BUG|Oops|cannot|unable|timed? out|deferred probe' | head -300"
+capsh 12-journal-kernel.txt          "journalctl -k -b 0 --no-pager"
+capsh 14-journal-failed.txt          "journalctl -b 0 --no-pager | grep -iE 'failed|error|warning' | head -200"
+
+# ---- Hardware enumeration ----
+cap   20-lspci.txt                   lspci -vvv
+cap   21-lsusb-tree.txt              lsusb -tv
+cap   22-lsusb-devices.txt           lsusb -vv
+cap   23-lsblk.txt                   lsblk -f -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINTS
+capsh 24-iommu-groups.txt            "for d in /sys/kernel/iommu_groups/*/devices/*; do echo \$d; done | sort"
+capsh 25-soc-topology.txt            "find /sys/devices/platform/soc@0 -maxdepth 2 -type d 2>/dev/null | sort"
+
+# ---- Drivers / modules / probe state ----
+cap   30-lsmod.txt                   lsmod
+capsh 31-drivers-bound.txt           "find /sys/bus/*/drivers/*/ -maxdepth 2 -type l 2>/dev/null | sort"
+capsh 32-devices-nodriver.txt        'for d in /sys/bus/*/devices/*; do if [ -e "$d/uevent" ] && [ ! -e "$d/driver" ]; then echo "UNBOUND: $d"; cat "$d/uevent" | sed "s/^/  /" 2>/dev/null; echo; fi; done | head -300'
+capsh 33-deferred-probe.txt          "dmesg | grep -iE 'deferred probe|EPROBE_DEFER|-517' | head -100"
+capsh 34-modalias.txt                "for d in /sys/bus/platform/devices/*; do if [ -e \$d/modalias ]; then echo \"\$d: \$(cat \$d/modalias)\"; fi; done"
+
+# ---- Display / GPU / backlight ----
+cap   40-drm-list.txt                ls -laR /sys/class/drm/
+capsh 41-drm-details.txt             'for d in /sys/class/drm/card*-*; do [ -d "$d" ] || continue; echo "=== $d ==="; for f in status enabled modes edid subconnector connector_id; do if [ -e "$d/$f" ]; then printf "  %s: " "$f"; if [ "$f" = "edid" ]; then od -An -tx1 <"$d/$f" | head -4; else cat "$d/$f"; fi; fi; done; echo; done'
+cap   42-backlight-list.txt          ls -laR /sys/class/backlight/
+capsh 43-backlight-all.txt           'for d in /sys/class/backlight/*; do [ -d "$d" ] || continue; echo "=== $d ==="; for f in brightness max_brightness actual_brightness bl_power type scale; do if [ -e "$d/$f" ]; then printf "  %s: " "$f"; cat "$d/$f" 2>&1; fi; done; echo; done'
+
+# ---- Power / regulators / clocks ----
+capsh 50-regulator-summary.txt       "cat /sys/kernel/debug/regulator/regulator_summary 2>&1 | head -300"
+capsh 51-clk-summary.txt             "cat /sys/kernel/debug/clk/clk_summary 2>&1 | head -400"
+capsh 52-genpd-summary.txt           "cat /sys/kernel/debug/pm_genpd/pm_genpd_summary 2>&1 | head -200"
+capsh 53-power-supply.txt            'for d in /sys/class/power_supply/*; do [ -d "$d" ] || continue; echo "=== $d ==="; cat "$d/uevent" 2>&1; echo; done'
+capsh 54-wakeup-sources.txt          "cat /sys/kernel/debug/wakeup_sources 2>&1 | head -100"
+
+# ---- Network / wireless (DEEP DIVE) ----
+cap   60-ip-addr.txt                 ip -br addr
+cap   61-ip-link.txt                 ip -br link
+cap   62-ip-route.txt                ip route
+cap   63-rfkill.txt                  rfkill list
+cap   64-iw-dev.txt                  iw dev
+cap   65-nmcli-dev.txt               nmcli -t dev status
+cap   66-nmcli-con.txt               nmcli -t con show
+capsh 67-wifi-modules.txt            "lsmod | grep -iE 'ath10k|cfg80211|mac80211|wcn|wireless|qmi|qrtr'"
+capsh 68-wifi-dmesg.txt              "dmesg | grep -iE 'ath10k|wcn|wlan|qmi|wlfw|pd_mapper|snoc|tqftp|18800000.wifi' | head -200"
+capsh 68a-ath10k-debugfs.txt         'find /sys/kernel/debug/ath10k -maxdepth 4 2>/dev/null | while read f; do if [ -f "$f" ] && [ -r "$f" ]; then sz=$(stat -c%s "$f"); if [ "$sz" -lt 65536 ]; then echo "=== $f ==="; cat "$f" 2>&1; echo; fi; fi; done'
+capsh 68b-qmi-services.txt           'for d in /sys/class/qrtr/*; do [ -d "$d" ] || continue; echo "=== $d ==="; cat "$d/uevent" 2>&1; echo; done; ls -la /sys/class/qrtr/ 2>&1'
+capsh 68c-tqftpserv.txt              'echo "--- pgrep tqftpserv ---"; pgrep -a tqftpserv; echo "--- pgrep rmtfs ---"; pgrep -a rmtfs; echo "--- systemctl tqftpserv ---"; systemctl status tqftpserv --no-pager 2>&1 | head -20; echo "--- systemctl rmtfs ---"; systemctl status rmtfs --no-pager 2>&1 | head -20'
+capsh 68d-wifi-platform.txt          'for d in /sys/devices/platform/soc@0/18800000.wifi /sys/bus/platform/devices/18800000.wifi; do [ -d "$d" ] || continue; echo "=== $d ==="; ls -la "$d" 2>&1; for f in driver modalias of_node uevent; do [ -e "$d/$f" ] && { echo "-- $f --"; cat "$d/$f" 2>&1; }; done; echo; done'
+
+# ---- Audio (NEW — for task #2) ----
+capsh 69a-audio-modules.txt          "lsmod | grep -iE 'snd|sound|wcd|q6|asoc|slim|lpass'"
+capsh 69b-audio-cards.txt            'cat /proc/asound/cards 2>&1; echo "---"; ls -la /proc/asound/ 2>&1'
+capsh 69c-audio-dmesg.txt            "dmesg | grep -iE 'snd|asoc|wcd|q6|lpass|slim|sound' | head -120"
+capsh 69d-audio-pcm.txt              'for d in /proc/asound/card*/pcm*p; do [ -d "$d" ] || continue; echo "=== $d ==="; cat "$d/info" 2>&1; echo; done'
+
+# ---- Remoteproc / firmware ----
+capsh 70-remoteproc-state.txt        'for d in /sys/class/remoteproc/*; do [ -d "$d" ] || continue; echo "=== $d ==="; for f in state firmware name recovery; do [ -e "$d/$f" ] && printf "  %s=%s\n" "$f" "$(cat $d/$f 2>&1)"; done; echo; done'
+capsh 71-remoteproc-debug.txt        'find /sys/kernel/debug/remoteproc -maxdepth 3 -type f 2>/dev/null | while read f; do echo "=== $f ==="; cat "$f" 2>&1; echo; done'
+capsh 72-firmware-tree.txt           "find /usr/lib/firmware -type d 2>/dev/null | sort"
+capsh 73-firmware-samsung.txt        "ls -la /usr/lib/firmware/qcom/samsung/w767/ 2>&1"
+capsh 74-firmware-ath10k.txt         "find /usr/lib/firmware/ath10k -ls 2>&1"
+capsh 75-firmware-dmesg.txt          "dmesg | grep -iE 'firmware|request_firmware|Direct firmware' | head -100"
+
+# ---- USB / HID (for task #5) ----
+capsh 80-usb-devices.txt             'for d in /sys/bus/usb/devices/*; do [ -d "$d" ] || continue; n=$(basename "$d"); echo "=== $n ==="; for f in idVendor idProduct product manufacturer serial bNumInterfaces speed bcdUSB; do [ -e "$d/$f" ] && printf "  %-16s %s\n" "$f" "$(cat $d/$f 2>&1)"; done; echo; done'
+capsh 81-usb-input.txt               'for d in /sys/class/input/input*; do [ -d "$d" ] || continue; echo "=== $d ==="; for f in name phys id/vendor id/product id/bustype; do [ -e "$d/$f" ] && printf "  %-14s %s\n" "$f" "$(cat $d/$f 2>&1)"; done; echo; done'
+capsh 82-hid-devices.txt             'for d in /sys/bus/hid/devices/*; do [ -d "$d" ] || continue; echo "=== $d ==="; cat "$d/uevent" 2>&1; echo; done'
+
+# ---- ACPI / EC (for task #3 — SAM0604 EMEC) ----
+capsh 85-acpi-devices.txt            'find /sys/bus/acpi/devices -maxdepth 1 2>/dev/null | head -200'
+capsh 86-acpi-sam.txt                'for d in /sys/bus/acpi/devices/*SAM*; do [ -d "$d" ] || continue; echo "=== $d ==="; cat "$d/uevent" 2>&1; for f in path status hid; do [ -e "$d/$f" ] && printf "  %s=%s\n" "$f" "$(cat $d/$f 2>&1)"; done; echo; done'
+
+# ---- SPMI / PMIC / battery / thermal ----
+capsh 90-spmi.txt                    'for d in /sys/bus/spmi/devices/*; do [ -d "$d" ] || continue; echo "=== $d ==="; cat "$d/uevent" 2>&1; echo; done'
+capsh 91-pmic-glink.txt              'find /sys/devices/platform/pmic-glink -maxdepth 3 2>/dev/null | head -80'
+capsh 92-battery.txt                 "upower -d 2>&1 | head -80"
+capsh 93-thermal.txt                 'for d in /sys/class/thermal/thermal_zone*; do [ -d "$d" ] || continue; printf "%-30s type=%s temp=%s\n" "$(basename $d)" "$(cat $d/type 2>&1)" "$(cat $d/temp 2>&1)"; done'
+capsh 94-socinfo.txt                 'for f in /sys/devices/soc0/* /sys/bus/soc/devices/soc0/*; do [ -f "$f" ] && printf "%-40s %s\n" "$f" "$(cat $f 2>&1)"; done'
+
+# ---- Suspend (for task #4) ----
+capsh A0-suspend-state.txt           'echo "--- /sys/power/state ---"; cat /sys/power/state; echo "--- /sys/power/mem_sleep ---"; cat /sys/power/mem_sleep 2>&1; echo "--- /sys/power/suspend_stats ---"; ls -la /sys/power/suspend_stats/ 2>&1; for f in /sys/power/suspend_stats/*; do [ -f "$f" ] && printf "%-30s %s\n" "$(basename $f)" "$(cat $f 2>&1)"; done'
+
+# ---- Tarball + retention ----
+sync
+cd "$ROOT"
+tar czf "audit-$TS.tar.gz" "audit-$TS" 2>&1 >/dev/null
+sync
+
+# Update latest symlink
+ln -sfn "audit-$TS" latest
+
+# Keep only the 5 most recent
+ls -1dt audit-* 2>/dev/null | tail -n +6 | while read old; do
+  rm -rf "$old" "${old}.tar.gz" 2>/dev/null
+done
+
+# Best-effort copy to EFI partition for USB-pull workflow
+if [ -d /boot/efi ]; then
+  cp "audit-$TS.tar.gz" /boot/efi/ 2>/dev/null
+  # Retain only 3 on EFI (small partition)
+  ls -1t /boot/efi/audit-*.tar.gz 2>/dev/null | tail -n +4 | xargs -r rm -f
+fi
+
+echo "==> Full audit done: $ROOT/audit-$TS.tar.gz"

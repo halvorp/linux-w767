@@ -1,0 +1,1588 @@
+﻿
+
+Class                       : HIDClass
+FriendlyName                : GPIO Laptop or Slate Indicator Driver
+InstanceId                  : ACPI\CONT1234\2&DABA3FF&0
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : GPIO Laptop or Slate Indicator Driver
+Description                 : GPIO Laptop or Slate Indicator Driver
+InstallDate                 : 
+Name                        : GPIO Laptop or Slate Indicator Driver
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : ACPI\CONT1234\2&DABA3FF&0
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : ACPI\CONT1234\2&DABA3FF&0
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {ACPI\PNP0C60, PNP0C60}
+HardwareID                  : {ACPI\VEN_CONT&DEV_1234, ACPI\CONT1234, *CONT1234}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : msgpiowin32
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_0603&PID_1010&MI_00\8&1FD580B5&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_0603&PID_1010&MI_00\8&1FD580B5&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_0603&PID_1010&MI_00\8&1FD580B5&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_0603&Class_03&SubClass_01&Prot_02, USB\COMPAT_VID_0603&Class_03&SubClass_01, USB\COMPAT_VID_0603&Class_03, USB\Class_03&SubClass_01&Prot_02...}
+HardwareID                  : {USB\VID_0603&PID_1010&REV_0719&MI_00, USB\VID_0603&PID_1010&MI_00}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : Samsung System Manager Device
+InstanceId                  : ACPI\SAMM0610\1
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : Samsung System Manager Device
+Description                 : Samsung System Manager Device
+InstallDate                 : 
+Name                        : Samsung System Manager Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : ACPI\SAMM0610\1
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : ACPI\SAMM0610\1
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {ACPI\VEN_SAMM&DEV_0610}
+HardwareID                  : {ACPI\VEN_SAMM&DEV_0610&SUBSYS_CLS08180, ACPI\SAMM0610, *SAMM0610}
+Manufacturer                : Samsung
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : hwnled
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant vendor-defined device
+InstanceId                  : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL02\3&34B59208&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant vendor-defined device
+Description                 : HID-compliant vendor-defined device
+InstallDate                 : 
+Name                        : HID-compliant vendor-defined device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL02\3&34B59208&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL02\3&34B59208&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&Col02, HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&Col02, HID\STMT1234&Col02, HID\*STMT1234&Col02...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant consumer control device
+InstanceId                  : HID\HID_DEVICE_SYSTEM_VHF\8&F9052ED&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant consumer control device
+Description                 : HID-compliant consumer control device
+InstallDate                 : 
+Name                        : HID-compliant consumer control device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\HID_DEVICE_SYSTEM_VHF\8&F9052ED&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\HID_DEVICE_SYSTEM_VHF\8&F9052ED&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\HID_DEVICE_SYSTEM_VHF, HID_DEVICE_SYSTEM_CONSUMER, HID_DEVICE_UP:000C_U:0001, HID_DEVICE}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant consumer control device
+InstanceId                  : HID\POWR1234&COL02\3&104AF128&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant consumer control device
+Description                 : HID-compliant consumer control device
+InstallDate                 : 
+Name                        : HID-compliant consumer control device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\POWR1234&COL02\3&104AF128&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\POWR1234&COL02\3&104AF128&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_POWR&DEV_1234&Col02, HID\POWR1234&Col02, HID\*POWR1234&Col02, HID_DEVICE_SYSTEM_CONSUMER...}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant system controller
+InstanceId                  : HID\CONVERTEDDEVICE&COL03\5&1E52E2E1&0&0002
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant system controller
+Description                 : HID-compliant system controller
+InstallDate                 : 
+Name                        : HID-compliant system controller
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\CONVERTEDDEVICE&COL03\5&1E52E2E1&0&0002
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\CONVERTEDDEVICE&COL03\5&1E52E2E1&0&0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\ConvertedDevice&Col03, HID\VID_045E&UP:0001_U:0080, HID_DEVICE_SYSTEM_CONTROL, HID_DEVICE_UP:0001_U:0080...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant vendor-defined device
+InstanceId                  : HID\VID_0BDA&PID_1100\7&18BBFF6C&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant vendor-defined device
+Description                 : HID-compliant vendor-defined device
+InstallDate                 : 
+Name                        : HID-compliant vendor-defined device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_0BDA&PID_1100\7&18BBFF6C&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_0BDA&PID_1100\7&18BBFF6C&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_0BDA&PID_1100&REV_0101, HID\VID_0BDA&PID_1100, HID\VID_0BDA&UP:FFDA_U:00DA, HID_DEVICE_UP:FFDA_U:00DA...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : Portable Device Control device
+InstanceId                  : HID\ACPI0011\3&1F273C3D&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : Portable Device Control device
+Description                 : Portable Device Control device
+InstallDate                 : 
+Name                        : Portable Device Control device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\ACPI0011\3&1F273C3D&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\ACPI0011\3&1F273C3D&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_ACPI&DEV_0011&SUBSYS_CLS08180, HID\ACPI0011, HID\*ACPI0011, HID_DEVICE_UP:0001_U:000D...}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : buttonconverter
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_04E8&PID_A055&MI_00\5&3ADD7E15&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_04E8&PID_A055&MI_00\5&3ADD7E15&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_04E8&PID_A055&MI_00\5&3ADD7E15&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_04e8&Class_03&SubClass_01&Prot_02, USB\COMPAT_VID_04e8&Class_03&SubClass_01, USB\COMPAT_VID_04e8&Class_03, USB\Class_03&SubClass_01&Prot_02...}
+HardwareID                  : {USB\VID_04E8&PID_A055&REV_0001&MI_00, USB\VID_04E8&PID_A055&MI_00}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID Button over Interrupt Driver
+InstanceId                  : ACPI\ACPI0011\0
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID Button over Interrupt Driver
+Description                 : HID Button over Interrupt Driver
+InstallDate                 : 
+Name                        : HID Button over Interrupt Driver
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : ACPI\ACPI0011\0
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : ACPI\ACPI0011\0
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {ACPI\VEN_ACPI&DEV_0011}
+HardwareID                  : {ACPI\VEN_ACPI&DEV_0011&SUBSYS_CLS08180, ACPI\ACPI0011, *ACPI0011}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : hidinterrupt
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : I2C HID Device
+InstanceId                  : ACPI\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001\2&DABA3FF&0
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : I2C HID Device
+Description                 : I2C HID Device
+InstallDate                 : 
+Name                        : I2C HID Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : ACPI\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001\2&DABA3FF&0
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : ACPI\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001\2&DABA3FF&0
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {ACPI\VEN_STMT&DEV_1234&REV_0001, ACPI\VEN_STMT&DEV_1234, ACPI\PNP0C50, PNP0C50}
+HardwareID                  : {ACPI\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001, ACPI\VEN_STMT&DEV_1234&SUBSYS_C17C144D, ACPI\STMT1234, *STMT1234}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : hidi2c
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_0603&PID_1010&MI_01\8&1FD580B5&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_0603&PID_1010&MI_01\8&1FD580B5&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_0603&PID_1010&MI_01\8&1FD580B5&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_0603&Class_03&SubClass_01&Prot_00, USB\COMPAT_VID_0603&Class_03&SubClass_01, USB\COMPAT_VID_0603&Class_03, USB\Class_03&SubClass_01&Prot_00...}
+HardwareID                  : {USB\VID_0603&PID_1010&REV_0719&MI_01, USB\VID_0603&PID_1010&MI_01}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant vendor-defined device
+InstanceId                  : HID\VID_05AC&PID_1393\7&13E1BCC9&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant vendor-defined device
+Description                 : HID-compliant vendor-defined device
+InstallDate                 : 
+Name                        : HID-compliant vendor-defined device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_05AC&PID_1393\7&13E1BCC9&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_05AC&PID_1393\7&13E1BCC9&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_05AC&PID_1393&REV_0141, HID\VID_05AC&PID_1393, HID\VID_05AC&UP:FF00_U:0001, HID_DEVICE_UP:FF00_U:0001...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : Sideband GPIO Buttons Injection Device
+InstanceId                  : {30EBFBF8-DF5F-4D4D-9FC5-A26C7FD1DF4A}\GPIO_BUTTONS\3&104AF128&0&0
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : Sideband GPIO Buttons Injection Device
+Description                 : Sideband GPIO Buttons Injection Device
+InstallDate                 : 
+Name                        : Sideband GPIO Buttons Injection Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : {30EBFBF8-DF5F-4D4D-9FC5-A26C7FD1DF4A}\GPIO_BUTTONS\3&104AF128&0&0
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : {30EBFBF8-DF5F-4D4D-9FC5-A26C7FD1DF4A}\GPIO_BUTTONS\3&104AF128&0&0
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {{30ebfbf8-df5f-4d4d-9fc5-a26c7fd1df4a}\GPIO_Buttons}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : Samsung VHIDEvent Device
+InstanceId                  : ACPI\SAMM0901\2&DABA3FF&0
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : Samsung VHIDEvent Device
+Description                 : Samsung VHIDEvent Device
+InstallDate                 : 
+Name                        : Samsung VHIDEvent Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : ACPI\SAMM0901\2&DABA3FF&0
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : ACPI\SAMM0901\2&DABA3FF&0
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {ACPI\VEN_SAMM&DEV_0901}
+HardwareID                  : {ACPI\VEN_SAMM&DEV_0901&SUBSYS_C17C144D, ACPI\SAMM0901, *SAMM0901}
+Manufacturer                : Samsung Electronics Co.,Ltd.
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : VHIDEvent
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : Mouse
+FriendlyName                : HID-compliant mouse
+InstanceId                  : HID\VID_04E8&PID_A055&MI_00&COL01\6&39B41DCA&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant mouse
+Description                 : HID-compliant mouse
+InstallDate                 : 
+Name                        : HID-compliant mouse
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_00&COL01\6&39B41DCA&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_00&COL01\6&39B41DCA&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {4d36e96f-e325-11ce-bfc1-08002be10318}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_00&Col01, HID\VID_04E8&PID_A055&MI_00&Col01, HID\VID_04E8&UP:0001_U:0002, HID_DEVICE_SYSTEM_MOUSE...}
+Manufacturer                : Microsoft
+PNPClass                    : Mouse
+Present                     : True
+Service                     : mouhid
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : Virtual HID Framework (VHF) HID device
+InstanceId                  : VHF\HID_DEVICE_SYSTEM_VHF\7&27B35E94&0&{A0A1C76D-BAFB-541D-81AF-D7B853049D81}
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : Virtual HID Framework (VHF) HID device
+Description                 : Virtual HID Framework (VHF) HID device
+InstallDate                 : 
+Name                        : Virtual HID Framework (VHF) HID device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : VHF\HID_DEVICE_SYSTEM_VHF\7&27B35E94&0&{A0A1C76D-BAFB-541D-81AF-D7B853049D81}
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : VHF\HID_DEVICE_SYSTEM_VHF\7&27B35E94&0&{A0A1C76D-BAFB-541D-81AF-D7B853049D81}
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID_DEVICE_SYSTEM_VHF}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : mshidkmdf
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant system controller
+InstanceId                  : HID\POWR1234&COL03\3&104AF128&0&0002
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant system controller
+Description                 : HID-compliant system controller
+InstallDate                 : 
+Name                        : HID-compliant system controller
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\POWR1234&COL03\3&104AF128&0&0002
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\POWR1234&COL03\3&104AF128&0&0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_POWR&DEV_1234&Col03, HID\POWR1234&Col03, HID\*POWR1234&Col03, HID_DEVICE_SYSTEM_CONTROL...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_04E8&PID_A055&MI_01\5&3ADD7E15&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_04E8&PID_A055&MI_01\5&3ADD7E15&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_04E8&PID_A055&MI_01\5&3ADD7E15&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_04e8&Class_03&SubClass_01&Prot_01, USB\COMPAT_VID_04e8&Class_03&SubClass_01, USB\COMPAT_VID_04e8&Class_03, USB\Class_03&SubClass_01&Prot_01...}
+HardwareID                  : {USB\VID_04E8&PID_A055&REV_0001&MI_01, USB\VID_04E8&PID_A055&MI_01}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : Converted Portable Device Control device
+InstanceId                  : BUTTONCONVERTER\CONVERTEDDEVICE\4&18057223&0&0
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : Converted Portable Device Control device
+Description                 : Converted Portable Device Control device
+InstallDate                 : 
+Name                        : Converted Portable Device Control device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : BUTTONCONVERTER\CONVERTEDDEVICE\4&18057223&0&0
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : BUTTONCONVERTER\CONVERTEDDEVICE\4&18057223&0&0
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {ButtonConverter\ConvertedDevice}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : mshidkmdf
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : Keyboard
+FriendlyName                : HID Keyboard Device
+InstanceId                  : HID\SAMM0901&COL01\3&38C7CA7E&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID Keyboard Device
+Description                 : HID Keyboard Device
+InstallDate                 : 
+Name                        : HID Keyboard Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\SAMM0901&COL01\3&38C7CA7E&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\SAMM0901&COL01\3&38C7CA7E&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {4d36e96b-e325-11ce-bfc1-08002be10318}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_SAMM&DEV_0901&SUBSYS_C17C144D&Col01, HID\SAMM0901&Col01, HID\*SAMM0901&Col01, HID\VID_04E8&UP:0001_U:0006...}
+Manufacturer                : (Standard keyboards)
+PNPClass                    : Keyboard
+Present                     : True
+Service                     : kbdhid
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : Microsoft Input Configuration Device
+InstanceId                  : HID\VID_04E8&PID_A055&MI_00&COL02\6&39B41DCA&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : Microsoft Input Configuration Device
+Description                 : Microsoft Input Configuration Device
+InstallDate                 : 
+Name                        : Microsoft Input Configuration Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_00&COL02\6&39B41DCA&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_00&COL02\6&39B41DCA&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_00&Col02, HID\VID_04E8&PID_A055&MI_00&Col02, HID\VID_04E8&UP:000D_U:000E, HID_DEVICE_UP:000D_U:000E...}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : MTConfig
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_04E8&PID_A055&MI_02\5&3ADD7E15&0&0002
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_04E8&PID_A055&MI_02\5&3ADD7E15&0&0002
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_04E8&PID_A055&MI_02\5&3ADD7E15&0&0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_04e8&Class_03&SubClass_00&Prot_00, USB\COMPAT_VID_04e8&Class_03&SubClass_00, USB\COMPAT_VID_04e8&Class_03, USB\Class_03&SubClass_00&Prot_00...}
+HardwareID                  : {USB\VID_04E8&PID_A055&REV_0001&MI_02, USB\VID_04E8&PID_A055&MI_02}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_0BDA&PID_1100\6&255F29DC&0&5
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_0BDA&PID_1100\6&255F29DC&0&5
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_0BDA&PID_1100\6&255F29DC&0&5
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_0BDA&Class_03&SubClass_00&Prot_00, USB\COMPAT_VID_0BDA&Class_03&SubClass_00, USB\COMPAT_VID_0BDA&Class_03, USB\Class_03&SubClass_00&Prot_00...}
+HardwareID                  : {USB\VID_0BDA&PID_1100&REV_0101, USB\VID_0BDA&PID_1100}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : Mouse
+FriendlyName                : HID-compliant mouse
+InstanceId                  : HID\VID_0603&PID_1010&MI_00\9&2E365B44&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant mouse
+Description                 : HID-compliant mouse
+InstallDate                 : 
+Name                        : HID-compliant mouse
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_0603&PID_1010&MI_00\9&2E365B44&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_0603&PID_1010&MI_00\9&2E365B44&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {4d36e96f-e325-11ce-bfc1-08002be10318}
+CompatibleID                : 
+HardwareID                  : {HID\VID_0603&PID_1010&REV_0719&MI_00, HID\VID_0603&PID_1010&MI_00, HID\VID_0603&UP:0001_U:0002, HID_DEVICE_SYSTEM_MOUSE...}
+Manufacturer                : Microsoft
+PNPClass                    : Mouse
+Present                     : True
+Service                     : mouhid
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant consumer control device
+InstanceId                  : HID\SAMM0901&COL02\3&38C7CA7E&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant consumer control device
+Description                 : HID-compliant consumer control device
+InstallDate                 : 
+Name                        : HID-compliant consumer control device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\SAMM0901&COL02\3&38C7CA7E&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\SAMM0901&COL02\3&38C7CA7E&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_SAMM&DEV_0901&SUBSYS_C17C144D&Col02, HID\SAMM0901&Col02, HID\*SAMM0901&Col02, HID\VID_04E8&UP:000C_U:0001...}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : GPIO Buttons Driver
+InstanceId                  : ACPI\POWR1234\2&DABA3FF&0
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : GPIO Buttons Driver
+Description                 : GPIO Buttons Driver
+InstallDate                 : 
+Name                        : GPIO Buttons Driver
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : ACPI\POWR1234\2&DABA3FF&0
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : ACPI\POWR1234\2&DABA3FF&0
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {ACPI\PNP0C40, PNP0C40}
+HardwareID                  : {ACPI\VEN_POWR&DEV_1234, ACPI\POWR1234, *POWR1234}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : msgpiowin32
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : TPadHelper Device
+InstanceId                  : HID\VID_04E8&PID_A055&MI_00&COL03\6&39B41DCA&0&0002
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : TPadHelper Device
+Description                 : TPadHelper Device
+InstallDate                 : 
+Name                        : TPadHelper Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_00&COL03\6&39B41DCA&0&0002
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_00&COL03\6&39B41DCA&0&0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_00&Col03, HID\VID_04E8&PID_A055&MI_00&Col03, HID\VID_04E8&UP:000D_U:0005, HID_DEVICE_UP:000D_U:0005...}
+Manufacturer                : Samsung Electronics Co.,Ltd.
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant vendor-defined device
+InstanceId                  : HID\VID_0451&PID_82FF\7&1DF238BB&0&0000
+Problem                     : CM_PROB_PHANTOM
+ConfigManagerErrorCode      : CM_PROB_PHANTOM
+ProblemDescription          : 
+Caption                     : HID-compliant vendor-defined device
+Description                 : HID-compliant vendor-defined device
+InstallDate                 : 
+Name                        : HID-compliant vendor-defined device
+Status                      : Unknown
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_0451&PID_82FF\7&1DF238BB&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_0451&PID_82FF\7&1DF238BB&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_0451&PID_82FF&REV_0200, HID\VID_0451&PID_82FF, HID\VID_0451&UP:FFB0_U:0001, HID_DEVICE_UP:FFB0_U:0001...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : False
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : Keyboard
+FriendlyName                : HID Keyboard Device
+InstanceId                  : HID\CONVERTEDDEVICE&COL01\5&1E52E2E1&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID Keyboard Device
+Description                 : HID Keyboard Device
+InstallDate                 : 
+Name                        : HID Keyboard Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\CONVERTEDDEVICE&COL01\5&1E52E2E1&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\CONVERTEDDEVICE&COL01\5&1E52E2E1&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {4d36e96b-e325-11ce-bfc1-08002be10318}
+CompatibleID                : 
+HardwareID                  : {HID\ConvertedDevice&Col01, HID\VID_045E&UP:0001_U:0006, HID_DEVICE_SYSTEM_KEYBOARD, HID_DEVICE_UP:0001_U:0006...}
+Manufacturer                : (Standard keyboards)
+PNPClass                    : Keyboard
+Present                     : True
+Service                     : kbdhid
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : Keyboard
+FriendlyName                : kbdHelper Device
+InstanceId                  : HID\VID_04E8&PID_A055&MI_01\6&15DCE008&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : kbdHelper Device
+Description                 : kbdHelper Device
+InstallDate                 : 
+Name                        : kbdHelper Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_01\6&15DCE008&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_01\6&15DCE008&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {4d36e96b-e325-11ce-bfc1-08002be10318}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_01, HID\VID_04E8&PID_A055&MI_01, HID\VID_04E8&UP:0001_U:0006, HID_DEVICE_SYSTEM_KEYBOARD...}
+Manufacturer                : Samsung Electronics Co.,Ltd.
+PNPClass                    : Keyboard
+Present                     : True
+Service                     : kbdhid
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant vendor-defined device
+InstanceId                  : HID\VID_0603&PID_1010&MI_01\9&A5F1D82&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant vendor-defined device
+Description                 : HID-compliant vendor-defined device
+InstallDate                 : 
+Name                        : HID-compliant vendor-defined device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_0603&PID_1010&MI_01\9&A5F1D82&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_0603&PID_1010&MI_01\9&A5F1D82&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_0603&PID_1010&REV_0719&MI_01, HID\VID_0603&PID_1010&MI_01, HID\VID_0603&UP:FF00_U:0001, HID_DEVICE_UP:FF00_U:0001...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant vendor-defined device
+InstanceId                  : HID\VID_04E8&PID_A055&MI_02&COL04\6&DFA5DBA&0&0003
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant vendor-defined device
+Description                 : HID-compliant vendor-defined device
+InstallDate                 : 
+Name                        : HID-compliant vendor-defined device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_02&COL04\6&DFA5DBA&0&0003
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_02&COL04\6&DFA5DBA&0&0003
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_02&Col04, HID\VID_04E8&PID_A055&MI_02&Col04, HID\VID_04E8&UP:FF01_U:0010, HID_DEVICE_UP:FF01_U:0010...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant device
+InstanceId                  : HID\VID_04E8&PID_A055&MI_02&COL03\6&DFA5DBA&0&0002
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant device
+Description                 : HID-compliant device
+InstallDate                 : 
+Name                        : HID-compliant device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_02&COL03\6&DFA5DBA&0&0002
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_02&COL03\6&DFA5DBA&0&0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_02&Col03, HID\VID_04E8&PID_A055&MI_02&Col03, HID\VID_04E8&UP:0001_U:0000, HID_DEVICE_UP:0001_U:0000...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant wireless radio controls
+InstanceId                  : HID\VID_04E8&PID_A055&MI_02&COL02\6&DFA5DBA&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant wireless radio controls
+Description                 : HID-compliant wireless radio controls
+InstallDate                 : 
+Name                        : HID-compliant wireless radio controls
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_02&COL02\6&DFA5DBA&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_02&COL02\6&DFA5DBA&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_02&Col02, HID\VID_04E8&PID_A055&MI_02&Col02, HID\VID_04E8&UP:0001_U:000C, HID_DEVICE_UP:0001_U:000C...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant consumer control device
+InstanceId                  : HID\VID_04E8&PID_A055&MI_02&COL01\6&DFA5DBA&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant consumer control device
+Description                 : HID-compliant consumer control device
+InstallDate                 : 
+Name                        : HID-compliant consumer control device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_02&COL01\6&DFA5DBA&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_02&COL01\6&DFA5DBA&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_02&Col01, HID\VID_04E8&PID_A055&MI_02&Col01, HID\VID_04E8&UP:000C_U:0001, HID_DEVICE_SYSTEM_CONSUMER...}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : TspHelper Device
+InstanceId                  : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL01\3&34B59208&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : TspHelper Device
+Description                 : TspHelper Device
+InstallDate                 : 
+Name                        : TspHelper Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL01\3&34B59208&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&COL01\3&34B59208&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&REV_0001&Col01, HID\VEN_STMT&DEV_1234&SUBSYS_C17C144D&Col01, HID\STMT1234&Col01, HID\*STMT1234&Col01...}
+Manufacturer                : Samsung Electronics Co.,Ltd.
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant system controller
+InstanceId                  : HID\SAMM0901&COL03\3&38C7CA7E&0&0002
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant system controller
+Description                 : HID-compliant system controller
+InstallDate                 : 
+Name                        : HID-compliant system controller
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\SAMM0901&COL03\3&38C7CA7E&0&0002
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\SAMM0901&COL03\3&38C7CA7E&0&0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_SAMM&DEV_0901&SUBSYS_C17C144D&Col03, HID\SAMM0901&Col03, HID\*SAMM0901&Col03, HID\VID_04E8&UP:0001_U:0080...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant vendor-defined device
+InstanceId                  : HID\VID_04E8&PID_A055&MI_00&COL04\6&39B41DCA&0&0003
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant vendor-defined device
+Description                 : HID-compliant vendor-defined device
+InstallDate                 : 
+Name                        : HID-compliant vendor-defined device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\VID_04E8&PID_A055&MI_00&COL04\6&39B41DCA&0&0003
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\VID_04E8&PID_A055&MI_00&COL04\6&39B41DCA&0&0003
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\VID_04E8&PID_A055&REV_0001&MI_00&Col04, HID\VID_04E8&PID_A055&MI_00&Col04, HID\VID_04E8&UP:FF00_U:0001, HID_DEVICE_UP:FF00_U:0001...}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_05AC&PID_1393\H6QFD1NX0C6L
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_05AC&PID_1393\H6QFD1NX0C6L
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_05AC&PID_1393\H6QFD1NX0C6L
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_05AC&Class_03&SubClass_00&Prot_00, USB\COMPAT_VID_05AC&Class_03&SubClass_00, USB\COMPAT_VID_05AC&Class_03, USB\Class_03&SubClass_00&Prot_00...}
+HardwareID                  : {USB\VID_05AC&PID_1393&REV_0141, USB\VID_05AC&PID_1393}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : Keyboard
+FriendlyName                : HID Keyboard Device
+InstanceId                  : HID\POWR1234&COL01\3&104AF128&0&0000
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID Keyboard Device
+Description                 : HID Keyboard Device
+InstallDate                 : 
+Name                        : HID Keyboard Device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\POWR1234&COL01\3&104AF128&0&0000
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\POWR1234&COL01\3&104AF128&0&0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {4d36e96b-e325-11ce-bfc1-08002be10318}
+CompatibleID                : 
+HardwareID                  : {HID\VEN_POWR&DEV_1234&Col01, HID\POWR1234&Col01, HID\*POWR1234&Col01, HID_DEVICE_SYSTEM_KEYBOARD...}
+Manufacturer                : (Standard keyboards)
+PNPClass                    : Keyboard
+Present                     : True
+Service                     : kbdhid
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : HID-compliant consumer control device
+InstanceId                  : HID\CONVERTEDDEVICE&COL02\5&1E52E2E1&0&0001
+Problem                     : CM_PROB_NONE
+ConfigManagerErrorCode      : CM_PROB_NONE
+ProblemDescription          : 
+Caption                     : HID-compliant consumer control device
+Description                 : HID-compliant consumer control device
+InstallDate                 : 
+Name                        : HID-compliant consumer control device
+Status                      : OK
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : HID\CONVERTEDDEVICE&COL02\5&1E52E2E1&0&0001
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : HID\CONVERTEDDEVICE&COL02\5&1E52E2E1&0&0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : 
+HardwareID                  : {HID\ConvertedDevice&Col02, HID\VID_045E&UP:000C_U:0001, HID_DEVICE_SYSTEM_CONSUMER, HID_DEVICE_UP:000C_U:0001...}
+Manufacturer                : Microsoft
+PNPClass                    : HIDClass
+Present                     : True
+Service                     : 
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Class                       : HIDClass
+FriendlyName                : USB Input Device
+InstanceId                  : USB\VID_0451&PID_82FF\6&2271AB10&0&5
+Problem                     : CM_PROB_PHANTOM
+ConfigManagerErrorCode      : CM_PROB_PHANTOM
+ProblemDescription          : 
+Caption                     : USB Input Device
+Description                 : USB Input Device
+InstallDate                 : 
+Name                        : USB Input Device
+Status                      : Unknown
+Availability                : 
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_PnPEntity
+DeviceID                    : USB\VID_0451&PID_82FF\6&2271AB10&0&5
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : USB\VID_0451&PID_82FF\6&2271AB10&0&5
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : IDIOT
+ClassGuid                   : {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+CompatibleID                : {USB\COMPAT_VID_0451&Class_03&SubClass_00&Prot_00, USB\COMPAT_VID_0451&Class_03&SubClass_00, USB\COMPAT_VID_0451&Class_03, USB\Class_03&SubClass_00&Prot_00...}
+HardwareID                  : {USB\VID_0451&PID_82FF&REV_0200, USB\VID_0451&PID_82FF}
+Manufacturer                : (Standard system devices)
+PNPClass                    : HIDClass
+Present                     : False
+Service                     : HidUsb
+PSComputerName              : 
+CimClass                    : ROOT/cimv2:Win32_PnPEntity
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+

@@ -1,0 +1,25 @@
+#!/bin/sh
+# w767-os initramfs /init
+# First program after the kernel. Sets up /proc /sys /dev, busybox shortcuts,
+# then exec's the Rust PID 1. If that fails, drops into a rescue shell so the
+# user isn't stranded.
+
+/opt/w767/bin/busybox --install -s /opt/w767/bin
+
+/opt/w767/bin/busybox mount -t proc     proc      /proc
+/opt/w767/bin/busybox mount -t sysfs    sys       /sys
+/opt/w767/bin/busybox mount -t devtmpfs devtmpfs  /dev 2>/dev/null
+/opt/w767/bin/busybox mkdir -p /dev/pts /run /tmp /var/log
+/opt/w767/bin/busybox mount -t devpts   devpts    /dev/pts 2>/dev/null
+/opt/w767/bin/busybox mount -t tmpfs    tmpfs     /run
+/opt/w767/bin/busybox mount -t tmpfs    tmpfs     /tmp
+
+export PATH=/opt/w767/bin:/bin:/sbin:/usr/bin:/usr/sbin
+echo "w767-os /init handing off to w767_init" > /dev/kmsg || true
+
+exec /opt/w767/bin/w767_init
+
+# If w767_init falls through (it shouldn't — PID 1 must never return),
+# drop to a rescue shell so we can diagnose.
+echo "w767_init returned — rescue shell" > /dev/kmsg || true
+exec /opt/w767/bin/busybox sh

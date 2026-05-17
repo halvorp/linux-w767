@@ -1,0 +1,14 @@
+[build]
+target = "aarch64-unknown-linux-musl"
+
+[target.aarch64-unknown-linux-musl]
+linker = "aarch64-linux-gnu-gcc"
+rustflags = [
+    "-C", "target-feature=+crt-static",
+    "-C", "link-arg=-static",
+    "-C", "link-arg=-s",
+]
+
+[env]
+# dhcproto sends raw DHCP frames via AF_PACKET; ensure libc-route flags match musl.
+PKG_CONFIG_ALLOW_CROSS = "1"

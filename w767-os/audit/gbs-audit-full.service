@@ -1,0 +1,18 @@
+[Unit]
+Description=Galaxy Book S full hardware audit (one-shot)
+DefaultDependencies=no
+After=multi-user.target
+Wants=multi-user.target
+ConditionPathExists=/usr/local/bin/gbs-audit-full
+
+[Service]
+Type=oneshot
+# Wait 30s after multi-user.target so ADSP/CDSP/network have a chance to settle.
+ExecStartPre=/bin/sleep 30
+ExecStart=/usr/local/bin/gbs-audit-full
+TimeoutStartSec=180
+Nice=10
+IOSchedulingClass=idle
+
+[Install]
+WantedBy=multi-user.target

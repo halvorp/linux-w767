@@ -1,0 +1,73 @@
+﻿
+
+AdminPasswordStatus         : 3
+BootupState                 : Normal boot
+ChassisBootupState          : 1
+KeyboardPasswordStatus      : 3
+PowerOnPasswordStatus       : 3
+PowerSupplyState            : 1
+PowerState                  : 0
+FrontPanelResetStatus       : 3
+ThermalState                : 1
+Status                      : OK
+Name                        : IDIOT
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+Caption                     : IDIOT
+Description                 : ARM processor family
+InstallDate                 : 
+CreationClassName           : Win32_ComputerSystem
+NameFormat                  : 
+PrimaryOwnerContact         : 
+PrimaryOwnerName            : peter.koczka@me.com
+Roles                       : {LM_Workstation, LM_Server, NT}
+InitialLoadInfo             : 
+LastLoadInfo                : 
+ResetCapability             : 1
+AutomaticManagedPagefile    : True
+AutomaticResetBootOption    : True
+AutomaticResetCapability    : True
+BootOptionOnLimit           : 
+BootOptionOnWatchDog        : 
+BootROMSupported            : True
+BootStatus                  : 
+ChassisSKUNumber            : 
+CurrentTimeZone             : 60
+DaylightInEffect            : True
+DNSHostName                 : idiot
+Domain                      : WORKGROUP
+DomainRole                  : 0
+EnableDaylightSavingsTime   : True
+HypervisorPresent           : True
+InfraredSupported           : False
+Manufacturer                : SAMSUNG ELECTRONICS CO., LTD.
+Model                       : Galaxy Book S
+NetworkServerModeEnabled    : True
+NumberOfLogicalProcessors   : 8
+NumberOfProcessors          : 1
+OEMLogoBitmap               : 
+OEMStringArray              : {OEM String 1, 2021/03/12, OEM String 3, SM-W767...}
+PartOfDomain                : False
+PauseAfterReset             : -1
+PCSystemType                : 2
+PCSystemTypeEx              : 8
+ResetCount                  : -1
+ResetLimit                  : -1
+SupportContactDescription   : 
+SystemFamily                : Galaxy Book Series
+SystemSKUNumber             : GALAXY A5A5-PAHP
+SystemStartupDelay          : 
+SystemStartupOptions        : 
+SystemStartupSetting        : 
+SystemType                  : ARM64-based PC
+TotalPhysicalMemory         : 8088150016
+UserName                    : idiot\peter
+WakeUpType                  : 6
+Workgroup                   : WORKGROUP
+PSComputerName              : 
+CimClass                    : root/cimv2:Win32_ComputerSystem
+CimInstanceProperties       : {Caption, Description, InstallDate, Name...}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
