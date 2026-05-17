@@ -1,11 +1,11 @@
 #!/bin/busybox sh
-# w767 iter-29 minimal initramfs /init
+# w767 iter30b minimal initramfs /init
 # Same refresh-loop visibility model as iter-24, extended with:
 #   - WiFi / ath10k / remoteproc / regulator dumps in the on-screen state
 #   - dmesg filter widened to catch ath10k_snoc, qcom_q6v5_pas, qrtr, mhi
 #   - 30-frame countdown then exec /bin/sh so the user can type interactively
 #     (keyboard works as of iter-28; we can finally drive the shell)
-# The ESP write-back loop now runs because iter-29 has USB_STORAGE=y +
+# The ESP write-back loop now runs because iter30b has USB_STORAGE=y +
 # VFAT_FS=y built into the kernel — for the first time we should get a real
 # dmesg.txt landed on the drive.
 
@@ -29,9 +29,9 @@ log() {
     echo "$(cat /proc/uptime | cut -d. -f1)s $1" > /dev/pmsg0 2>/dev/null
 }
 
-log "iter-29 init: starting, WiFi stack should now be built-in"
+log "iter30b init: starting, WiFi stack should now be built-in"
 
-# Background: ESP retry loop. With iter-29's USB_STORAGE=y this should
+# Background: ESP retry loop. With iter30b's USB_STORAGE=y this should
 # actually succeed and land dmesg on the drive for offline analysis.
 (
     for i in $(seq 1 60); do
@@ -39,7 +39,7 @@ log "iter-29 init: starting, WiFi stack should now be built-in"
         for dev in /dev/disk/by-label/W767-ESP /dev/sda1 /dev/sdb1 /dev/sdc1; do
             [ -b "$dev" ] || continue
             mount -t vfat -o rw,noatime "$dev" /mnt/esp 2>/dev/null || continue
-            D=/mnt/esp/iter29-snap-try$i
+            D=/mnt/esp/iter30b-snap-try$i
             mkdir -p "$D"
             dmesg                            > "$D/dmesg.txt"
             cat /proc/cmdline                > "$D/cmdline.txt"
@@ -65,12 +65,12 @@ log "iter-29 init: starting, WiFi stack should now be built-in"
             grep -r "" /sys/kernel/debug/regulator/regulator_summary 2>/dev/null > "$D/regulator.txt"
             [ -d /sys/fs/pstore ] && cp /sys/fs/pstore/* "$D/" 2>/dev/null
             sync
-            log "iter-29: snapshot $D landed (try=$i)"
+            log "iter30b: snapshot $D landed (try=$i)"
             umount /mnt/esp
             exit 0
         done
     done
-    log "iter-29: gave up retrying ESP after 60 tries (~120s)"
+    log "iter30b: gave up retrying ESP after 60 tries (~120s)"
 ) &
 
 # Foreground: refresh loop, 30 frames @ 3s = ~90s of on-screen state,
@@ -80,7 +80,7 @@ for frame in $(seq 1 30); do
     up=$(cat /proc/uptime | cut -d. -f1)s
     clear 2>/dev/null
     printf '\033[2J\033[H' 2>/dev/null
-    echo "=== w767 iter-29 — frame $frame/30 at $up ==="
+    echo "=== w767 iter30b — frame $frame/30 at $up ==="
     echo "Drops to /bin/sh after frame 30. Photograph anytime."
     echo
     echo "--- USB:        " ; ls /sys/bus/usb/devices/  2>/dev/null | tr '\n' ' '; echo
@@ -99,11 +99,18 @@ for frame in $(seq 1 30); do
     echo "--- Deferred:   " ; grep -cE '' /sys/kernel/debug/devices_deferred 2>/dev/null || echo "0"
     echo
     echo "=== q6v5/remoteproc/adsp/cdsp dmesg ==="
-    dmesg | grep -iE 'q6v5|remoteproc|adsp|cdsp' | head -10
+    dmesg | grep -iE 'q6v5|remoteproc|adsp|cdsp' | head -8
     echo "=== ath10k/wcn/wlan/qrtr/mhi dmesg ==="
-    dmesg | grep -iE 'ath10k|wcn|wlan|qrtr|mhi' | head -10
-    echo "=== drivers present:" ; ls /sys/bus/platform/drivers/ 2>/dev/null | grep -iE 'q6v5|ath10k|wcnss|aoss' | tr '\n' ' ' ; echo
-    echo "=== rproc/wifi devices:" ; ls /sys/bus/platform/devices/ 2>/dev/null | grep -E '17300000|8300000|4080000|18800000|af00000|18200000' | tr '\n' ' ' ; echo
+    dmesg | grep -iE 'ath10k|wcn|wlan|qrtr|mhi' | head -6
+    echo "=== smem/hwspinlock/smp2p dmesg ==="
+    dmesg | grep -iE 'smem|hwspinlock|smp2p' | head -8
+    echo "=== pmic_glink/typec/ucsi dmesg ==="
+    dmesg | grep -iE 'pmic_glink|typec|ucsi' | head -6
+    echo "=== auxiliary devices:" ; ls /sys/bus/auxiliary/devices/ 2>/dev/null | tr '\n' ' ' ; echo
+    echo "=== typec class:    " ; ls /sys/class/typec/ 2>/dev/null | tr '\n' ' ' ; echo
+    echo "=== drivers present:" ; ls /sys/bus/platform/drivers/ 2>/dev/null | grep -iE 'q6v5|ath10k|wcnss|aoss|smp2p|pmic_glink|typec' | tr '\n' ' ' ; echo
+    echo "=== deferred list:"
+    cat /sys/kernel/debug/devices_deferred 2>/dev/null | head -12
     echo
     echo "(frame ${frame}/30, drops to shell at 30)"
     sleep 3
@@ -112,13 +119,13 @@ done
 # Keyboard works as of iter-28 — drop to interactive sh so the user can
 # poke around (run `dmesg`, `ip`, `iw`, `lsmod`, whatever).
 clear 2>/dev/null
-echo "=== iter-30: dropping to /bin/sh — keyboard is yours ==="
+echo "=== iter30b: dropping to /bin/sh — keyboard is yours ==="
 echo
 echo "Per brother (DSDT walk, commits 31e3bbe + 201cc5e):"
 echo "  W767 has ONE USB-C on each side (one LEFT, one RIGHT)."
 echo "  Keyboard MCU is on usb_mp (internal, no port)."
 echo "  External USB-C ports are usb_prim + usb_sec (one each side)."
-echo "  iter-29 brought up only ONE of the URS controllers."
+echo "  iter30b brought up only ONE of the URS controllers."
 echo
 echo "If you don't see /dev/sda, try unplugging and plugging the boot"
 echo "drive into the OTHER side USB-C port, then 'ls /dev/sd*'."
