@@ -1224,8 +1224,18 @@
 &usb_prim_qmpphy {
 	status = "okay";
 
-	vdda-phy-supply = <&vreg_l3c_1p2>;
-	vdda-pll-supply = <&vreg_l5e_0p88>;
+	/*
+	 * iter-34: supplies swapped/corrected per brother's dossier
+	 * (recon/04-pep-vote-map.md).  PEP for \_SB.URS0.USB0 votes
+	 * LDO9_E (0.912V) for vdda-phy and LDO3_C (1.2V) for vdda-pll.
+	 * Pre-iter-34 had vdda-phy on vreg_l3c_1p2 (the PLL rail) and
+	 * vdda-pll on vreg_l5e_0p88 (the digital CX/MX rail) — both
+	 * wrong, almost certainly the dwc3 "failed to initialize core"
+	 * root cause.  vreg_l9e_0p88's regulator-max-microvolt is
+	 * already 912000 so no constraint change needed.
+	 */
+	vdda-phy-supply = <&vreg_l9e_0p88>;
+	vdda-pll-supply = <&vreg_l3c_1p2>;
 };
 
 &usb_prim {
@@ -1247,8 +1257,9 @@
 &usb_sec_qmpphy {
 	status = "okay";
 
-	vdda-phy-supply = <&vreg_l3c_1p2>;
-	vdda-pll-supply = <&vreg_l5e_0p88>;
+	/* iter-34: see vdda-* comment on &usb_prim_qmpphy. */
+	vdda-phy-supply = <&vreg_l9e_0p88>;
+	vdda-pll-supply = <&vreg_l3c_1p2>;
 };
 
 &usb_sec {
