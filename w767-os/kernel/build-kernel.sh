@@ -26,7 +26,10 @@ CROSS_COMPILE="${CROSS_COMPILE:-$CROSS_COMPILE_DEFAULT}"
 ARCH=arm64
 
 REPO_ROOT="$(dirname "$PROJECT_DIR")"
-DTS_SRC="$REPO_ROOT/dts-stage-v2/sc8180x-samsung-w767.dts"
+# Canonical board DTS lives at dts/ in this repo. The previous path
+# dts-stage-v2/ was a leftover from an earlier directory layout that no
+# longer exists; every build aborted at the "board DTS not found" check.
+DTS_SRC="$REPO_ROOT/dts/sc8180x-samsung-w767.dts"
 DTS_BOARD_NAME="sc8180x-samsung-w767"
 KERNEL_DTS_DIR_REL="arch/arm64/boot/dts/qcom"
 
