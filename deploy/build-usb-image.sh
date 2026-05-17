@@ -143,11 +143,12 @@ EOF
 # initramfs-distro essentials.
 sudo tee "$MNT/loader/entries/w767-initramfs.conf" > /dev/null <<'EOF'
 title    Samsung Galaxy Book S (W767) — Phase 2 initramfs distro
-version  iter-19
+version  iter-21
 linux    /Image
 initrd   /w767-initramfs.img
 devicetree /sc8180x-samsung-w767.dtb
 options  console=tty0 loglevel=7 rdinit=/init net.ifnames=0 panic=10 \
+         earlycon=efifb keep_bootcon \
          clk_ignore_unused pd_ignore_unused arm64.nopauth efi=noruntime \
          iommu.passthrough=0 iommu.strict=0 pcie_aspm.policy=powersupersave
 EOF

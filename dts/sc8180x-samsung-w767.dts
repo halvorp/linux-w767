@@ -82,6 +82,34 @@
 		/* gpu_mem inherited from sc8180x.dtsi at 0x98715000 collides
 		 * with Samsung's adsp_mem range (0x97800000 + 32 MiB). See the
 		 * &gpu_mem override at the end of this file (iter-18 fix). */
+
+		/*
+		 * iter-21: ramoops persistent RAM for pstore.
+		 *
+		 * 1 MiB at 0x9b500000 — just past gpu_mem (ends at 0x9b405000)
+		 * and well outside the DSP regions (rmtfs/wlan/mpss/adsp/cdsp/
+		 * scss all end at 0x9b400000). Survives warm reboot, so a
+		 * hang/panic in early bring-up is recoverable via pstore on
+		 * the next boot: mount -t pstore none /sys/fs/pstore; the
+		 * console-ramoops-0 file holds the entire kernel log from the
+		 * failed boot, including anything printk'd up to the moment
+		 * of failure.
+		 *
+		 * Kernel side is already configured:
+		 *   CONFIG_PSTORE=y, CONFIG_PSTORE_RAM=y, CONFIG_PSTORE_CONSOLE=y,
+		 *   CONFIG_PSTORE_PMSG=y  (all in base-arm64.config)
+		 * — the binding just needed this DT reserved-memory node, which
+		 * the pre-boot audit (research/2026-05-17-claude-pre-boot-audit.md)
+		 * flagged as missing.
+		 */
+		ramoops@9b500000 {
+			compatible = "ramoops";
+			reg = <0x0 0x9b500000 0x0 0x100000>;
+			record-size  = <0x4000>;    /* 16 KiB per oops/panic record */
+			console-size = <0x10000>;   /* 64 KiB rolling console buffer */
+			pmsg-size    = <0x4000>;    /* 16 KiB userspace messages */
+			ecc-size     = <16>;
+		};
 	};
 
 	pmic-glink {
