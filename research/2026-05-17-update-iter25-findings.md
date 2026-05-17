@@ -147,3 +147,30 @@ The Linux side will:
 - Try iter-26 with a patched dwc3-qcom if Qd reveals the variant isn't supported
 
 Likely we converge in one more round if brother delivers Qa/Qb/Qc + Linux side gets the kernel grep + DTS interrupt-count fix.
+
+---
+
+## 📎 Addendum (15 min after first push): driver match isn't the issue
+
+Linux side checked our kernel source for the dwc3-qcom OF match table. Initial concern was that `dwc3-qcom.c` only matches `qcom,snps-dwc3` while our DTSI uses `qcom,sc8180x-dwc3` and `qcom,sc8180x-dwc3-mp`.
+
+**Resolved**: There are TWO dwc3-qcom drivers in mainline, both built when `CONFIG_USB_DWC3_QCOM=y`:
+
+```
+drivers/usb/dwc3/dwc3-qcom.c          ← matches "qcom,snps-dwc3" (new combined binding)
+drivers/usb/dwc3/dwc3-qcom-legacy.c   ← matches "qcom,dwc3"      (old fallback compatible)
+```
+
+Mainline DTSI declares:
+```
+usb_prim, usb_sec: compatible = "qcom,sc8180x-dwc3", "qcom,dwc3"
+usb_mp:            compatible = "qcom,sc8180x-dwc3-mp", "qcom,dwc3"
+```
+
+The `qcom,dwc3` fallback at the END of each compatible list catches **all three** controllers via `dwc3-qcom-legacy`. So driver attachment isn't the gap.
+
+This shifts the hypothesis: **usb_mp probe is starting via dwc3-qcom-legacy, getting partway, and stalling**. The fact that we DON'T see `a4f8800.usb` in any sync_state line means usb_mp hasn't reached the point where it calls `devm_of_icc_get()` to claim the interconnect path — the probe failed/hung earlier.
+
+This makes Qa/Qb/Qc (PnP service, registry, _CRS side-by-side for usb_mp) **even more relevant**. The difference between usb_sec (probing far enough to register with interconnect) and usb_mp (not reaching that point) is exactly what Windows-side investigation can illuminate.
+
+Linux side will iterate /init to paginate dmesg so we can see the *actual* dwc3-qcom-legacy probe trace for usb_mp instead of just the late sync_state spam.
