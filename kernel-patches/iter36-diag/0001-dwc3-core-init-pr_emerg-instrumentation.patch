@@ -1,0 +1,94 @@
+--- /proc/self/fd/12	2026-05-17 23:16:19.186249958 +0100
++++ drivers/usb/dwc3/core.c	2026-05-17 23:14:17.186742257 +0100
+@@ -1341,19 +1341,27 @@
+ 
+ 	hw_mode = DWC3_GHWPARAMS0_MODE(dwc->hwparams.hwparams0);
+ 
++	pr_emerg("DWC3-CORE-W767: ===== dwc3_core_init BEGIN for %s, hw_mode=%u =====\n", dev_name(dwc->dev), hw_mode);
++
+ 	/*
+ 	 * Write Linux Version Code to our GUID register so it's easy to figure
+ 	 * out which kernel version a bug was found.
+ 	 */
+ 	dwc3_writel(dwc, DWC3_GUID, LINUX_VERSION_CODE);
+ 
++	pr_emerg("DWC3-CORE-W767: %s STEP1 dwc3_phy_setup...\n", dev_name(dwc->dev));
+ 	ret = dwc3_phy_setup(dwc);
+-	if (ret)
++	if (ret) {
++		pr_emerg("DWC3-CORE-W767: %s STEP1 FAIL: %d\n", dev_name(dwc->dev), ret);
+ 		return ret;
++	}
++	pr_emerg("DWC3-CORE-W767: %s STEP1 OK\n", dev_name(dwc->dev));
+ 
+ 	if (!dwc->ulpi_ready) {
++		pr_emerg("DWC3-CORE-W767: %s STEP2 dwc3_core_ulpi_init...\n", dev_name(dwc->dev));
+ 		ret = dwc3_core_ulpi_init(dwc);
+ 		if (ret) {
++			pr_emerg("DWC3-CORE-W767: %s STEP2 FAIL: %d\n", dev_name(dwc->dev), ret);
+ 			if (ret == -ETIMEDOUT) {
+ 				dwc3_core_soft_reset(dwc);
+ 				ret = -EPROBE_DEFER;
+@@ -1361,22 +1369,35 @@
+ 			return ret;
+ 		}
+ 		dwc->ulpi_ready = true;
++		pr_emerg("DWC3-CORE-W767: %s STEP2 OK\n", dev_name(dwc->dev));
+ 	}
+ 
+ 	if (!dwc->phys_ready) {
++		pr_emerg("DWC3-CORE-W767: %s STEP3 dwc3_core_get_phy...\n", dev_name(dwc->dev));
+ 		ret = dwc3_core_get_phy(dwc);
+-		if (ret)
++		if (ret) {
++			pr_emerg("DWC3-CORE-W767: %s STEP3 FAIL: %d\n", dev_name(dwc->dev), ret);
+ 			goto err_exit_ulpi;
++		}
+ 		dwc->phys_ready = true;
++		pr_emerg("DWC3-CORE-W767: %s STEP3 OK\n", dev_name(dwc->dev));
+ 	}
+ 
++	pr_emerg("DWC3-CORE-W767: %s STEP4 dwc3_phy_init...\n", dev_name(dwc->dev));
+ 	ret = dwc3_phy_init(dwc);
+-	if (ret)
++	if (ret) {
++		pr_emerg("DWC3-CORE-W767: %s STEP4 FAIL: %d\n", dev_name(dwc->dev), ret);
+ 		goto err_exit_ulpi;
++	}
++	pr_emerg("DWC3-CORE-W767: %s STEP4 OK\n", dev_name(dwc->dev));
+ 
++	pr_emerg("DWC3-CORE-W767: %s STEP5 dwc3_core_soft_reset...\n", dev_name(dwc->dev));
+ 	ret = dwc3_core_soft_reset(dwc);
+-	if (ret)
++	if (ret) {
++		pr_emerg("DWC3-CORE-W767: %s STEP5 FAIL: %d\n", dev_name(dwc->dev), ret);
+ 		goto err_exit_phy;
++	}
++	pr_emerg("DWC3-CORE-W767: %s STEP5 OK\n", dev_name(dwc->dev));
+ 
+ 	dwc3_core_setup_global_control(dwc);
+ 	dwc3_core_num_eps(dwc);
+@@ -1394,15 +1415,22 @@
+ 
+ 	dwc3_config_soc_bus(dwc);
+ 
++	pr_emerg("DWC3-CORE-W767: %s STEP6 dwc3_phy_power_on...\n", dev_name(dwc->dev));
+ 	ret = dwc3_phy_power_on(dwc);
+-	if (ret)
++	if (ret) {
++		pr_emerg("DWC3-CORE-W767: %s STEP6 FAIL: %d\n", dev_name(dwc->dev), ret);
+ 		goto err_exit_phy;
++	}
++	pr_emerg("DWC3-CORE-W767: %s STEP6 OK\n", dev_name(dwc->dev));
+ 
++	pr_emerg("DWC3-CORE-W767: %s STEP7 dwc3_event_buffers_setup...\n", dev_name(dwc->dev));
+ 	ret = dwc3_event_buffers_setup(dwc);
+ 	if (ret) {
++		pr_emerg("DWC3-CORE-W767: %s STEP7 FAIL: %d\n", dev_name(dwc->dev), ret);
+ 		dev_err(dwc->dev, "failed to setup event buffers\n");
+ 		goto err_power_off_phy;
+ 	}
++	pr_emerg("DWC3-CORE-W767: %s STEP7 OK — core_init effectively done\n", dev_name(dwc->dev));
+ 
+ 	/*
+ 	 * ENDXFER polling is available on version 3.10a and later of
