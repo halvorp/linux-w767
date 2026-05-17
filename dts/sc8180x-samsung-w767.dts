@@ -1117,6 +1117,17 @@
 	status = "okay";
 
 	/*
+	 * iter-27: brother's suggestion 1 from
+	 * research/2026-05-17-claude-qcxhcifilter-rev.md — try the
+	 * single-port compatible instead of the -mp variant.  Probably
+	 * a no-op (dwc3-qcom-legacy doesn't branch on compatible string),
+	 * but cheap to test.  If iter-27 makes no observable difference,
+	 * iter-28 escalates to source-level pr_emerg instrumentation of
+	 * dwc3-qcom-legacy probe.
+	 */
+	compatible = "qcom,sc8180x-dwc3", "qcom,dwc3";
+
+	/*
 	 * iter-26: brother's USB-MP probe-failure analysis
 	 * (research/2026-05-17-claude-usb-mp-vs-sec-deep.md):
 	 *
