@@ -864,7 +864,12 @@
 };
 
 &remoteproc_mpss {
-	status = "okay";
+	/* iter-38: TEMPORARILY DISABLED so the modem crashloop stops
+	 * polluting dmesg while we isolate dwc3 core init.  Restore to
+	 * "okay" in iter-39 once we know if dwc3 works independent of
+	 * MPSS, then add rmtfs/pd-mapper proper fix for the WiFi path.
+	 */
+	status = "disabled";
 
 	memory-region = <&mpss_mem>;
 	firmware-name = "qcom/samsung/w767/qcmpss8180_XEF.mbn";
@@ -1234,12 +1239,21 @@
 	 * driver (phy-qcom-qmp-usb-legacy.c) matches `qcom,sc8180x-
 	 * qmp-usb3-phy` and registers a single USB3 PHY with
 	 * #phy-cells=0 — no connector graph required.
+	 *
+	 * iter-38: also delete the inherited `ports` subtree.  The
+	 * mainline combo node has port@0/@1/@2 for DP+SBU+USB SS graph
+	 * routing; the USB-only legacy driver doesn't parse that and
+	 * was still returning -517 in iter-37.  /delete-node/ forces it
+	 * to evaluate deps only via regulators + clocks (already correct
+	 * from iter-34).
 	 */
 	compatible = "qcom,sc8180x-qmp-usb3-phy";
 	#phy-cells = <0>;
 
 	vdda-phy-supply = <&vreg_l9e_0p88>;
 	vdda-pll-supply = <&vreg_l3c_1p2>;
+
+	/delete-node/ ports;
 };
 
 &usb_prim_dwc3 {
@@ -1247,6 +1261,12 @@
 	/* iter-37: USB-only PHY (#phy-cells=0) — drop QMP_USB43DP_USB3_PHY cell. */
 	phys = <&usb_prim_hsphy>, <&usb_prim_qmpphy>;
 	phy-names = "usb2-phy", "usb3-phy";
+	/* iter-38: also delete inherited ports subtree — its port@1
+	 * referenced usb_prim_qmpphy_usb_ss_in which we just deleted
+	 * along with the qmpphy's ports.  Without role-switch wiring,
+	 * dwc3 doesn't need its own port graph either.
+	 */
+	/delete-node/ ports;
 };
 
 &usb_prim {
@@ -1264,18 +1284,23 @@
 &usb_sec_qmpphy {
 	status = "okay";
 
-	/* iter-37: USB-only legacy QMP driver, see &usb_prim_qmpphy comment. */
+	/* iter-37+38: USB-only legacy QMP driver + drop ports.
+	 * See &usb_prim_qmpphy comment.
+	 */
 	compatible = "qcom,sc8180x-qmp-usb3-phy";
 	#phy-cells = <0>;
 
 	vdda-phy-supply = <&vreg_l9e_0p88>;
 	vdda-pll-supply = <&vreg_l3c_1p2>;
+
+	/delete-node/ ports;
 };
 
 &usb_sec_dwc3 {
 	dr_mode = "host";
 	phys = <&usb_sec_hsphy>, <&usb_sec_qmpphy>;
 	phy-names = "usb2-phy", "usb3-phy";
+	/delete-node/ ports;
 };
 
 &usb_sec {
