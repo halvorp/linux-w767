@@ -1,0 +1,28 @@
+diff --git a/translate.c b/translate.c
+index 486181d..e076ace 100644
+--- a/translate.c
++++ b/translate.c
+@@ -24,6 +24,14 @@
+ #define READONLY_FW_BASE	"/readonly/firmware/"
+ #define READONLY_MODEM_PATH	READONLY_FW_BASE "modem_pr"
+ 
++/* W767 patch: Samsung's qcmpss8180_XEF.mbn requests its WLAN firmware
++ * at /readonly/vendor/firmware/wlanmdsp.mbn (non-standard prefix).
++ * Upstream tqftpserv rejects this -> MPSS WLAN init fails -> ath10k
++ * never sees wlanfw QMI service -> no wlan0. Strip this prefix the
++ * same way READONLY_FW_BASE is stripped.
++ */
++#define READONLY_VENDOR_FW_BASE	"/readonly/vendor/firmware/"
++
+ #ifndef ANDROID
+ #define FIRMWARE_BASE	"/lib/firmware/"
+ #define TQFTPSERV_RW_DIR	"/var/lib/tqftpserv"
+@@ -211,6 +219,8 @@ int translate_open(const char *path, int flags)
+ 		return translate_readonly(path + strlen(READONLY_PATH));
+ 	else if (!strncmp(path, READONLY_MODEM_PATH, strlen(READONLY_MODEM_PATH)))
+ 		return translate_readonly(path + strlen(READONLY_FW_BASE));
++	else if (!strncmp(path, READONLY_VENDOR_FW_BASE, strlen(READONLY_VENDOR_FW_BASE)))
++		return translate_readonly(path + strlen(READONLY_VENDOR_FW_BASE));
+ 	else if (!strncmp(path, READWRITE_PATH, strlen(READWRITE_PATH)))
+ 		return translate_readwrite(path + strlen(READWRITE_PATH), flags);
+ 
