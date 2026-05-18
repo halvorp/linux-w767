@@ -487,14 +487,27 @@
 };
 
 /*
- * iter-56: disable the entire display stack so msm-drm (DRM_MSM=y in the
- * iter-50+ barebones kernel) can NOT bind at boot. In iter-49 these nodes
- * were also "okay" but DRM_MSM was =m so the module never loaded with no
- * modprobe in initramfs. Now =y, the driver binds and hangs the kernel.
- * Trade KMS console for a working system + live wifi logs.
+ * iter-58: re-enable &dispcc (just the clock controller). iter-56 disabled it
+ * along with &mdss/&mdss_edp/&gpu to keep msm-drm from binding. But dispcc
+ * also feeds the USB-C combo phys (88ec000.phy and friends) and the
+ * phy-wrapper@1d87000 -- with dispcc disabled they kept returning -EPROBE_DEFER,
+ * which (pre iter-58 cmdline change) spun deferred_probe in a tight loop,
+ * starved RCU, and silently NMI'd the kernel between 0.6s and 21s. Iter-58
+ * verbose boot showed all five phys returning -517 even with our DTB.
+ *
+ * dispcc the clock controller is harmless on its own: nothing requests a
+ * display clock unless mdss/mdss_edp/gpu are also enabled, which they're not.
+ * The known "disp_cc_pll0 rate 0 not within [249.6, 249.6005]" upstream bug
+ * is consumer-driven (someone asking for rate 0), so we should not hit it
+ * with no consumers wired up. Brother's iter-56 dossier §7.2 endorses this
+ * as the next step.
+ *
+ * iter-56 history (still relevant): with DRM_MSM=y, mdss/mdss_edp/gpu cannot
+ * be status=okay -- the msm driver would bind and hang. So those stay
+ * disabled. See iter-57 comment below for the GPU power island.
  */
 &dispcc {
-	status = "disabled";
+	status = "okay";
 };
 
 &gpu {
