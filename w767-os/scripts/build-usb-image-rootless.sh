@@ -58,6 +58,11 @@ mcopy "$SD_BOOT" z:/EFI/BOOT/BOOTAA64.EFI
 mcopy "$IMAGE_KERN" z:/Image
 mcopy "$DTB" z:/sc8180x-samsung-w767.dtb
 mcopy "$INITRAMFS" z:/w767-initramfs.img
+# iter-41+: bake the diagnostic collect script into the ESP so dd
+# carries it across every flash. From the initramfs shell:
+#   mount /dev/sda1 /mnt/esp && sh /mnt/esp/collect.sh
+COLLECT="$(dirname "$0")/../../research/collect-w767-diagnostics.sh"
+[ -f "$COLLECT" ] && mcopy "$COLLECT" z:/collect.sh
 
 LOADER=$(mktemp)
 cat > "$LOADER" <<'EOF'
