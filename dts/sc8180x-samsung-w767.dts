@@ -486,17 +486,19 @@
 	};
 };
 
+/*
+ * iter-56: disable the entire display stack so msm-drm (DRM_MSM=y in the
+ * iter-50+ barebones kernel) can NOT bind at boot. In iter-49 these nodes
+ * were also "okay" but DRM_MSM was =m so the module never loaded with no
+ * modprobe in initramfs. Now =y, the driver binds and hangs the kernel.
+ * Trade KMS console for a working system + live wifi logs.
+ */
 &dispcc {
-	status = "okay";
+	status = "disabled";
 };
 
 &gpu {
-	status = "okay";
-
-	zap-shader {
-		memory-region = <&gpu_mem>;
-		firmware-name = "qcom/samsung/w767/qcdxkmsuc8180.mbn";
-	};
+	status = "disabled";
 };
 
 &i2c1 {
@@ -672,7 +674,7 @@
 };
 
 &mdss {
-	status = "okay";
+	status = "disabled"; /* iter-56: see comment above &dispcc */
 };
 
 // &mdss_dp0 {
@@ -731,7 +733,7 @@
 };
 
 &mdss_edp {
-	status = "okay";
+	status = "disabled"; /* iter-56 */
 
 	data-lanes = <0 1 2 3>;
 
