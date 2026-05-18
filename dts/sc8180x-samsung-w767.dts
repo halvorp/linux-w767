@@ -864,12 +864,11 @@
 };
 
 &remoteproc_mpss {
-	/* iter-38: TEMPORARILY DISABLED so the modem crashloop stops
-	 * polluting dmesg while we isolate dwc3 core init.  Restore to
-	 * "okay" in iter-39 once we know if dwc3 works independent of
-	 * MPSS, then add rmtfs/pd-mapper proper fix for the WiFi path.
+	/* iter-41: re-enabled. iter-40 confirmed dwc3 is independent of
+	 * MPSS — combo driver fixed USB, not MPSS state. Now bring MPSS
+	 * back to host the WLAN QMI service ath10k_snoc needs for wlan0.
 	 */
-	status = "disabled";
+	status = "okay";
 
 	memory-region = <&mpss_mem>;
 	firmware-name = "qcom/samsung/w767/qcmpss8180_XEF.mbn";
