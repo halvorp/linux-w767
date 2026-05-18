@@ -501,6 +501,25 @@
 	status = "disabled";
 };
 
+/*
+ * iter-57: also disable the GPU's IOMMU and the GMU. iter-56 only disabled
+ * &gpu, but &adreno_smmu and &gmu default to status=okay in sc8180x.dtsi.
+ * arm-smmu still probed adreno_smmu@2ca0000, got through cfg_probe, printed
+ * "preserved 0 boot mappings", then hung in arm_smmu_device_reset() inside
+ * the GPU power island (no driver coordinating GPU_CX_GDSC/clocks → bus
+ * stall). Watchdog rebooted in a loop. Disabling both consumers + the SMMU
+ * itself takes the whole island offline cleanly. Brother's Windows DSDT
+ * GPU0._DEP confirms MMU0/MMU1 are part of this island — see
+ * research/2026-05-18-claude-iter56-gpu-bringup-answers.md §2.
+ */
+&adreno_smmu {
+	status = "disabled";
+};
+
+&gmu {
+	status = "disabled";
+};
+
 &i2c1 {
 	status = "okay";
 	clock-frequency = <100000>;
