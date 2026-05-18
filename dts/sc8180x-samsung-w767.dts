@@ -533,6 +533,20 @@
 	status = "disabled";
 };
 
+/*
+ * iter-59: also disable &edp_phy. It defaults to status=okay in sc8180x.dtsi
+ * (the only display PHY we never explicitly disabled). iter-58 turned &dispcc
+ * back on, which gave edp_phy resolvable clocks for the first time. With
+ * &mdss_edp still disabled (no consumer to complete the PLL handshake), the
+ * phy-qcom-edp probe hangs in a register-poll waiting forever. Hypothesis
+ * from cross-review with the Kimi K2.6 instance on the W767. Pair with
+ * panic=10 + dropping rcu_cpu_stall_suppress on the cmdline so a hang now
+ * dumps to ramoops instead of silently spinning.
+ */
+&edp_phy {
+	status = "disabled";
+};
+
 &i2c1 {
 	status = "okay";
 	clock-frequency = <100000>;
