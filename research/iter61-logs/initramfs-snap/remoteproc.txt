@@ -1,0 +1,3 @@
+remoteproc0
+remoteproc1
+remoteproc2

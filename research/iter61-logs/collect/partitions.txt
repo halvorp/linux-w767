@@ -1,0 +1,4 @@
+major minor  #blocks  name
+
+   8        0  250059096 sda
+   8        1     786432 sda1

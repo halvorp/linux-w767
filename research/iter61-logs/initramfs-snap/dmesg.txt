@@ -1,0 +1,510 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51df805e]
+[    0.000000] Linux version 6.6.0 (peter@fedora) (aarch64-linux-gnu-gcc (GCC) 15.2.1 20250808 (Red Hat Cross 15.2.1-1), GNU ld version 2.45-1.fc43) #1 SMP PREEMPT Mon May 18 17:22:26 BST 2026
+[    0.000000] KASLR enabled
+[    0.000000] Machine model: Samsung Galaxy Book S
+[    0.000000] earlycon: efifb0 at I/O port 0x0 (options '')
+[    0.000000] printk: bootconsole [efifb0] enabled
+[    0.000000] printk: debug: skip boot console de-registration.
+[    0.000000] efi: EFI v2.7 by American Megatrends
+[    0.000000] efi: SMBIOS=0xffed0000 ACPI 2.0=0xffffd000 ESRT=0xfa488b18 MEMATTR=0xf98b1018 TPMEventLog=0xf006e018 INITRD=0xf0075518 RNG=0xfff70018 MEMRESERVE=0xf0075598 
+[    0.000000] random: crng init done
+[    0.000000] TPM Final Events table not present
+[    0.000000] esrt: Reserving ESRT space from 0x00000000fa488b18 to 0x00000000fa488b50.
+[    0.000000] OF: reserved mem: 0x0000000085500000..0x00000000856fffff (2048 KiB) nomap non-reusable memory@85500000
+[    0.000000] OF: reserved mem: 0x0000000085700000..0x0000000085cfffff (6144 KiB) nomap non-reusable hyp@85700000
+[    0.000000] OF: reserved mem: 0x0000000085d00000..0x0000000085e3ffff (1280 KiB) nomap non-reusable xbl@85d00000
+[    0.000000] OF: reserved mem: 0x0000000085f00000..0x0000000085f1ffff (128 KiB) nomap non-reusable aop@85f00000
+[    0.000000] OF: reserved mem: 0x0000000085f20000..0x0000000085f3ffff (128 KiB) nomap non-reusable cmd-db@85f20000
+[    0.000000] OF: reserved mem: 0x0000000085f40000..0x0000000085f4ffff (64 KiB) nomap non-reusable reserved@85f40000
+[    0.000000] OF: reserved mem: 0x0000000086000000..0x00000000861fffff (2048 KiB) nomap non-reusable smem@86000000
+[    0.000000] OF: reserved mem: 0x0000000086200000..0x0000000089afffff (58368 KiB) nomap non-reusable reserved@86200000
+[    0.000000] OF: reserved mem: 0x0000000089b00000..0x000000008b6fffff (28672 KiB) nomap non-reusable reserved@89b00000
+[    0.000000] OF: reserved mem: 0x000000008bc00000..0x000000008bd7ffff (1536 KiB) nomap non-reusable memory@8bc00000
+[    0.000000] OF: reserved mem: 0x000000008d800000..0x00000000977fffff (163840 KiB) nomap non-reusable memory@8d800000
+[    0.000000] OF: reserved mem: 0x0000000097800000..0x00000000997fffff (32768 KiB) nomap non-reusable memory@97800000
+[    0.000000] OF: reserved mem: 0x0000000099800000..0x0000000099ffffff (8192 KiB) nomap non-reusable memory@99800000
+[    0.000000] OF: reserved mem: 0x000000009a000000..0x000000009b3fffff (20480 KiB) nomap non-reusable memory@9a000000
+[    0.000000] OF: reserved mem: 0x000000009b400000..0x000000009b404fff (20 KiB) nomap non-reusable memory@9b400000
+[    0.000000] OF: reserved mem: 0x000000009d400000..0x000000009e3fffff (16384 KiB) nomap non-reusable reserved@9d400000
+[    0.000000] OF: reserved mem: 0x000000009e400000..0x000000009f7fffff (20480 KiB) nomap non-reusable reserved@9e400000
+[    0.000000] OF: reserved mem: 0x000000009f800000..0x000000009fffffff (8192 KiB) nomap non-reusable reserved@9f800000
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080000000-0x000000027b9fffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x27aa799c0-0x27aa7bfff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000080000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000027b9fffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x00000000805fffff]
+[    0.000000]   node   0: [mem 0x0000000080600000-0x00000000829fffff]
+[    0.000000]   node   0: [mem 0x0000000083722000-0x00000000854fffff]
+[    0.000000]   node   0: [mem 0x0000000085500000-0x00000000856fffff]
+[    0.000000]   node   0: [mem 0x0000000085d00000-0x0000000085efffff]
+[    0.000000]   node   0: [mem 0x0000000085f20000-0x0000000085f4ffff]
+[    0.000000]   node   0: [mem 0x0000000085f50000-0x0000000085ffffff]
+[    0.000000]   node   0: [mem 0x0000000086000000-0x00000000861fffff]
+[    0.000000]   node   0: [mem 0x000000008b700000-0x000000009b404fff]
+[    0.000000]   node   0: [mem 0x000000009b405000-0x000000009d3fffff]
+[    0.000000]   node   0: [mem 0x000000009d400000-0x000000009ff91fff]
+[    0.000000]   node   0: [mem 0x000000009ffb0000-0x000000009fffffff]
+[    0.000000]   node   0: [mem 0x00000000a0000000-0x00000000ffa75fff]
+[    0.000000]   node   0: [mem 0x00000000ffa76000-0x00000000fff21fff]
+[    0.000000]   node   0: [mem 0x00000000fff22000-0x000000027b9fffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000027b9fffff]
+[    0.000000] On node 0, zone DMA: 3362 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 1536 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 32 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 21760 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 30 pages in unavailable ranges
+[    0.000000] On node 0, zone Normal: 17920 pages in unavailable ranges
+[    0.000000] cma: Reserved 32 MiB at 0x00000000fda00000 on node -1
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.1
+[    0.000000] psci: OSI mode supported.
+[    0.000000] psci: [Firmware Bug]: failed to set PC mode: -3
+[    0.000000] percpu: Embedded 22 pages/cpu s49704 r8192 d32216 u90112
+[    0.000000] pcpu-alloc: s49704 r8192 d32216 u90112 alloc=22*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: SYS_ID_AA64ISAR1_EL1[31:28]: already set to 0
+[    0.000000] CPU features: SYS_ID_AA64ISAR1_EL1[27:24]: already set to 0
+[    0.000000] CPU features: SYS_ID_AA64ISAR1_EL1[11:8]: already set to 0
+[    0.000000] CPU features: SYS_ID_AA64ISAR1_EL1[7:4]: already set to 0
+[    0.000000] CPU features: SYS_ID_AA64ISAR2_EL1[15:12]: already set to 0
+[    0.000000] CPU features: SYS_ID_AA64ISAR2_EL1[11:8]: already set to 0
+[    0.000000] CPU features: detected: GIC system register CPU interface
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: initrd=\w767-initramfs.img console=tty0 loglevel=6 consoleblank=0 rdinit=/init earlycon=efifb keep_bootcon net.ifnames=0 iommu.passthrough=0 iommu.strict=0 pcie_aspm.policy=powersupersave clk_ignore_unused pd_ignore_unused arm64.nopauth efi=noruntime
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2020024
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] software IO TLB: area num 8.
+[    0.000000] software IO TLB: mapped [mem 0x00000000f58b1000-0x00000000f98b1000] (64MB)
+[    0.000000] Memory: 7510960K/8210048K available (13056K kernel code, 2420K rwdata, 5580K rodata, 1600K init, 551K bss, 666320K reserved, 32768K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=8.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: 928 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000017a60000
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000000] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000175] Console: colour dummy device 80x25
+[    0.000184] printk: console [tty0] enabled
+[    0.000246] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+[    0.000257] pid_max: default: 32768 minimum: 301
+[    0.000321] LSM: initializing lsm=capability,integrity
+[    0.000393] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.000412] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.001794] RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1.
+[    0.001841] RCU Tasks Trace: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1.
+[    0.001984] rcu: Hierarchical SRCU implementation.
+[    0.001988] rcu: 	Max phase no-delay instances is 1000.
+[    0.002922] EFI runtime services will be disabled.
+[    0.003132] smp: Bringing up secondary CPUs ...
+[    0.004242] Detected VIPT I-cache on CPU1
+[    0.004294] GICv3: CPU1: found redistributor 100 region 0:0x0000000017a80000
+[    0.004330] CPU1: Booted secondary processor 0x0000000100 [0x51df805e]
+[    0.005355] Detected VIPT I-cache on CPU2
+[    0.005400] GICv3: CPU2: found redistributor 200 region 0:0x0000000017aa0000
+[    0.005434] CPU2: Booted secondary processor 0x0000000200 [0x51df805e]
+[    0.006511] Detected VIPT I-cache on CPU3
+[    0.006553] GICv3: CPU3: found redistributor 300 region 0:0x0000000017ac0000
+[    0.006586] CPU3: Booted secondary processor 0x0000000300 [0x51df805e]
+[    0.008694] CPU features: detected: Spectre-v2
+[    0.008712] CPU features: detected: Spectre-v4
+[    0.008729] CPU features: detected: ARM erratum 1418040
+[    0.008736] CPU features: detected: Qualcomm erratum 1009, or ARM erratum 1286807, 2441009
+[    0.008740] Detected PIPT I-cache on CPU4
+[    0.008789] GICv3: CPU4: found redistributor 400 region 0:0x0000000017ae0000
+[    0.008806] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.008826] CPU4: Booted secondary processor 0x0000000400 [0x51df804e]
+[    0.010158] Detected PIPT I-cache on CPU5
+[    0.010219] GICv3: CPU5: found redistributor 500 region 0:0x0000000017b00000
+[    0.010236] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.010256] CPU5: Booted secondary processor 0x0000000500 [0x51df804e]
+[    0.011675] Detected PIPT I-cache on CPU6
+[    0.011735] GICv3: CPU6: found redistributor 600 region 0:0x0000000017b20000
+[    0.011752] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.011772] CPU6: Booted secondary processor 0x0000000600 [0x51df804e]
+[    0.013336] Detected PIPT I-cache on CPU7
+[    0.013397] GICv3: CPU7: found redistributor 700 region 0:0x0000000017b40000
+[    0.013414] arch_timer: Enabling local workaround for ARM erratum 1418040
+[    0.013434] CPU7: Booted secondary processor 0x0000000700 [0x51df804e]
+[    0.013503] smp: Brought up 1 node, 8 CPUs
+[    0.013528] SMP: Total of 8 processors activated.
+[    0.013533] CPU features: detected: 32-bit EL0 Support
+[    0.013536] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.013540] CPU features: detected: Common not Private translations
+[    0.013543] CPU features: detected: CRC32 instructions
+[    0.013548] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.013551] CPU features: detected: LSE atomic instructions
+[    0.013555] CPU features: detected: Privileged Access Never
+[    0.013558] CPU features: detected: RAS Extension Support
+[    0.013678] CPU: All CPU(s) started at EL1
+[    0.013690] alternatives: applying system-wide alternatives
+[    0.019115] devtmpfs: initialized
+[    0.027403] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.027417] futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.027919] pinctrl core: initialized pinctrl subsystem
+[    0.028392] SMBIOS 3.1 present.
+[    0.028410] DMI: SAMSUNG ELECTRONICS CO., LTD. Galaxy Book S/SM-W767NZNABTU, BIOS P02AHP.003.241226.WY.1518 12/26/2024
+[    0.028746] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.029391] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+[    0.029507] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.029677] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.029711] audit: initializing netlink subsys (disabled)
+[    0.029809] audit: type=2000 audit(0.028:1): state=initialized audit_enabled=0 res=1
+[    0.030104] thermal_sys: Registered thermal governor 'step_wise'
+[    0.039937] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.039978] cpuidle: using governor menu
+[    0.040116] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.040244] ASID allocator initialised with 32768 entries
+[    0.041030] Serial: AMBA PL011 UART driver
+[    0.048090] platform 1d87000.phy-wrapper: Fixed dependency cycle(s) with /soc@0/ufshc@1d84000
+[    0.051128] platform aec2a00.phy: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.053511] Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+[    0.053517] Modules: 0 pages in range for non-PLT usage
+[    0.053520] Modules: 518432 pages in range for PLT usage
+[    0.054025] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.054031] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.054036] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.054039] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.054043] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.054046] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.054049] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.054051] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.054805] ACPI: Interpreter disabled.
+[    0.055787] iommu: Default domain type: Translated (set via kernel command line)
+[    0.055792] iommu: DMA domain TLB invalidation policy: lazy mode (set via kernel command line)
+[    0.055923] SCSI subsystem initialized
+[    0.066073] libata version 3.00 loaded.
+[    0.066162] usbcore: registered new interface driver usbfs
+[    0.066176] usbcore: registered new interface driver hub
+[    0.066190] usbcore: registered new device driver usb
+[    0.066342] pps_core: LinuxPPS API ver. 1 registered
+[    0.066345] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.066352] PTP clock support registered
+[    0.066420] EDAC MC: Ver: 3.0.0
+[    0.066662] CPUidle PSCI: Initialized CPU PM domain topology using OSI mode
+[    0.066854] qcom_scm: convention: smc arm 64
+[    0.066982] scmi_core: SCMI protocol bus registered
+[    0.067165] FPGA manager framework
+[    0.067203] Advanced Linux Sound Architecture Driver Initialized.
+[    0.067719] vgaarb: loaded
+[    0.067881] clocksource: Switched to clocksource arch_sys_counter
+[    0.067991] VFS: Disk quotas dquot_6.6.0
+[    0.078112] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.078205] pnp: PnP ACPI: disabled
+[    0.081572] NET: Registered PF_INET protocol family
+[    0.081701] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.086120] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.086170] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.086179] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.086373] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.086837] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.086882] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.086926] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.087012] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.087201] RPC: Registered named UNIX socket transport module.
+[    0.087205] RPC: Registered udp transport module.
+[    0.087208] RPC: Registered tcp transport module.
+[    0.087210] RPC: Registered tcp-with-tls transport module.
+[    0.087213] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.087218] PCI: CLS 0 bytes, default 64
+[    0.087352] Unpacking initramfs...
+[    0.095969] kvm [1]: HYP mode not available
+[    0.096502] Initialise system trusted keyrings
+[    0.106700] workingset: timestamp_bits=42 max_order=21 bucket_order=0
+[    0.106723] zbud: loaded
+[    0.106855] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.106981] NFS: Registering the id_resolver key type
+[    0.117122] Key type id_resolver registered
+[    0.127265] Key type id_legacy registered
+[    0.137386] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.137391] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.137469] 9p: Installing v9fs 9p2000 file system support
+[    0.157878] Key type asymmetric registered
+[    0.168006] Asymmetric key parser 'x509' registered
+[    0.178156] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    0.178230] io scheduler mq-deadline registered
+[    0.178235] io scheduler kyber registered
+[    0.181547] EINJ: ACPI disabled.
+[    0.185300] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.186290] msm_serial: driver initialized
+[    0.188774] arm-smmu 15000000.iommu: probing hardware configuration...
+[    0.198930] arm-smmu 15000000.iommu: SMMUv2 with:
+[    0.209077] arm-smmu 15000000.iommu: 	stage 1 translation
+[    0.219216] arm-smmu 15000000.iommu: 	non-coherent table walk
+[    0.229353] arm-smmu 15000000.iommu: 	(IDR0.CTTW overridden by FW configuration)
+[    0.239511] arm-smmu 15000000.iommu: 	stream matching with 79 register groups
+[    0.249718] arm-smmu 15000000.iommu: 	106 context banks (0 stage-2 only)
+[    0.260956] arm-smmu 15000000.iommu: 	Supported page sizes: 0x61311000
+[    0.271110] arm-smmu 15000000.iommu: 	Stage-1: 48-bit VA -> 48-bit IPA
+[    0.281397] arm-smmu 15000000.iommu: 	preserved 0 boot mappings
+[    0.299210] loop: module loaded
+[    0.300024] spmi spmi-0: PMIC arbiter version v5 (0x50000000)
+[    0.306441] tun: Universal TUN/TAP device driver, 1.6
+[    0.307180] VFIO - User Level meta-driver version: 0.3
+[    0.308012] usbcore: registered new interface driver usb-storage
+[    0.308921] i2c_dev: i2c /dev entries driver
+[    0.310294] sdhci: Secure Digital Host Controller Interface driver
+[    0.310298] sdhci: Copyright(c) Pierre Ossman
+[    0.310546] Synopsys Designware Multimedia Card Interface Driver
+[    0.310785] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.311843] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.312280] usbcore: registered new interface driver usbhid
+[    0.312285] usbhid: USB HID core driver
+[    0.315567] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.317950] NET: Registered PF_PACKET protocol family
+[    0.318008] 9pnet: Installing 9P2000 support
+[    0.318042] Key type dns_resolver registered
+[    0.332389] registered taskstats version 1
+[    0.332499] Loading compiled-in X.509 certificates
+[    0.352068] platform 18200000.rsc:pmc8180-a-rpmh-regulators: Fixed dependency cycle(s) with /soc@0/rsc@18200000/pmc8180-a-rpmh-regulators/smps5
+[    0.352380] platform 18200000.rsc:pmc8180c-rpmh-regulators: Fixed dependency cycle(s) with /soc@0/rsc@18200000/pmc8180c-rpmh-regulators/bob
+[    0.352395] platform 18200000.rsc:pmc8180c-rpmh-regulators: Fixed dependency cycle(s) with /soc@0/rsc@18200000/pmc8180c-rpmh-regulators/smps6
+[    0.352776] platform 18200000.rsc:pmc8180-e-rpmh-regulators: Fixed dependency cycle(s) with /soc@0/rsc@18200000/pmc8180-e-rpmh-regulators/smps5
+[    0.352805] platform 18200000.rsc:pmc8180-e-rpmh-regulators: Fixed dependency cycle(s) with /soc@0/rsc@18200000/pmc8180-e-rpmh-regulators/smps4
+[    0.373687] smps8: Setting 1800000-1800000uV
+[    0.374477] ldo2: Setting 1200000-1200000uV
+[    0.374575] geni_se_qup 8c0000.geniqup: Adding to iommu group 0
+[    0.374863] ldo3: Setting 1200000-1200000uV
+[    0.375315] ldo6: Setting 1800000-2950000uV
+[    0.375603] ldo7: Setting 3000000-3000000uV
+[    0.375863] ldo8: Setting 1800000-1800000uV
+[    0.376215] ldo9: Setting 2504000-2904000uV
+[    0.376804] ldo11: Setting 3312000-3312000uV
+[    0.377115] geni_se_qup ac0000.geniqup: Adding to iommu group 1
+[    0.379294] geni_se_qup cc0000.geniqup: Adding to iommu group 2
+[    0.381617] c8c000.serial: ttyHS0 at MMIO 0xc8c000 (irq = 131, base_baud = 0) is a MSM
+[    0.382463] serial serial0: tty port ttyHS0 registered
+[    0.384058] arm-smmu 2ca0000.iommu: probing hardware configuration...
+[    0.392058] arm-smmu 2ca0000.iommu: SMMUv2 with:
+[    0.400044] arm-smmu 2ca0000.iommu: 	stage 1 translation
+[    0.468026] arm-smmu 2ca0000.iommu: 	non-coherent table walk
+[    0.476077] arm-smmu 2ca0000.iommu: 	(IDR0.CTTW overridden by FW configuration)
+[    0.484036] arm-smmu 2ca0000.iommu: 	stream matching with 4 register groups
+[    0.492026] arm-smmu 2ca0000.iommu: 	5 context banks (0 stage-2 only)
+[    0.499990] arm-smmu 2ca0000.iommu: 	Supported page sizes: 0x61311000
+[    0.507935] arm-smmu 2ca0000.iommu: 	Stage-1: 48-bit VA -> 48-bit IPA
+[    0.516075] arm-smmu 2ca0000.iommu: 	preserved 0 boot mappings
+[    0.537518] ldo1: Setting 1200000-1200000uV
+[    0.537718] ldo2: Setting 2800000-2850000uV
+[    0.538421] ldo6: Setting 1200000-1200000uV
+[    0.538500] ldo1: Setting 752000-752000uV
+[    0.538624] ldo7: Setting 1800000-1800000uV
+[    0.538798] ldo9: Setting 1304000-1304000uV
+[    0.538968] ldo10: Setting 2850000-3000000uV
+[    0.539032] ldo5: Setting 880000-880000uV
+[    0.539243] ldo7: Setting 1800000-1800000uV
+[    0.539345] ldo12: Setting 1800000-1800000uV
+[    0.539726] ldo9: Setting 880000-912000uV
+[    0.539800] ldo14: Setting 1800000-1800000uV
+[    0.540026] ldo10: Setting 2504000-2904000uV
+[    0.540447] ldo16: Setting 2800000-2800000uV
+[    0.540457] ldo12: Setting 1800000-1800000uV
+[    0.540499] PM: genpd: Not disabling unused power domains
+[    0.541423] ldo14: Setting 1800000-1800000uV
+[    0.548822] ldo15: Setting 1800000-1800000uV
+[    0.549008] ldo16: Setting 3072000-3072000uV
+[    0.549193] ldo17: Setting 2960000-2960000uV
+[    0.549231] clk: Not disabling unused clocks
+[    0.553817] dwc3 a400000.dwc3: Adding to iommu group 3
+[    0.557195] ALSA device list:
+[    0.557199]   No soundcards found.
+[    0.624305] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    0.624327] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    0.624504] xhci-hcd xhci-hcd.0.auto: hcc params 0x0238ffe5 hci version 0x110 quirks 0x0000000000000010
+[    0.624544] xhci-hcd xhci-hcd.0.auto: irq 153, io mem 0x0a400000
+[    0.624665] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    0.624674] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    0.624682] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.1 Enhanced SuperSpeed
+[    0.627081] hub 1-0:1.0: USB hub found
+[    0.627396] hub 1-0:1.0: 2 ports detected
+[    0.628439] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    0.630310] hub 2-0:1.0: USB hub found
+[    0.630652] hub 2-0:1.0: 2 ports detected
+[    0.883900] usb 1-1: new full-speed USB device number 2 using xhci-hcd
+[    1.084198] input: Samsung Electronics Co., Ltd SPACE v57 Mouse as /devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0/0003:04E8:A055.0001/input/input0
+[    1.084652] input: Samsung Electronics Co., Ltd SPACE v57 Touchpad as /devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0/0003:04E8:A055.0001/input/input1
+[    1.144437] hid-generic 0003:04E8:A055.0001: input: USB HID v1.11 Mouse [Samsung Electronics Co., Ltd SPACE v57] on usb-xhci-hcd.0.auto-1/input0
+[    1.145813] input: Samsung Electronics Co., Ltd SPACE v57 as /devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.1/0003:04E8:A055.0002/input/input3
+[    1.204527] hid-generic 0003:04E8:A055.0002: input: USB HID v1.11 Keyboard [Samsung Electronics Co., Ltd SPACE v57] on usb-xhci-hcd.0.auto-1/input1
+[    1.205860] input: Samsung Electronics Co., Ltd SPACE v57 Consumer Control as /devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input4
+[    1.264635] input: Samsung Electronics Co., Ltd SPACE v57 Wireless Radio Control as /devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input5
+[    1.264994] input: Samsung Electronics Co., Ltd SPACE v57 as /devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input6
+[    1.265304] hid-generic 0003:04E8:A055.0003: input: USB HID v1.11 Device [Samsung Electronics Co., Ltd SPACE v57] on usb-xhci-hcd.0.auto-1/input2
+[    1.912743] Freeing initrd memory: 63616K
+[    1.913561] Freeing unused kernel memory: 1600K
+[    1.913699] Run /init as init process
+[    1.913703]   with arguments:
+[    1.913706]     /init
+[    1.913709]   with environment:
+[    1.913711]     HOME=/
+[    1.913713]     TERM=linux
+[    1.939035] iter-61 init: pmOS-aligned 6.6 kernel, loading modules first
+[    1.951503] iter-61: modprobe SoC + remoteproc + qrtr
+[    1.999726] qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle
+[    2.019993] remoteproc remoteproc0: releasing 4080000.remoteproc
+[    2.021277] qcom_q6v5_pas 8300000.remoteproc: failed to initialize qmi handle
+[    2.031996] remoteproc remoteproc0: releasing 8300000.remoteproc
+[    2.033065] qcom_q6v5_pas 17300000.remoteproc: failed to initialize qmi handle
+[    2.041063] remoteproc remoteproc0: releasing 17300000.remoteproc
+[    2.043171] NET: Registered PF_QIPCRTR protocol family
+[    2.045551] iter-61: modprobe USB-C + eDP phys
+[    2.071590] dwc3 a600000.usb: Adding to iommu group 4
+[    2.074304] iter-61: modprobe display + GPU (msm + panel-edp + backlight)
+[    2.119382] adreno 2c00000.gpu: Adding to iommu group 5
+[    2.121882] iter-61: modprobe wifi
+[    2.132185] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    2.132200] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 3
+[    2.132349] xhci-hcd xhci-hcd.1.auto: hcc params 0x0230ffe5 hci version 0x110 quirks 0x0000000000000010
+[    2.132387] xhci-hcd xhci-hcd.1.auto: irq 170, io mem 0x0a600000
+[    2.132467] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    2.132473] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 4
+[    2.132479] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.1 Enhanced SuperSpeed
+[    2.132915] hub 3-0:1.0: USB hub found
+[    2.132931] hub 3-0:1.0: 1 port detected
+[    2.133085] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[    2.133307] hub 4-0:1.0: USB hub found
+[    2.133322] hub 4-0:1.0: 1 port detected
+[    2.133700] dwc3 a800000.usb: Adding to iommu group 6
+[    2.142523] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.196104] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[    2.210356] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 5
+[    2.210494] xhci-hcd xhci-hcd.2.auto: hcc params 0x0230ffe5 hci version 0x110 quirks 0x0000000000000010
+[    2.210523] xhci-hcd xhci-hcd.2.auto: irq 171, io mem 0x0a800000
+[    2.210603] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[    2.210610] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 6
+[    2.210616] xhci-hcd xhci-hcd.2.auto: Host supports USB 3.1 Enhanced SuperSpeed
+[    2.210904] hub 5-0:1.0: USB hub found
+[    2.210918] hub 5-0:1.0: 1 port detected
+[    2.211071] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+[    2.211291] hub 6-0:1.0: USB hub found
+[    2.211304] hub 6-0:1.0: 1 port detected
+[    2.211486] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.212100] remoteproc remoteproc0: 4080000.remoteproc is available
+[    2.220312] remoteproc remoteproc1: 8300000.remoteproc is available
+[    2.220700] cfg80211: loaded regulatory.db is malformed or signature is missing/invalid
+[    2.221207] remoteproc remoteproc2: 17300000.remoteproc is available
+[    2.222667] remoteproc remoteproc1: powering up 8300000.remoteproc
+[    2.222676] remoteproc remoteproc1: Booting fw image qcom/samsung/w767/qccdsp8180.mbn, size 3114644
+[    2.225069] qcom-edp-phy aec2a00.phy: supply vdda-phy not found, using dummy regulator
+[    2.227851] remoteproc remoteproc2: powering up 17300000.remoteproc
+[    2.233333] remoteproc remoteproc2: Booting fw image qcom/samsung/w767/qcadsp8180.mbn, size 11008656
+[    2.233500] qcom-edp-phy aec2a00.phy: supply vdda-pll not found, using dummy regulator
+[    2.242144] msm-mdss ae00000.mdss: Adding to iommu group 7
+[    2.249996] ath10k_snoc 18800000.wifi: Adding to iommu group 8
+[    2.251560] ath10k_snoc 18800000.wifi: supply vdd-3.3-ch1 not found, using dummy regulator
+[    2.262985] iter-61: modules loaded (32 total)
+[    2.268883] platform ae9a000.displayport-controller: Fixed dependency cycle(s) with /soc@0/mdss@ae00000/displayport-controller@ae9a000/aux-bus/panel/ports/port/endpoint
+[    2.271114] platform ae9a000.displayport-controller: Fixed dependency cycle(s) with /soc@0/mdss@ae00000/mdp@ae01000/ports/port@5/endpoint
+[    2.275098] msm_dpu ae01000.mdp: bound ae9a000.displayport-controller (ops dp_display_comp_ops [msm])
+[    2.275553] adreno 2c00000.gpu: supply vdd not found, using dummy regulator
+[    2.280383] iter-54: starting pd-mapper, rmtfs, tqftpserv
+[    2.283569] adreno 2c00000.gpu: supply vddcx not found, using dummy regulator
+[    2.298883] remoteproc remoteproc1: remote processor 8300000.remoteproc is now up
+[    2.299577] adreno 2c00000.gpu: [drm:msm_devfreq_init [msm]] *ERROR* Couldn't register GPU cooling device
+[    2.308577] platform 2c6a000.gmu: Adding to iommu group 9
+[    2.309955] msm_dpu ae01000.mdp: bound 2c00000.gpu (ops a3xx_ops [msm])
+[    2.310652] [drm:dpu_kms_hw_init:1112] dpu hardware revision:0x50010001
+[    2.368104] remoteproc remoteproc2: remote processor 17300000.remoteproc is now up
+[    2.368290] panel-simple-dp-aux aux-ae9a000.displayport-controller: supply power not found, using dummy regulator
+[    2.435194] ------------[ cut here ]------------
+[    2.467887] usb 5-1: new high-speed USB device number 2 using xhci-hcd
+[    2.502847] WARNING: CPU: 0 PID: 11 at drivers/gpu/drm/panel/panel-edp.c:769 panel_edp_probe+0x508/0x560 [panel_edp]
+[    2.570577] Modules linked in: ath10k_snoc ath10k_core ath mac80211 libarc4 cfg80211 rfkill msm gpu_sched panel_edp drm_display_helper drm_dp_aux_bus pwm_bl leds_qcom_lpg led_class_multicolor phy_qcom_edp phy_qcom_qmp_combo drm_kms_helper drm drm_panel_orientation_quirks qrtr_smd qrtr qcom_q6v5_pas qcom_pil_info qcom_q6v5 qcom_sysmon mdt_loader qcom_common qcom_glink_smem pdr_interface qmi_helpers
+[    2.706247] CPU: 0 PID: 11 Comm: kworker/u16:0 Not tainted 6.6.0 #1
+[    2.706252] Hardware name: SAMSUNG ELECTRONICS CO., LTD. Galaxy Book S/SM-W767NZNABTU, BIOS P02AHP.003.241226.WY.1518 12/26/2024
+[    2.706257] Workqueue: events_unbound deferred_probe_work_func
+[    2.781860] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[    2.917142] pc : panel_edp_probe+0x508/0x560 [panel_edp]
+[    2.984781] lr : panel_edp_probe+0x2c8/0x560 [panel_edp]
+[    2.984791] sp : ffff8000800ab360
+[    2.984793] x29: ffff8000800ab3f0 x28: 000000010000000a x27: ffff029e014968b8
+[    3.120016] x26: ffff029e0148e080 x25: 0000000000000000 x24: 0000000000000000
+[    3.187668] x23: ffff029e0141d440 x22: ffffc641f6e366b8 x21: 0000000000000000
+[    3.255322] x20: ffff029e0beaa800 x19: ffff029e0ceb0480 x18: ffff800084473c08
+[    3.322995] x17: 0000000000000000 x16: ffffc642368f6b4c x15: ffffc64237abd858
+[    3.323002] x14: 00000000000001a2 x13: ffffc64237ab9b48 x12: ffff029e00149e10
+[    3.323008] x11: 000000009124f400 x10: 0000000000000a60 x9 : 0000000000000000
+[    3.525969] x8 : ffff8000800ab2f0 x7 : 0000000000000000 x6 : 0000000000000000
+[    3.525975] x5 : ffffc641f6cafe14 x4 : 00000000000007e7 x3 : 000000008020001f
+[    3.661270] x2 : 0000000000000000 x1 : ffffc641f6e36af0 x0 : 0000000009e507e7
+[    3.728929] Call trace:
+[    3.728932]  panel_edp_probe+0x508/0x560 [panel_edp]
+[    3.872023]  panel_edp_dp_aux_ep_probe+0x38/0x50 [panel_edp]
+[    3.939663]  dp_aux_ep_probe+0x30/0xfc [drm_dp_aux_bus]
+[    3.939681]  really_probe+0x148/0x2b8
+[    3.939688]  __driver_probe_device+0x78/0x128
+[    4.082751]  driver_probe_device+0x3c/0x178
+[    4.082756]  __device_attach_driver+0xb8/0x140
+[    4.158226]  bus_for_each_drv+0x88/0xe8
+[    4.158231]  __device_attach+0x9c/0x194
+[    4.233693]  device_initial_probe+0x14/0x20
+[    4.301302]  bus_probe_device+0xa8/0xac
+[    4.368930]  device_add+0x61c/0x7e8
+[    4.436526]  device_register+0x1c/0x28
+[    4.504125]  of_dp_aux_populate_bus+0xe0/0x1c0 [drm_dp_aux_bus]
+[    4.571764]  msm_dp_modeset_init+0x1bc/0x230 [msm]
+[    4.639478]  _dpu_kms_drm_obj_init+0x168/0x734 [msm]
+[    4.707173]  dpu_kms_hw_init+0x460/0x58c [msm]
+[    4.774844]  msm_drm_bind+0x310/0x674 [msm]
+[    4.842529]  try_to_bring_up_aggregate_device+0x164/0x1d0
+[    4.910153]  __component_add+0xa0/0x168
+[    4.977749]  component_add+0x14/0x20
+[    5.045333]  dp_display_probe+0x248/0x3d0 [msm]
+[    5.113060]  platform_probe+0x68/0xd8
+[    5.180689]  really_probe+0x148/0x2b8
+[    5.248314]  __driver_probe_device+0x78/0x128
+[    5.315966]  driver_probe_device+0x3c/0x178
+[    5.383612]  __device_attach_driver+0xb8/0x140
+[    5.451250]  bus_for_each_drv+0x88/0xe8
+[    5.518875]  __device_attach+0x9c/0x194
+[    5.586500]  device_initial_probe+0x14/0x20
+[    5.654125]  bus_probe_device+0xa8/0xac
+[    5.721753]  deferred_probe_work_func+0x84/0xbc
+[    5.789389]  process_one_work+0x13c/0x25c
+[    5.857022]  worker_thread+0x328/0x454
+[    5.924651]  kthread+0x110/0x114
+[    5.992267]  ret_from_fork+0x10/0x20
+[    6.059895] ---[ end trace 0000000000000000 ]---
+[    6.127631] panel-simple-dp-aux aux-ae9a000.displayport-controller: Unknown panel BOE 0x07e7, using conservative timings
+[    6.197448] [drm] Initialized msm 1.10.0 20130625 for ae01000.mdp on minor 0
+[    6.197602] msm_dpu ae01000.mdp: [drm:adreno_request_fw [msm]] loaded qcom/a680_sqe.fw from new location
+[    6.197778] msm_dpu ae01000.mdp: [drm:adreno_request_fw [msm]] loaded qcom/a680_gmu.bin from new location
+[    6.502851] Console: switching to colour frame buffer device 240x67
+[    6.525928] msm_dpu ae01000.mdp: [drm] fb0: msmdrmfb frame buffer device
+[    6.754067] usb-storage 5-1:1.0: USB Mass Storage device detected
+[    6.757449] scsi host0: usb-storage 5-1:1.0
+[    7.305598] iter-54: rmtfs died, retrying without -P/-s/-r flags
+[    7.790309] scsi 0:0:0:0: Direct-Access     Realtek  RTL9210B-CG      1.00 PQ: 0 ANSI: 6
+[    7.818693] sd 0:0:0:0: [sda] 500118192 512-byte logical blocks: (256 GB/238 GiB)
+[    7.828920] sd 0:0:0:0: [sda] Write Protect is off
+[    7.836889] sd 0:0:0:0: [sda] Mode Sense: 37 00 00 08
+[    7.841873] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    7.877881]  sda: sda1
+[    7.878285] sd 0:0:0:0: [sda] Attached SCSI disk

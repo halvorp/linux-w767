@@ -1,0 +1,12 @@
+=== remoteproc0 ===
+state:    offline
+name:     4080000.remoteproc
+firmware: qcom/samsung/w767/qcmpss8180_XEF.mbn
+=== remoteproc1 ===
+state:    running
+name:     8300000.remoteproc
+firmware: qcom/samsung/w767/qccdsp8180.mbn
+=== remoteproc2 ===
+state:    running
+name:     17300000.remoteproc
+firmware: qcom/samsung/w767/qcadsp8180.mbn

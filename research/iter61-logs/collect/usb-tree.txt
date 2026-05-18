@@ -1,0 +1,22 @@
+/sys/bus/usb/devices/:
+total 0
+drwxr-xr-x    2 0        0                0 Jan  1 00:00 .
+drwxr-xr-x    4 0        0                0 Jan  1 00:00 ..
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 1-0:1.0 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-0:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 1-1 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 1-1:1.0 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 1-1:1.1 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 1-1:1.2 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 2-0:1.0 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb2/2-0:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 3-0:1.0 -> ../../../devices/platform/soc@0/a6f8800.usb/a600000.usb/xhci-hcd.1.auto/usb3/3-0:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 4-0:1.0 -> ../../../devices/platform/soc@0/a6f8800.usb/a600000.usb/xhci-hcd.1.auto/usb4/4-0:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 5-0:1.0 -> ../../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb5/5-0:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 5-1 -> ../../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb5/5-1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 5-1:1.0 -> ../../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb5/5-1/5-1:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 6-0:1.0 -> ../../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb6/6-0:1.0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 usb1 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 usb2 -> ../../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb2
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 usb3 -> ../../../devices/platform/soc@0/a6f8800.usb/a600000.usb/xhci-hcd.1.auto/usb3
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 usb4 -> ../../../devices/platform/soc@0/a6f8800.usb/a600000.usb/xhci-hcd.1.auto/usb4
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 usb5 -> ../../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb5
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 usb6 -> ../../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb6

@@ -1,0 +1,1 @@
+initrd=\w767-initramfs.img console=tty0 loglevel=6 consoleblank=0 rdinit=/init earlycon=efifb keep_bootcon net.ifnames=0 iommu.passthrough=0 iommu.strict=0 pcie_aspm.policy=powersupersave clk_ignore_unused pd_ignore_unused arm64.nopauth efi=noruntime

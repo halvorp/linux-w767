@@ -1,0 +1,82 @@
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+  9:        213        968        642        528        156         29        120         53     GICv3  38 Level     arch_mem_timer
+ 13:       2430       4208       4232       3734       4679       4199       4514       3685     GICv3  19 Level     arch_timer
+ 15:          7          0          0          0          0          0          0          0     GICv3 421 Edge      aoss-qmp
+ 16:          3          0          0          0          0          0          0          0     GICv3 608 Edge      smp2p
+ 17:          4          0          0          0          0          0          0          0     GICv3 190 Edge      smp2p
+ 18:          0          0          0          0          0          0          0          0     GICv3 483 Edge      smp2p
+ 19:          0          0          0          0          0          0          0          0     GICv3 204 Edge      smp2p
+ 20:          0          0          0          0          0          0          0          0     GICv3  97 Level     arm-smmu global fault
+ 21:          0          0          0          0          0          0          0          0     GICv3 129 Level     arm-smmu-context-fault
+ 22:          0          0          0          0          0          0          0          0     GICv3 130 Level     arm-smmu-context-fault
+ 23:          0          0          0          0          0          0          0          0     GICv3 131 Level     arm-smmu-context-fault
+ 24:          0          0          0          0          0          0          0          0     GICv3 132 Level     arm-smmu-context-fault
+ 25:          0          0          0          0          0          0          0          0     GICv3 133 Level     arm-smmu-context-fault
+ 26:          0          0          0          0          0          0          0          0     GICv3 134 Level     arm-smmu-context-fault
+ 27:          0          0          0          0          0          0          0          0     GICv3 135 Level     arm-smmu-context-fault
+ 28:          0          0          0          0          0          0          0          0     GICv3 136 Level     arm-smmu-context-fault
+128:          0          0          0          0          0          0          0          0     GICv3  21 Level     arm-pmu
+130:        212          0          0          0          0          0          0          0     GICv3  37 Level     apps_rsc
+131:          0          0          0          0          0          0          0          0     GICv3 617 Level     qcom_geni_serial_uart0
+132:          0          0          0          0          0          0          0          0     GICv3 706 Level     arm-smmu global fault
+133:          0          0          0          0          0          0          0          0     GICv3 713 Level     arm-smmu-context-fault
+134:          0          0          0          0          0          0          0          0     GICv3 714 Level     arm-smmu-context-fault
+135:          0          0          0          0          0          0          0          0     GICv3 715 Level     arm-smmu-context-fault
+141:          0          0          0          0          0          0          0          0     GICv3 162 Level     qcom_dwc3 HS
+142:          0          0          0          0          0          0          0          0     GICv3 521 Level     qcom_dwc3 DP_HS
+143:          0          0          0          0          0          0          0          0     GICv3 520 Level     qcom_dwc3 DM_HS
+144:          0          0          0          0          0          0          0          0     GICv3 518 Level     qcom_dwc3 SS
+145:          0          0          0          0          0          0          0          0     GICv3 167 Level     qcom_dwc3 HS
+146:          0          0          0          0          0          0          0          0     GICv3 523 Level     qcom_dwc3 DP_HS
+147:          0          0          0          0          0          0          0          0     GICv3 522 Level     qcom_dwc3 DM_HS
+148:          0          0          0          0          0          0          0          0     GICv3 552 Level     qcom_dwc3 SS
+149:          0          0          0          0          0          0          0          0     GICv3 688 Level     qcom_dwc3 HS
+150:          0          0          0          0          0          0          0          0     GICv3 542 Level     qcom_dwc3 DP_HS
+151:          0          0          0          0          0          0          0          0     GICv3 687 Level     qcom_dwc3 DM_HS
+152:          0          0          0          0          0          0          0          0     GICv3 519 Level     qcom_dwc3 SS
+153:        156          0          0          0          0          0          0          0     GICv3 686 Level     xhci-hcd:usb1
+154:          0          0          0          0          0          0          0          0     GICv3 298 Edge      q6v5 wdog
+155:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+156:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+157:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+158:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+159:          0          0          0          0          0          0          0          0     smp2p   7 Edge      q6v5 shutdown-ack
+160:          0          0          0          0          0          0          0          0     GICv3 610 Edge      q6v5 wdog
+161:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+162:          1          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+163:          1          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+164:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+165:          0          0          0          0          0          0          0          0     GICv3 194 Edge      q6v5 wdog
+166:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+167:          1          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+168:          1          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+169:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+170:          1          0          0          0          0          0          0          0     GICv3 165 Level     xhci-hcd:usb3
+171:        213          0          0          0          0          0          0          0     GICv3 170 Level     xhci-hcd:usb5
+172:          0          0          0          0          0          0          0          0     GICv3 446 Level     WLAN_CE_0
+173:          0          0          0          0          0          0          0          0     GICv3 447 Level     WLAN_CE_1
+174:          0          0          0          0          0          0          0          0     GICv3 448 Level     WLAN_CE_2
+175:          0          0          0          0          0          0          0          0     GICv3 449 Level     WLAN_CE_3
+176:          0          0          0          0          0          0          0          0     GICv3 450 Level     WLAN_CE_4
+177:          0          0          0          0          0          0          0          0     GICv3 451 Level     WLAN_CE_5
+178:          0          0          0          0          0          0          0          0     GICv3 452 Level     WLAN_CE_6
+179:          0          0          0          0          0          0          0          0     GICv3 453 Level     WLAN_CE_7
+180:          0          0          0          0          0          0          0          0     GICv3 454 Level     WLAN_CE_8
+181:          0          0          0          0          0          0          0          0     GICv3 455 Level     WLAN_CE_9
+182:          0          0          0          0          0          0          0          0     GICv3 456 Level     WLAN_CE_10
+183:          0          0          0          0          0          0          0          0     GICv3 457 Level     WLAN_CE_11
+185:          0          0          0          0          0          0          0          0     GICv3 332 Level     gpu-irq
+186:         49          0          0          0          0          0          0          0     GICv3 606 Edge      glink-smem
+187:          0          0          0          0          0          0          0          0     GICv3 336 Level     hfi
+188:          0          0          0          0          0          0          0          0     GICv3 337 Level     gmu
+189:          7          0          0          0          0          0          0          0  msm_mdss   0 Edge      msm
+190:         89          0          0          0          0          0          0          0  msm_mdss  14 Edge      dp_display_isr
+191:         56          0          0          0          0          0          0          0     GICv3 188 Edge      glink-smem
+IPI0:       369        381        338        332        445        368        353        356       Rescheduling interrupts
+IPI1:       985        956        786        698        973        736       1148        818       Function call interrupts
+IPI2:         0          0          0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:        22         49         69         77         17         11         12         12       Timer broadcast interrupts
+IPI5:         0          0          0          0          0          0          0          0       IRQ work interrupts
+IPI6:         0          0          0          0          0          0          0          0       CPU wake-up interrupts
+Err:          0

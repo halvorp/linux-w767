@@ -1,0 +1,1 @@
+18323000.cpufreq	qcom-cpufreq-hw: Failed to find icc paths

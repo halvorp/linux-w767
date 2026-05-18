@@ -1,0 +1,15 @@
+total 0
+drwxr-xr-x    2 0        0                0 Jan  1 00:03 .
+drwxr-xr-x   75 0        0                0 Jan  1 00:00 ..
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 event0 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0/0003:04E8:A055.0001/input/input0/event0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 event1 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0/0003:04E8:A055.0001/input/input1/event1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 event2 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.1/0003:04E8:A055.0002/input/input3/event2
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 event3 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input4/event3
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 event4 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input5/event4
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 event5 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input6/event5
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 input0 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0/0003:04E8:A055.0001/input/input0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 input1 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0/0003:04E8:A055.0001/input/input1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 input3 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.1/0003:04E8:A055.0002/input/input3
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 input4 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input4
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 input5 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input5
+lrwxrwxrwx    1 0        0                0 Jan  1 00:03 input6 -> ../../devices/platform/soc@0/a4f8800.usb/a400000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.2/0003:04E8:A055.0003/input/input6

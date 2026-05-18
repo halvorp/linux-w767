@@ -1,0 +1,118 @@
+00100000-002effff : 100000.clock-controller clock-controller@100000
+008c0000-008c5fff : 8c0000.geniqup geniqup@8c0000
+00ac0000-00ac5fff : ac0000.geniqup geniqup@ac0000
+00c8c000-00c8ffff : c8c000.serial serial@c8c000
+00cc0000-00cc5fff : cc0000.geniqup geniqup@cc0000
+01d87000-01d871bf : 1d87000.phy-wrapper phy-wrapper@1d87000
+01d87400-01d87507 : 1d87000.phy-wrapper phy@1d87400
+01d87600-01d877df : 1d87000.phy-wrapper phy@1d87400
+01d87800-01d87907 : 1d87000.phy-wrapper phy@1d87400
+01d87a00-01d87bdf : 1d87000.phy-wrapper phy@1d87400
+01d87c00-01d87ddb : 1d87000.phy-wrapper phy@1d87400
+01f40000-01f7ffff : 1f40000.hwlock hwlock@1f40000
+02c90000-02c98fff : 2c90000.clock-controller clock-controller@2c90000
+02ca0000-02caffff : 2ca0000.iommu iommu@2ca0000
+03100000-033fffff : 3100000.pinctrl west
+03500000-03bfffff : 3100000.pinctrl east
+03d00000-03ffffff : 3100000.pinctrl south
+088e2000-088e23ff : 88e2000.phy phy@88e2000
+088e3000-088e33ff : 88e3000.phy phy@88e3000
+088e4000-088e43ff : 88e4000.phy phy@88e4000
+088e5000-088e53ff : 88e5000.phy phy@88e5000
+088e8000-088e8037 : 88e9000.phy dp_com
+088e9000-088e918b : 88e9000.phy reg-base
+088e9200-088e93ff : 88e9000.phy usb3-phy@88e9200
+088e9400-088e95ff : 88e9000.phy usb3-phy@88e9200
+088e9600-088e97ff : 88e9000.phy usb3-phy@88e9200
+088e9800-088e99ff : 88e9000.phy usb3-phy@88e9200
+088e9a00-088e9aff : 88e9000.phy usb3-phy@88e9200
+088e9c00-088e9e17 : 88e9000.phy usb3-phy@88e9200
+088ea000-088ea03f : 88e9000.phy phy@88e9000
+088ea200-088ea3ff : 88e9000.phy dp-phy@88ea200
+088ea600-088ea7ff : 88e9000.phy dp-phy@88ea200
+088eaa00-088eabff : 88e9000.phy dp-phy@88ea200
+088eb000-088eb1ff : 88eb000.phy phy@88eb000
+088eb200-088eb3ff : 88eb000.phy usb3-phy@88eb200
+088eb400-088eb5ff : 88eb000.phy usb3-phy@88eb200
+088eb600-088eb7ff : 88eb000.phy usb3-phy@88eb200
+088eb800-088ebfff : 88eb000.phy usb3-phy@88eb200
+088ec000-088ec1ff : 88ec000.phy phy@88ec000
+088ec200-088ec3ff : 88ec000.phy usb3-phy@88ec200
+088ec400-088ec5ff : 88ec000.phy usb3-phy@88ec200
+088ec600-088ec7ff : 88ec000.phy usb3-phy@88ec200
+088ec800-088ecfff : 88ec000.phy usb3-phy@88ec200
+088ed000-088ed00f : 88ee000.phy dp_com
+088ee000-088ee18b : 88ee000.phy reg-base
+088ee200-088ee3ff : 88ee000.phy usb3-phy@88ee200
+088ee400-088ee5ff : 88ee000.phy usb3-phy@88ee200
+088ee600-088ee7ff : 88ee000.phy usb3-phy@88ee200
+088ee800-088ee9ff : 88ee000.phy usb3-phy@88ee200
+088eea00-088eeaff : 88ee000.phy usb3-phy@88ee200
+088eec00-088eee17 : 88ee000.phy usb3-phy@88ee200
+088ef000-088ef03f : 88ee000.phy phy@88ee000
+088ef200-088ef3ff : 88ee000.phy dp-phy@88ef200
+088ef600-088ef7ff : 88ee000.phy dp-phy@88ef200
+088efa00-088efbff : 88ee000.phy dp-phy@88ef200
+0a400000-0a407fff : dwc3@a400000
+  0a400000-0a407fff : xhci-hcd.0.auto dwc3@a400000
+0a40c100-0a40ccff : a400000.dwc3 dwc3@a400000
+0a4f8800-0a4f8bff : a4f8800.usb usb@a4f8800
+0a600000-0a607fff : usb@a600000
+  0a600000-0a607fff : xhci-hcd.1.auto usb@a600000
+0a60c100-0a60ccff : a600000.usb usb@a600000
+0a6f8800-0a6f8bff : a6f8800.usb usb@a6f8800
+0a800000-0a807fff : usb@a800000
+  0a800000-0a807fff : xhci-hcd.2.auto usb@a800000
+0a80c100-0a80ccff : a800000.usb usb@a800000
+0a8f8800-0a8f8bff : a8f8800.usb usb@a8f8800
+0ae00000-0ae00fff : ae00000.mdss mdss
+0ae9a000-0ae9a1ff : ae9a000.displayport-controller displayport-controller@ae9a000
+0ae9a200-0ae9a3ff : ae9a000.displayport-controller displayport-controller@ae9a000
+0ae9a400-0ae9a9ff : ae9a000.displayport-controller displayport-controller@ae9a000
+0ae9aa00-0ae9adff : ae9a000.displayport-controller displayport-controller@ae9a000
+0aec2000-0aec219b : aec2a00.phy phy@aec2a00
+0aec2200-0aec229f : aec2a00.phy phy@aec2a00
+0aec2600-0aec269f : aec2a00.phy phy@aec2a00
+0aec2a00-0aec2bbf : aec2a00.phy phy@aec2a00
+0af00000-0af1ffff : af00000.clock-controller clock-controller@af00000
+0c300000-0c3fffff : c300000.power-controller power-controller@c300000
+0c40a000-0c42ffff : spmi-0 cnfg
+0e700000-0e79ffff : spmi-0 intr
+15000000-150fffff : 15000000.iommu iommu@15000000
+17a00000-17a0ffff : GICD
+17a60000-17b5ffff : GICR
+17c00000-17c00fff : 17c00000.mailbox mailbox@17c00000
+17c21000-17c21fff : arch_mem_timer
+18220000-1822ffff : 18200000.rsc drv-2
+80000000-805fffff : System RAM
+80600000-829fffff : reserved
+83722000-854fffff : System RAM
+85500000-856fffff : reserved
+85d00000-85efffff : reserved
+85f20000-85f4ffff : reserved
+85f50000-85ffffff : System RAM
+86000000-861fffff : reserved
+8b700000-9b404fff : reserved
+9b405000-9d3fffff : System RAM
+9d400000-9ff91fff : reserved
+9ffb0000-9fffffff : reserved
+a0000000-ffa75fff : System RAM
+  e6b20000-e6b34fff : reserved
+  e6d20000-eab40fff : reserved
+  f006e000-f0073fff : reserved
+  f0075000-f0075fff : reserved
+  f58b1000-f98b0fff : reserved
+  f98b1000-f98b1fff : reserved
+  fa488000-fa488fff : reserved
+  fda00000-ff9fffff : reserved
+ffa76000-fff21fff : reserved
+fff22000-27b9fffff : System RAM
+  fff22000-ffffdfff : reserved
+  15e0d0000-15f31ffff : Kernel code
+  15f320000-15f4affff : reserved
+  15f4b0000-15f79ffff : Kernel data
+  271c90000-27a9fffff : reserved
+  27aa65000-27aa66fff : reserved
+  27aa67000-27aa67fff : reserved
+  27aa68000-27aa7cfff : reserved
+  27aa7d000-27b9fffff : reserved

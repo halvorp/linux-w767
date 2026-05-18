@@ -1,0 +1,1 @@
+Linux version 6.6.0 (peter@fedora) (aarch64-linux-gnu-gcc (GCC) 15.2.1 20250808 (Red Hat Cross 15.2.1-1), GNU ld version 2.45-1.fc43) #1 SMP PREEMPT Mon May 18 17:22:26 BST 2026
