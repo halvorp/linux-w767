@@ -1,0 +1,66 @@
+[
+  {
+    "data": "bdf/bdwlan.bin",
+    "names": [
+      "bus=snoc,qmi-board-id=ff,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=ff",
+      "bus=snoc,qmi-board-id=0"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b36",
+    "names": [
+      "bus=snoc,qmi-board-id=36,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=36"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b37",
+    "names": [
+      "bus=snoc,qmi-board-id=37,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=37"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b46",
+    "names": [
+      "bus=snoc,qmi-board-id=46,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=46"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b47",
+    "names": [
+      "bus=snoc,qmi-board-id=47,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=47"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b48",
+    "names": [
+      "bus=snoc,qmi-board-id=48,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=48"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b58",
+    "names": [
+      "bus=snoc,qmi-board-id=58,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=58"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b5f",
+    "names": [
+      "bus=snoc,qmi-board-id=5f,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=5f"
+    ]
+  },
+  {
+    "data": "bdf/bdwlan.b71",
+    "names": [
+      "bus=snoc,qmi-board-id=71,qmi-chip-id=30224",
+      "bus=snoc,qmi-board-id=71"
+    ]
+  }
+]
