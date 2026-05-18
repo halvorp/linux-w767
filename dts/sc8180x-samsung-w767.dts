@@ -487,64 +487,29 @@
 };
 
 /*
- * iter-58: re-enable &dispcc (just the clock controller). iter-56 disabled it
- * along with &mdss/&mdss_edp/&gpu to keep msm-drm from binding. But dispcc
- * also feeds the USB-C combo phys (88ec000.phy and friends) and the
- * phy-wrapper@1d87000 -- with dispcc disabled they kept returning -EPROBE_DEFER,
- * which (pre iter-58 cmdline change) spun deferred_probe in a tight loop,
- * starved RCU, and silently NMI'd the kernel between 0.6s and 21s. Iter-58
- * verbose boot showed all five phys returning -517 even with our DTB.
+ * iter-61: re-enable the full display + GPU stack (revert iter-56/57/59).
  *
- * dispcc the clock controller is harmless on its own: nothing requests a
- * display clock unless mdss/mdss_edp/gpu are also enabled, which they're not.
- * The known "disp_cc_pll0 rate 0 not within [249.6, 249.6005]" upstream bug
- * is consumer-driven (someone asking for rate 0), so we should not hit it
- * with no consumers wired up. Brother's iter-56 dossier §7.2 endorses this
- * as the next step.
+ * KIMI_2 + the postmarketOS samsung-w767 device package (pkgver=6) showed
+ * the silent hang we hit on iter-50→59 is the upstream 6.8-rc1 DRM/msm
+ * eDP/DP/aux_bridge regression. PostmarketOS ships a working W767 by
+ * pinning to sc8180x-mainline/linux @ 27c30b32 (kernel 6.6) which predates
+ * the regression. iter-61 follows the same plan:
+ *   - kernel: pmOS's 6.6 (separate build tree)
+ *   - DRM_MSM / PHY_QCOM_EDP / PHY_QCOM_QMP_COMBO = m (loaded via
+ *     modules-initfs, not built-in)
+ *   - all display nodes back to status=okay so msm can bind cleanly
  *
- * iter-56 history (still relevant): with DRM_MSM=y, mdss/mdss_edp/gpu cannot
- * be status=okay -- the msm driver would bind and hang. So those stay
- * disabled. See iter-57 comment below for the GPU power island.
+ * On the 6.6 kernel the previously-failing chain (dispcc → edp_phy →
+ * mdss_edp → aux_bridge → msm) works end-to-end -- pmOS reports
+ * "Screen: Partial / 3D Acceleration: Works" on the W767 wiki page.
  */
-&dispcc {
-	status = "okay";
-};
-
 &gpu {
-	status = "disabled";
-};
+	status = "okay";
 
-/*
- * iter-57: also disable the GPU's IOMMU and the GMU. iter-56 only disabled
- * &gpu, but &adreno_smmu and &gmu default to status=okay in sc8180x.dtsi.
- * arm-smmu still probed adreno_smmu@2ca0000, got through cfg_probe, printed
- * "preserved 0 boot mappings", then hung in arm_smmu_device_reset() inside
- * the GPU power island (no driver coordinating GPU_CX_GDSC/clocks → bus
- * stall). Watchdog rebooted in a loop. Disabling both consumers + the SMMU
- * itself takes the whole island offline cleanly. Brother's Windows DSDT
- * GPU0._DEP confirms MMU0/MMU1 are part of this island — see
- * research/2026-05-18-claude-iter56-gpu-bringup-answers.md §2.
- */
-&adreno_smmu {
-	status = "disabled";
-};
-
-&gmu {
-	status = "disabled";
-};
-
-/*
- * iter-59: also disable &edp_phy. It defaults to status=okay in sc8180x.dtsi
- * (the only display PHY we never explicitly disabled). iter-58 turned &dispcc
- * back on, which gave edp_phy resolvable clocks for the first time. With
- * &mdss_edp still disabled (no consumer to complete the PLL handshake), the
- * phy-qcom-edp probe hangs in a register-poll waiting forever. Hypothesis
- * from cross-review with the Kimi K2.6 instance on the W767. Pair with
- * panic=10 + dropping rcu_cpu_stall_suppress on the cmdline so a hang now
- * dumps to ramoops instead of silently spinning.
- */
-&edp_phy {
-	status = "disabled";
+	zap-shader {
+		memory-region = <&gpu_mem>;
+		firmware-name = "qcom/samsung/w767/qcdxkmsuc8180.mbn";
+	};
 };
 
 &i2c1 {
@@ -720,7 +685,7 @@
 };
 
 &mdss {
-	status = "disabled"; /* iter-56: see comment above &dispcc */
+	status = "okay"; /* iter-61: re-enabled, pmOS 6.6 kernel predates the regression */
 };
 
 // &mdss_dp0 {
@@ -779,7 +744,7 @@
 };
 
 &mdss_edp {
-	status = "disabled"; /* iter-56 */
+	status = "okay"; /* iter-61 */
 
 	data-lanes = <0 1 2 3>;
 
