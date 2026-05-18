@@ -47,3 +47,11 @@ w767-os/rust/target/
 .DS_Store
 Thumbs.db
 *~
+
+# Windows driver archive — too big for git, shared via Google Drive
+# (see recon/w767-w11-drivers.manifest.md)
+recon/w767-w11-drivers.zip
+# Ghidra analysis intermediates (regenerated on demand)
+recon/ghidra_paneldriver_analysis.txt
+recon/ghidra_paneldriver_err.txt
+.stage-drivers/
