@@ -1,0 +1,20 @@
+/lib/firmware/ath10k:
+total 0
+drwxr-xr-x    3 1000     1000            60 May 18  2026 .
+drwxr-xr-x    5 1000     1000           140 May 18  2026 ..
+drwxr-xr-x    3 1000     1000            60 May 18  2026 WCN3990
+
+/lib/firmware/ath10k/WCN3990:
+total 0
+drwxr-xr-x    3 1000     1000            60 May 18  2026 .
+drwxr-xr-x    3 1000     1000            60 May 18  2026 ..
+drwxr-xr-x    2 1000     1000           120 May 18  2026 hw1.0
+
+/lib/firmware/ath10k/WCN3990/hw1.0:
+total 4240
+drwxr-xr-x    2 1000     1000           120 May 18  2026 .
+drwxr-xr-x    3 1000     1000            60 May 18  2026 ..
+-rw-r--r--    1 1000     1000        237904 May 18  2026 board-2.bin
+-rw-r--r--    1 1000     1000         26328 May 18  2026 board.bin
+-rw-r--r--    1 1000     1000            60 May 18  2026 firmware-5.bin
+-rw-r--r--    1 1000     1000       4067104 May 18  2026 wlanmdsp.mbn

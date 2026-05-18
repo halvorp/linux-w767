@@ -1,0 +1,6 @@
+=== card0-eDP-1 ===
+status:    connected
+enabled:   enabled
+modes:
+  1920x1080
+edid_size: 128 bytes

@@ -1,0 +1,6 @@
+total 0
+drwxr-xr-x    2 0        0                0 Jan  1 00:00 .
+drwxr-xr-x   76 0        0                0 Jan  1 00:00 ..
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 remoteproc0 -> ../../devices/platform/soc@0/4080000.remoteproc/remoteproc/remoteproc0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 remoteproc1 -> ../../devices/platform/soc@0/8300000.remoteproc/remoteproc/remoteproc1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 remoteproc2 -> ../../devices/platform/soc@0/17300000.remoteproc/remoteproc/remoteproc2

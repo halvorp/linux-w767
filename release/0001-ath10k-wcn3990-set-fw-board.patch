@@ -1,0 +1,40 @@
+From: Peter Koczka <mg.peter.koczka@gmail.com>
+Subject: [PATCH] ath10k: WCN3990: set .fw.board so api_1 fallback works
+
+The 6.6 ath10k_core_fetch_board_data_api_1() short-circuits with -EINVAL
+when ar->hw_params.fw.board is NULL, before even trying to load
+board.bin. The WCN3990 hw_params entry leaves .board unset (only .dir),
+so the W767 (and any other WCN3990-SNOC board that doesn't ship a
+matching entry inside board-2.bin) fails with:
+
+  ath10k_snoc 18800000.wifi: failed to fetch board data for
+    bus=snoc,qmi-board-id=ff,qmi-chip-id=30224 from
+    ath10k/WCN3990/hw1.0/board-2.bin
+  ath10k_snoc 18800000.wifi: failed to find board file fw entry
+  ath10k_snoc 18800000.wifi: failed to fetch board-2.bin or board.bin
+
+Linux 7.0's api_1 had no .fw.board NULL guard and simply tried
+ATH10K_BOARD_DATA_FILE ("board.bin") directly. Setting .board here
+restores that behaviour on 6.6 without changing the function logic.
+
+Diff:
+---
+diff --git a/drivers/net/wireless/ath/ath10k/core.c b/drivers/net/wireless/ath/ath10k/core.c
+@@ -703,6 +703,17 @@
+         .max_spatial_stream = 4,
+         .fw = {
+             .dir = WCN3990_HW_1_0_FW_DIR,
++            /* iter-65 (W767): set .board so api_1 fallback
++             * can use plain board.bin when both the
++             * per-device boardname (board-snoc-18800000.wifi.bin)
++             * and the board-2.bin lookup fail. Without this,
++             * api_1's NULL check at the top of
++             * ath10k_core_fetch_board_data_api_1() short-circuits
++             * with -EINVAL and the driver gives up. Linux 7.0
++             * (iter-49) had no such check; 6.6 (pmOS-pinned)
++             * introduced it.
++             */
++            .board = "board.bin",
+         },
+         .sw_decrypt_mcast_mgmt = true,
+         .rx_desc_ops = &wcn3990_rx_desc_ops,

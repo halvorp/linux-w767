@@ -1,0 +1,61 @@
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 29 fb
+ 89 i2c
+116 alsa
+128 ptm
+136 pts
+180 usb
+189 usb_device
+226 drm
+237 qcom_rmtfs_mem
+238 rpmb
+239 vfio
+240 ttynull
+241 ttyLF
+242 ttyLP
+243 ttyHS
+244 ttyMSM
+245 ttyMSM
+246 bsg
+247 watchdog
+248 tee
+249 iio
+250 ptp
+251 pps
+252 rtc
+253 tpm
+254 gpiochip
+
+Block devices:
+  7 loop
+  8 sd
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+179 mmc
+254 virtblk
+259 blkext

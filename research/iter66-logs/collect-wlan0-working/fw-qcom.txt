@@ -1,0 +1,73 @@
+/lib/firmware/qcom:
+total 408
+drwxr-xr-x    3 1000     1000           180 May 18  2026 .
+drwxr-xr-x    5 1000     1000           140 May 18  2026 ..
+-rw-r--r--    1 1000     1000        104328 May 18  2026 a630_gmu.bin
+-rw-r--r--    1 1000     1000         32456 May 18  2026 a630_sqe.fw
+-rw-r--r--    1 1000     1000        104328 May 18  2026 a640_gmu.bin
+-rw-r--r--    1 1000     1000         32456 May 18  2026 a640_sqe.fw
+-rw-r--r--    1 1000     1000        104328 May 18  2026 a680_gmu.bin
+-rw-r--r--    1 1000     1000         32456 May 18  2026 a680_sqe.fw
+drwxr-xr-x    3 1000     1000            60 May 18  2026 samsung
+
+/lib/firmware/qcom/samsung:
+total 0
+drwxr-xr-x    3 1000     1000            60 May 18  2026 .
+drwxr-xr-x    3 1000     1000           180 May 18  2026 ..
+drwxr-xr-x    3 1000     1000           260 May 18  2026 w767
+
+/lib/firmware/qcom/samsung/w767:
+total 94488
+drwxr-xr-x    3 1000     1000           260 May 18  2026 .
+drwxr-xr-x    3 1000     1000            60 May 18  2026 ..
+-rw-r--r--    1 1000     1000           403 May 18  2026 adspr.jsn
+-rw-r--r--    1 1000     1000           555 May 18  2026 adspua.jsn
+-rw-r--r--    1 1000     1000           516 May 18  2026 battmgr.jsn
+-rw-r--r--    1 1000     1000           403 May 18  2026 cdspr.jsn
+drwxr-xr-x    3 1000     1000            60 May 18  2026 modem_pr
+-rw-r--r--    1 1000     1000           713 May 18  2026 modemuw.jsn
+-rw-r--r--    1 1000     1000      11008656 May 18  2026 qcadsp8180.mbn
+-rw-r--r--    1 1000     1000       3114644 May 18  2026 qccdsp8180.mbn
+-rw-r--r--    1 1000     1000         14240 May 18  2026 qcdxkmsuc8180.mbn
+-rw-r--r--    1 1000     1000      78520448 May 18  2026 qcmpss8180_XEF.mbn
+-rw-r--r--    1 1000     1000       4067104 May 18  2026 wlanmdsp.mbn
+
+/lib/firmware/qcom/samsung/w767/modem_pr:
+total 0
+drwxr-xr-x    3 1000     1000            60 May 18  2026 .
+drwxr-xr-x    3 1000     1000           260 May 18  2026 ..
+drwxr-xr-x    3 1000     1000            60 May 18  2026 mcfg
+
+/lib/firmware/qcom/samsung/w767/modem_pr/mcfg:
+total 0
+drwxr-xr-x    3 1000     1000            60 May 18  2026 .
+drwxr-xr-x    3 1000     1000            60 May 18  2026 ..
+drwxr-xr-x    4 1000     1000            80 May 18  2026 configs
+
+/lib/firmware/qcom/samsung/w767/modem_pr/mcfg/configs:
+total 0
+drwxr-xr-x    4 1000     1000            80 May 18  2026 .
+drwxr-xr-x    3 1000     1000            60 May 18  2026 ..
+drwxr-xr-x    2 1000     1000            60 May 18  2026 mcfg_hw
+drwxr-xr-x    2 1000     1000           240 May 18  2026 mcfg_sw
+
+/lib/firmware/qcom/samsung/w767/modem_pr/mcfg/configs/mcfg_hw:
+total 28
+drwxr-xr-x    2 1000     1000            60 May 18  2026 .
+drwxr-xr-x    4 1000     1000            80 May 18  2026 ..
+-rw-r--r--    1 1000     1000         28576 May 18  2026 mbn_hw.dig
+
+/lib/firmware/qcom/samsung/w767/modem_pr/mcfg/configs/mcfg_sw:
+total 216
+drwxr-xr-x    2 1000     1000           240 May 18  2026 .
+drwxr-xr-x    4 1000     1000            80 May 18  2026 ..
+-rw-r--r--    1 1000     1000         14152 May 18  2026 mcfg_sw.mbn.10
+-rw-r--r--    1 1000     1000         14788 May 18  2026 mcfg_sw.mbn.11
+-rw-r--r--    1 1000     1000         41000 May 18  2026 mcfg_sw.mbn.12
+-rw-r--r--    1 1000     1000         15576 May 18  2026 mcfg_sw.mbn.13
+-rw-r--r--    1 1000     1000         15548 May 18  2026 mcfg_sw.mbn.14
+-rw-r--r--    1 1000     1000         15400 May 18  2026 mcfg_sw.mbn.5
+-rw-r--r--    1 1000     1000         13956 May 18  2026 mcfg_sw.mbn.6
+-rw-r--r--    1 1000     1000         42864 May 18  2026 mcfg_sw.mbn.7
+-rw-r--r--    1 1000     1000         14176 May 18  2026 mcfg_sw.mbn.8
+-rw-r--r--    1 1000     1000         14168 May 18  2026 mcfg_sw.mbn.9

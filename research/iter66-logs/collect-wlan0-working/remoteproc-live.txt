@@ -1,0 +1,6 @@
+=== remoteproc0 ===
+  state=running  fw=qcom/samsung/w767/qcmpss8180_XEF.mbn  name=4080000.remoteproc
+=== remoteproc1 ===
+  state=running  fw=qcom/samsung/w767/qccdsp8180.mbn  name=8300000.remoteproc
+=== remoteproc2 ===
+  state=running  fw=qcom/samsung/w767/qcadsp8180.mbn  name=17300000.remoteproc

@@ -1,0 +1,7 @@
+# Binary release artifacts — uploaded to the GitHub release page, not stored in git history.
+# Build them with the recipes in RELEASE-NOTES.md, or download from the release.
+Image
+sc8180x-samsung-w767.dtb
+w767-initramfs.img
+ath10k-WCN3990-hw1.0-board-2.bin
+ath10k_core.ko

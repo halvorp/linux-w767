@@ -1,0 +1,38 @@
+[    2.207599] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.277707] cfg80211: loaded regulatory.db is malformed or signature is missing/invalid
+[    2.301182] ath10k_snoc 18800000.wifi: Adding to iommu group 7
+[    2.302526] ath10k_snoc 18800000.wifi: supply vdd-3.3-ch1 not found, using dummy regulator
+[    2.584672] Modules linked in: rmtfs_mem ath10k_snoc ath10k_core ath mac80211 libarc4 cfg80211 rfkill msm gpu_sched panel_edp drm_display_helper drm_dp_aux_bus pwm_bl leds_qcom_lpg led_class_multicolor phy_qcom_edp phy_qcom_qmp_combo drm_kms_helper drm drm_panel_orientation_quirks qrtr_smd qrtr qcom_q6v5_pas qcom_pil_info qcom_q6v5 qcom_sysmon mdt_loader qcom_common qcom_glink_smem pdr_interface qmi_helpers
+[    8.117385] ath10k_snoc 18800000.wifi: qmi chip_id 0x30224 chip_family 0x4001 board_id 0xff soc_id 0x40060000
+[    8.117407] ath10k_snoc 18800000.wifi: qmi fw_version 0x303780a0 fw_build_timestamp 2019-10-15 01:27 fw_build_id QC_IMAGE_VERSION_STRING=WLAN.HL.3.0.3-00160-QCAHLSWSC8180XMTPLZ-1
+[   11.900324] ath10k_snoc 18800000.wifi: wcn3990 hw1.0 target 0x00000008 chip_id 0x00000000 sub 0000:0000
+[   11.900338] ath10k_snoc 18800000.wifi: kconfig debug 0 debugfs 0 tracing 0 dfs 0 testmode 0
+[   11.900346] ath10k_snoc 18800000.wifi: firmware ver  api 5 features wowlan,mgmt-tx-by-reference,non-bmi crc32 b3d4b790
+[   11.934395] ath10k_snoc 18800000.wifi: htt-ver 3.71 wmi-op 4 htt-op 3 cal file max-sta 32 raw 0 hwcrypto 1
+[   12.016031] ath10k_snoc 18800000.wifi: invalid MAC address; choosing random
+[   12.388354] iter-54: wlan0 appeared at 12s, bringing up
+[   14.505155] ath10k_snoc 18800000.wifi: chan info: invalid frequency 0 (idx 41 out of bounds)
+[   14.928555] iter-54: wpa_supplicant association attempted, requesting DHCP
+[   15.969170] ath10k_snoc 18800000.wifi: chan info: invalid frequency 0 (idx 41 out of bounds)
+[   15.990007] wlan0: authenticate with 62:7a:58:f0:10:2b
+[   15.990046] wlan0: 80 MHz not supported, disabling VHT
+[   16.016057] wlan0: send auth to 62:7a:58:f0:10:2b (try 1/3)
+[   16.054396] wlan0: authenticated
+[   16.059955] wlan0: associate with 62:7a:58:f0:10:2b (try 1/3)
+[   16.083781] wlan0: RX AssocResp from 62:7a:58:f0:10:2b (capab=0x1411 status=0 aid=18)
+[   16.155065] wlan0: associated
+[   16.203352] wlan0: Limiting TX power to 27 (27 - 0) dBm as advertised by 62:7a:58:f0:10:2b
+[   20.712053] iter-54: wlan0 IP=
+[   34.865665] ath10k_snoc 18800000.wifi: chan info: invalid frequency 0 (idx 41 out of bounds)
+[   38.121121] ath10k_snoc 18800000.wifi: failed to install key for vdev 0 peer 62:7a:58:f0:10:2b: -110
+[   38.125467] wlan0: failed to remove key (1, ff:ff:ff:ff:ff:ff) from hardware (-110)
+[   38.131123] wlan0: disconnect from AP 62:7a:58:f0:10:2b for new auth to 6a:7a:58:f0:10:2c
+[   41.193130] ath10k_snoc 18800000.wifi: failed to install key for vdev 0 peer 62:7a:58:f0:10:2b: -110
+[   41.197474] wlan0: failed to remove key (0, 62:7a:58:f0:10:2b) from hardware (-110)
+[   41.310769] wlan0: authenticate with 6a:7a:58:f0:10:2c
+[   41.334474] wlan0: send auth to 6a:7a:58:f0:10:2c (try 1/3)
+[   41.337984] wlan0: authenticated
+[   41.352098] wlan0: associate with 6a:7a:58:f0:10:2c (try 1/3)
+[   41.362960] wlan0: RX ReassocResp from 6a:7a:58:f0:10:2c (capab=0x1011 status=0 aid=30)
+[   41.436846] wlan0: associated
+[   41.487870] wlan0: Limiting TX power to 30 (30 - 0) dBm as advertised by 6a:7a:58:f0:10:2c

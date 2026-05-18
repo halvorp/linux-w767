@@ -1,0 +1,13 @@
+total 0
+drwxr-xr-x    2 0        0                0 Jan  1 00:05 .
+drwxr-xr-x   76 0        0                0 Jan  1 00:00 ..
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop0 -> ../../devices/virtual/block/loop0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop1 -> ../../devices/virtual/block/loop1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop2 -> ../../devices/virtual/block/loop2
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop3 -> ../../devices/virtual/block/loop3
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop4 -> ../../devices/virtual/block/loop4
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop5 -> ../../devices/virtual/block/loop5
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop6 -> ../../devices/virtual/block/loop6
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 loop7 -> ../../devices/virtual/block/loop7
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 sda -> ../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb5/5-1/5-1:1.0/host0/target0:0:0/0:0:0:0/block/sda
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 sda1 -> ../../devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.2.auto/usb5/5-1/5-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1

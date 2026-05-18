@@ -1,0 +1,12 @@
+/readwrite/server_check.txt opened for writing from 0:38
+tqftpserv: failed to open ota_firewall/ruleset: No such file or directory
+unable to open /readwrite/ota_firewall/ruleset (2), reject
+tqftpserv: failed to open ota_firewall/ruleset: No such file or directory
+unable to open /readwrite/ota_firewall/ruleset (2), reject
+tqftpserv: failed to open mcfg.tmp: No such file or directory
+unable to open /readwrite/mcfg.tmp (2), reject
+Ignoring unknown option 'unlink' with value '0'
+unable to open /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt (2), reject
+unable to open /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.txt (2), reject
+unable to open /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt (2), reject
+unable to open /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.txt (2), reject

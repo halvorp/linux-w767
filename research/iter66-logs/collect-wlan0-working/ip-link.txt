@@ -1,0 +1,4 @@
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
+    link/ether 4e:55:ff:24:3b:c0 brd ff:ff:ff:ff:ff:ff

@@ -1,0 +1,20 @@
+=== group 0 ===
+  8c0000.geniqup
+=== group 1 ===
+  ac0000.geniqup
+=== group 2 ===
+  cc0000.geniqup
+=== group 3 ===
+  a400000.dwc3
+=== group 4 ===
+  a600000.usb
+=== group 5 ===
+  2c00000.gpu
+=== group 6 ===
+  a800000.usb
+=== group 7 ===
+  18800000.wifi
+=== group 8 ===
+  ae00000.mdss
+=== group 9 ===
+  2c6a000.gmu

@@ -1,0 +1,23 @@
+[    2.042653] iter-61: modprobe SoC + remoteproc + qrtr
+[    2.076843] qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle
+[    2.099900] remoteproc remoteproc0: releasing 4080000.remoteproc
+[    2.101419] qcom_q6v5_pas 8300000.remoteproc: failed to initialize qmi handle
+[    2.109433] remoteproc remoteproc0: releasing 8300000.remoteproc
+[    2.110237] qcom_q6v5_pas 17300000.remoteproc: failed to initialize qmi handle
+[    2.118280] remoteproc remoteproc0: releasing 17300000.remoteproc
+[    2.349912] remoteproc remoteproc0: 4080000.remoteproc is available
+[    2.350621] remoteproc remoteproc1: 8300000.remoteproc is available
+[    2.352215] remoteproc remoteproc1: powering up 8300000.remoteproc
+[    2.352225] remoteproc remoteproc1: Booting fw image qcom/samsung/w767/qccdsp8180.mbn, size 3114644
+[    2.352407] remoteproc remoteproc2: 17300000.remoteproc is available
+[    2.359256] remoteproc remoteproc2: powering up 17300000.remoteproc
+[    2.363552] remoteproc remoteproc2: Booting fw image qcom/samsung/w767/qcadsp8180.mbn, size 11008656
+[    2.398414] remoteproc remoteproc1: remote processor 8300000.remoteproc is now up
+[    2.486470] remoteproc remoteproc2: remote processor 17300000.remoteproc is now up
+[    2.584672] Modules linked in: rmtfs_mem ath10k_snoc ath10k_core ath mac80211 libarc4 cfg80211 rfkill msm gpu_sched panel_edp drm_display_helper drm_dp_aux_bus pwm_bl leds_qcom_lpg led_class_multicolor phy_qcom_edp phy_qcom_qmp_combo drm_kms_helper drm drm_panel_orientation_quirks qrtr_smd qrtr qcom_q6v5_pas qcom_pil_info qcom_q6v5 qcom_sysmon mdt_loader qcom_common qcom_glink_smem pdr_interface qmi_helpers
+[    4.376106] remoteproc remoteproc0: powering up 4080000.remoteproc
+[    4.407260] remoteproc remoteproc0: Booting fw image qcom/samsung/w767/qcmpss8180_XEF.mbn, size 78520448
+[    4.887141] remoteproc remoteproc0: remote processor 4080000.remoteproc is now up
+[    4.896251] iter-63: kicked MPSS at remoteproc0 fw=qcom/samsung/w767/qcmpss8180_XEF.mbn (was=offline, now=running)
+[    8.117385] ath10k_snoc 18800000.wifi: qmi chip_id 0x30224 chip_family 0x4001 board_id 0xff soc_id 0x40060000
+[    8.117407] ath10k_snoc 18800000.wifi: qmi fw_version 0x303780a0 fw_build_timestamp 2019-10-15 01:27 fw_build_id QC_IMAGE_VERSION_STRING=WLAN.HL.3.0.3-00160-QCAHLSWSC8180XMTPLZ-1

@@ -1,0 +1,4 @@
+total 0
+drwxr-xr-x    2 0        0                0 Jan  1 00:05 .
+drwxr-xr-x   76 0        0                0 Jan  1 00:00 ..
+lrwxrwxrwx    1 0        0                0 Jan  1 00:05 2c00000.gpu -> ../../devices/platform/soc@0/2c00000.gpu/devfreq/2c00000.gpu

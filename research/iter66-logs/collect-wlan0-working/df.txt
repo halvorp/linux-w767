@@ -1,0 +1,5 @@
+Filesystem           1K-blocks      Used Available Use% Mounted on
+devtmpfs               3755472         4   3755468   0% /dev
+tmpfs                  3804472         0   3804472   0% /run
+tmpfs                  3804472         0   3804472   0% /tmp
+/dev/sda1               784876     88992    695884  11% /mnt/esp

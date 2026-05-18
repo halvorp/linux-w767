@@ -1,0 +1,83 @@
+ regulator                      use open bypass  opmode voltage current     min     max
+---------------------------------------------------------------------------------------
+ regulator-dummy                  5   11      0 unknown     0mV     0mA     0mV     0mV 
+    aux-ae9a000.displayport-controller-power   1                                 0mA     0mV     0mV
+    2c00000.gpu-vddcx             0                                 0mA     0mV     0mV
+    2c00000.gpu-vdd               0                                 0mA     0mV     0mV
+    aec2a00.phy-vdda-pll          1                                36mA     0mV     0mV
+    aec2a00.phy-vdda-phy          1                                21mA     0mV     0mV
+    18800000.wifi-vdd-3.3-ch1     1                                 0mA     0mV     0mV
+    ldo9                          0    0      0  normal  2504mV     0mA  2504mV  2904mV 
+    ldo10                         0    0      0  normal     0mV     0mA     0mV     0mV 
+    ldo3                          0    0      0  normal     0mV     0mA     0mV     0mV 
+    ldo5                          0    0      0  normal     0mV     0mA     0mV     0mV 
+    ldo18                         0    0      0  normal     0mV     0mA     0mV     0mV 
+ vph_pwr                          6    8      0 unknown  3700mV     0mA  3700mV  3700mV 
+    vreg_s4a_1p8                  1    2      0 unknown  1800mV     0mA  1800mV  1800mV 
+       ldo1                       0    0      0  normal     0mV     0mA     0mV     0mV 
+       ldo8                       0    0      0  normal  1800mV     0mA  1800mV  1800mV 
+    smps6                         2    6      0    fast     0mV     0mA     0mV     0mV 
+       ldo2                       0    0      0  normal  1200mV     0mA  1200mV  1200mV 
+       ldo3                       4    5      0  normal  1200mV     0mA  1200mV  1200mV 
+          88ee000.phy-vdda-phy    1                                21mA     0mV     0mV
+          88e9000.phy-vdda-phy    1                                21mA     0mV     0mV
+          88ec000.phy-vdda-phy    1                                 0mA     0mV     0mV
+          88eb000.phy-vdda-phy    1                                 0mA     0mV     0mV
+          1d87000.phy-wrapper-vdda-pll   0                                 0mA     0mV     0mV
+       ldo1                       0    0      0 unknown  1200mV     0mA  1200mV  1200mV 
+       ldo6                       0    0      0  normal  1200mV     0mA  1200mV  1200mV 
+       ldo9                       1    1      0  normal  1304mV     0mA  1304mV  1304mV 
+          18800000.wifi-vdd-1.3-rfa   1                                 0mA     0mV     0mV
+       ldo11                      0    0      0  normal     0mV     0mA     0mV     0mV 
+    smps7                         0    0      0    fast     0mV     0mA     0mV     0mV 
+    smps8                         0    0      0    fast  1800mV     0mA  1800mV  1800mV 
+    bob                           2   12      0    fast     0mV     0mA     0mV     0mV 
+       ldo6                       0    0      0  normal  1800mV     0mA  1800mV  2944mV 
+       ldo7                       0    0      0  normal  3000mV     0mA  3000mV  3000mV 
+       ldo11                      1    1      0  normal  3312mV     0mA  3312mV  3312mV 
+          18800000.wifi-vdd-3.3-ch0   1                                 0mA     0mV     0mV
+       ldo2                       0    0      0 unknown  2800mV     0mA  2800mV  2848mV 
+       ldo2                       0    0      0  normal     0mV     0mA     0mV     0mV 
+       ldo10                      0    0      0  normal  2856mV     0mA  2856mV  3000mV 
+       ldo13                      0    0      0  normal     0mV     0mA     0mV     0mV 
+       ldo16                      0    0      0  normal  2800mV     0mA  2800mV  2800mV 
+       ldo10                      0    0      0  normal  2504mV     0mA  2504mV  2904mV 
+       ldo13                      0    0      0  normal     0mV     0mA     0mV     0mV 
+       ldo16                      4    4      0  normal  3072mV     0mA  3072mV  3072mV 
+          88e5000.phy-vdda33      1                                 0mA     0mV     0mV
+          88e4000.phy-vdda33      1                                 0mA     0mV     0mV
+          88e3000.phy-vdda33      1                                 0mA     0mV     0mV
+          88e2000.phy-vdda33      1                                 0mA     0mV     0mV
+       ldo17                      0    0      0  normal  2960mV     0mA  2960mV  2960mV 
+    smps5                         2    4      0 unknown     0mV     0mA     0mV     0mV 
+       ldo7                       1    1      0  normal  1800mV     0mA  1800mV  1800mV 
+          18800000.wifi-vdd-1.8-xo   1                                 0mA     0mV     0mV
+       ldo12                      4    4      0  normal  1800mV     0mA  1800mV  1800mV 
+          88e5000.phy-vdda18      1                                 0mA     0mV     0mV
+          88e4000.phy-vdda18      1                                 0mA     0mV     0mV
+          88e3000.phy-vdda18      1                                 0mA     0mV     0mV
+          88e2000.phy-vdda18      1                                 0mA     0mV     0mV
+       ldo14                      0    0      0 unknown  1800mV     0mA  1800mV  1800mV 
+       ldo15                      0    0      0  normal     0mV     0mA     0mV     0mV 
+    smps4                         2    5      0    fast     0mV     0mA     0mV     0mV 
+       ldo1                       1    1      0  normal   752mV     0mA   752mV   752mV 
+          18800000.wifi-vdd-0.8-cx-mx   1                                 0mA     0mV     0mV
+       ldo4                       0    0      0  normal     0mV     0mA     0mV     0mV 
+       ldo5                       8    9      0  normal   880mV     0mA   880mV   880mV 
+          88ee000.phy-vdda-pll    1                                36mA     0mV     0mV
+          88e9000.phy-vdda-pll    1                                36mA     0mV     0mV
+          88e5000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          88e4000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          88e3000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          88e2000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          88ec000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          88eb000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          1d87000.phy-wrapper-vdda-phy   0                                 0mA     0mV     0mV
+       ldo8                       0    0      0  normal     0mV     0mA     0mV     0mV 
+       ldo9                       0    0      0  normal   880mV     0mA   880mV   912mV 
+    smps5                         0    4      0    fast     0mV     0mA     0mV     0mV 
+       ldo7                       0    0      0  normal  1800mV     0mA  1800mV  1800mV 
+       ldo12                      0    0      0  normal  1800mV     0mA  1800mV  1800mV 
+       ldo14                      0    0      0  normal  1800mV     0mA  1800mV  1800mV 
+       ldo15                      0    0      0  normal  1800mV     0mA  1800mV  1800mV 
+ MMCX                             0    0      0 unknown     0mV     0mA     0mV     0mV 

@@ -1,0 +1,5 @@
+total 0
+drwxr-xr-x    2 0        0                0 Jan  1 00:00 .
+drwxr-xr-x   76 0        0                0 Jan  1 00:00 ..
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 lo -> ../../devices/virtual/net/lo
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 wlan0 -> ../../devices/platform/soc@0/18800000.wifi/net/wlan0
