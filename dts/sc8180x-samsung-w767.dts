@@ -1230,43 +1230,23 @@
 	status = "okay";
 
 	/*
-	 * iter-37: override compatible to USB-only legacy QMP driver.
-	 * iter-36 instrumentation showed dwc3_core_get_phy returning
-	 * -517 (EPROBE_DEFER) forever — the combo driver
-	 * (phy-qcom-qmp-combo.c) wasn't registering its
-	 * QMP_USB43DP_USB3_PHY interface because Branch C from iter-33
-	 * stripped the connector graph it needs.  The USB-only legacy
-	 * driver (phy-qcom-qmp-usb-legacy.c) matches `qcom,sc8180x-
-	 * qmp-usb3-phy` and registers a single USB3 PHY with
-	 * #phy-cells=0 — no connector graph required.
+	 * iter-40: REVERT iter-37 (compatible/#phy-cells override) and
+	 * iter-38 (/delete-node/ ports) — the USB-only legacy driver
+	 * never worked because its sm8150_usb3phy_cfg expects clock
+	 * names `aux, ref_clk_src, ref, com_aux` while mainline DT
+	 * (combo-flavored) provides `aux, ref, com_aux, usb3_pipe`.
+	 * Even with -y the legacy driver silently fails clk_bulk_get
+	 * for `ref_clk_src` and never registers the PHY.  iter-40
+	 * flips PHY_QCOM_QMP_COMBO=y instead (7th =m trap) so the
+	 * combo driver that mainline DT was designed for actually
+	 * loads.  Lenovo Flex 5G uses the same SoC+DT+combo driver
+	 * combination successfully.
 	 *
-	 * iter-38: also delete the inherited `ports` subtree.  The
-	 * mainline combo node has port@0/@1/@2 for DP+SBU+USB SS graph
-	 * routing; the USB-only legacy driver doesn't parse that and
-	 * was still returning -517 in iter-37.  /delete-node/ forces it
-	 * to evaluate deps only via regulators + clocks (already correct
-	 * from iter-34).
+	 * Keep iter-34's vdda-* supply corrections (LDO9_E + LDO3_C
+	 * per PEP map).
 	 */
-	compatible = "qcom,sc8180x-qmp-usb3-phy";
-	#phy-cells = <0>;
-
 	vdda-phy-supply = <&vreg_l9e_0p88>;
 	vdda-pll-supply = <&vreg_l3c_1p2>;
-
-	/delete-node/ ports;
-};
-
-&usb_prim_dwc3 {
-	dr_mode = "host";
-	/* iter-37: USB-only PHY (#phy-cells=0) — drop QMP_USB43DP_USB3_PHY cell. */
-	phys = <&usb_prim_hsphy>, <&usb_prim_qmpphy>;
-	phy-names = "usb2-phy", "usb3-phy";
-	/* iter-38: also delete inherited ports subtree — its port@1
-	 * referenced usb_prim_qmpphy_usb_ss_in which we just deleted
-	 * along with the qmpphy's ports.  Without role-switch wiring,
-	 * dwc3 doesn't need its own port graph either.
-	 */
-	/delete-node/ ports;
 };
 
 &usb_prim {
@@ -1284,23 +1264,11 @@
 &usb_sec_qmpphy {
 	status = "okay";
 
-	/* iter-37+38: USB-only legacy QMP driver + drop ports.
-	 * See &usb_prim_qmpphy comment.
+	/* iter-40: see &usb_prim_qmpphy comment for the COMBO driver
+	 * revert. Keep iter-34 supply corrections only.
 	 */
-	compatible = "qcom,sc8180x-qmp-usb3-phy";
-	#phy-cells = <0>;
-
 	vdda-phy-supply = <&vreg_l9e_0p88>;
 	vdda-pll-supply = <&vreg_l3c_1p2>;
-
-	/delete-node/ ports;
-};
-
-&usb_sec_dwc3 {
-	dr_mode = "host";
-	phys = <&usb_sec_hsphy>, <&usb_sec_qmpphy>;
-	phy-names = "usb2-phy", "usb3-phy";
-	/delete-node/ ports;
 };
 
 &usb_sec {

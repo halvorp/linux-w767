@@ -1,0 +1,51 @@
+#!/bin/busybox sh
+# w767 iter-32 one-shot diagnostic dump
+# Type `diag` at the shell — every section we care about, prints to stdout.
+
+clear 2>/dev/null
+
+echo "===== state summary ====="
+echo "uname:    $(uname -a)"
+echo "uptime:   $(cat /proc/uptime | cut -d. -f1)s"
+echo
+echo "USB devices:"
+ls /sys/bus/usb/devices/ 2>/dev/null | tr '\n' ' '; echo
+echo "block devices:"
+ls /sys/block/ 2>/dev/null | tr '\n' ' '; echo
+echo "NET:"
+ls /sys/class/net/ 2>/dev/null | tr '\n' ' '; echo
+echo "remoteproc:"
+for rp in /sys/class/remoteproc/*/; do
+    [ -d "$rp" ] || continue
+    n=$(basename "$rp")
+    echo "  $n: state=$(cat "$rp/state" 2>/dev/null) name=$(cat "$rp/name" 2>/dev/null) fw=$(cat "$rp/firmware" 2>/dev/null)"
+done
+echo "typec:"
+ls /sys/class/typec/ 2>/dev/null | tr '\n' ' '; echo
+echo "auxiliary:"
+ls /sys/bus/auxiliary/devices/ 2>/dev/null | tr '\n' ' '; echo
+echo "deferred (full):"
+cat /sys/kernel/debug/devices_deferred 2>/dev/null
+
+echo
+echo "===== dmesg: dwc3 / qmpphy / hsphy / URS ====="
+dmesg | grep -iE 'dwc3|qmpphy|hsphy|a600000|a800000|a4f8800|usb_prim|usb_sec|usb_mp|role-switch|pmic_glink' | tail -40
+
+echo
+echo "===== dmesg: ath10k / wifi / wcn / qmi / qrtr ====="
+dmesg | grep -iE 'ath10k|wlanmdsp|wcn3990|wcn|qmi|qrtr|18800000' | tail -30
+
+echo
+echo "===== dmesg: remoteproc / q6v5 / adsp / cdsp / mpss ====="
+dmesg | grep -iE 'remoteproc|q6v5|adsp|cdsp|mpss|qcadsp|qccdsp|smp2p|smem|hwspinlock' | tail -30
+
+echo
+echo "===== dmesg: pmic_glink / typec / ucsi ====="
+dmesg | grep -iE 'pmic_glink|typec|ucsi|connector|orientation' | tail -20
+
+echo
+echo "===== regulator summary (snippet) ====="
+cat /sys/kernel/debug/regulator/regulator_summary 2>/dev/null | head -30
+
+echo
+echo "===== END (scroll up; Shift+PageUp on most consoles) ====="
