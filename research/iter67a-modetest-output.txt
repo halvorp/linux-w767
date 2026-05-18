@@ -1,0 +1,1377 @@
+=== modetest (no args, full dump) ===
+trying to open device '/dev/dri/card0'... done
+opened device `MSM Snapdragon DRM` on driver `msm` (version 1.10.0 at 20130625)
+Encoders:
+id	crtc	type	possible crtcs	possible clones	
+31	81	TMDS	0x00000001	0x00000001
+
+Connectors:
+id	encoder	status		name		size (mm)	modes	encoders
+32	31	connected	eDP-1          	290x170		1	31
+  modes:
+	index name refresh (Hz) hdisp hss hse htot vdisp vss vse vtot
+  #0 1920x1080 60.02 1920 1968 2000 2200 1080 1083 1089 1120 147900 flags: phsync, nvsync; type: preferred, driver
+  props:
+	1 EDID:
+		flags: immutable blob
+		blobs:
+
+		value:
+			00ffffffffffff0009e5e70700000001
+			0e1d0104a51d117802ad70a7524a9a27
+			114f5300000001010101010101010101
+			010101010101c6398018713828403020
+			360026a51000001a0000000000000000
+			00000000000000000000000000fc0042
+			4f45204c4344202020202020000000fe
+			0054453133334648452d5453300a0011
+	2 DPMS:
+		flags: enum
+		enums: On=0 Standby=1 Suspend=2 Off=3
+		value: 0
+	5 link-status:
+		flags: enum
+		enums: Good=0 Bad=1
+		value: 0
+	6 non-desktop:
+		flags: immutable range
+		values: 0 1
+		value: 0
+	4 TILE:
+		flags: immutable blob
+		blobs:
+
+		value:
+
+CRTCs:
+id	fb	pos	size
+81	83	(0,0)	(1920x1080)
+  #0 1920x1080 60.02 1920 1968 2000 2200 1080 1083 1089 1120 147900 flags: phsync, nvsync; type: preferred, driver
+  props:
+	24 VRR_ENABLED:
+		flags: range
+		values: 0 1
+		value: 0
+	27 CTM:
+		flags: blob
+		blobs:
+
+		value:
+
+Planes:
+id	crtc	fb	CRTC x,y	x,y	gamma size	possible crtcs
+33	81	83	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 1
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	35 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	36 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	37 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	38 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+39	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	41 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	42 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	43 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	44 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+45	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	47 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	48 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	49 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	50 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+51	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	53 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	54 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	55 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	56 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+57	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	59 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	60 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	61 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	62 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+63	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	65 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	66 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	67 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	68 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+69	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 2
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	71 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	72 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	73 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	74 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+75	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	77 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	78 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	79 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	80 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+
+Frame buffers:
+id	size	pitch
+
+
+=== modetest -M msm ===
+opened device `MSM Snapdragon DRM` on driver `msm` (version 1.10.0 at 20130625)
+Encoders:
+id	crtc	type	possible crtcs	possible clones	
+31	81	TMDS	0x00000001	0x00000001
+
+Connectors:
+id	encoder	status		name		size (mm)	modes	encoders
+32	31	connected	eDP-1          	290x170		1	31
+  modes:
+	index name refresh (Hz) hdisp hss hse htot vdisp vss vse vtot
+  #0 1920x1080 60.02 1920 1968 2000 2200 1080 1083 1089 1120 147900 flags: phsync, nvsync; type: preferred, driver
+  props:
+	1 EDID:
+		flags: immutable blob
+		blobs:
+
+		value:
+			00ffffffffffff0009e5e70700000001
+			0e1d0104a51d117802ad70a7524a9a27
+			114f5300000001010101010101010101
+			010101010101c6398018713828403020
+			360026a51000001a0000000000000000
+			00000000000000000000000000fc0042
+			4f45204c4344202020202020000000fe
+			0054453133334648452d5453300a0011
+	2 DPMS:
+		flags: enum
+		enums: On=0 Standby=1 Suspend=2 Off=3
+		value: 0
+	5 link-status:
+		flags: enum
+		enums: Good=0 Bad=1
+		value: 0
+	6 non-desktop:
+		flags: immutable range
+		values: 0 1
+		value: 0
+	4 TILE:
+		flags: immutable blob
+		blobs:
+
+		value:
+
+CRTCs:
+id	fb	pos	size
+81	83	(0,0)	(1920x1080)
+  #0 1920x1080 60.02 1920 1968 2000 2200 1080 1083 1089 1120 147900 flags: phsync, nvsync; type: preferred, driver
+  props:
+	24 VRR_ENABLED:
+		flags: range
+		values: 0 1
+		value: 0
+	27 CTM:
+		flags: blob
+		blobs:
+
+		value:
+
+Planes:
+id	crtc	fb	CRTC x,y	x,y	gamma size	possible crtcs
+33	81	83	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 1
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	35 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	36 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	37 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	38 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+39	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	41 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	42 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	43 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	44 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+45	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	47 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	48 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	49 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	50 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+51	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BX24 BA24 AR30 XR30 XR24 XB24 RX24 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12 P010 NV12 NV21 NV16 NV61 VYUY UYVY YUYV YVYU YU12 YV12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000002900000018000000
+			01000000c00000004152323441423234
+			52413234425832344241323441523330
+			58523330585232345842323452583234
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			503031304e5631324e5632314e563136
+			4e563631565955595559565959555956
+			59565955595531325956313200000000
+			ffffffffff0100000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+			 P010:  LINEAR(0x0)
+			 NV12:  LINEAR(0x0)
+			 NV21:  LINEAR(0x0)
+			 NV16:  LINEAR(0x0)
+			 NV61:  LINEAR(0x0)
+			 VYUY:  LINEAR(0x0)
+			 UYVY:  LINEAR(0x0)
+			 YUYV:  LINEAR(0x0)
+			 YVYU:  LINEAR(0x0)
+			 YU12:  LINEAR(0x0)
+			 YV12:  LINEAR(0x0)
+	53 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	54 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	55 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	56 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+57	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	59 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	60 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	61 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	62 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+63	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	65 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	66 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	67 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	68 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+69	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 2
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	71 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	72 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	73 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	74 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+75	0	0	0,0		0,0	0       	0x000000ff
+  formats: AR24 AB24 RA24 BA24 XR24 RX24 BX24 XB24 AR30 XR30 RG24 BG24 RG16 BG16 AR15 AB15 RA15 BA15 XR15 XB15 RX15 BX15 AR12 AB12 RA12 BA12 XR12 XB12 RX12 BX12
+  props:
+	8 type:
+		flags: immutable enum
+		enums: Overlay=0 Primary=1 Cursor=2
+		value: 0
+	30 IN_FORMATS:
+		flags: immutable blob
+		blobs:
+
+		value:
+			01000000000000001e00000018000000
+			01000000900000004152323441423234
+			52413234424132345852323452583234
+			42583234584232344152333058523330
+			52473234424732345247313642473136
+			41523135414231355241313542413135
+			58523135584231355258313542583135
+			41523132414231325241313242413132
+			58523132584231325258313242583132
+			ffffff3f000000000000000000000000
+			0000000000000000
+		in_formats blob decoded:
+			 AR24:  LINEAR(0x0)
+			 AB24:  LINEAR(0x0)
+			 RA24:  LINEAR(0x0)
+			 BA24:  LINEAR(0x0)
+			 XR24:  LINEAR(0x0)
+			 RX24:  LINEAR(0x0)
+			 BX24:  LINEAR(0x0)
+			 XB24:  LINEAR(0x0)
+			 AR30:  LINEAR(0x0)
+			 XR30:  LINEAR(0x0)
+			 RG24:  LINEAR(0x0)
+			 BG24:  LINEAR(0x0)
+			 RG16:  LINEAR(0x0)
+			 BG16:  LINEAR(0x0)
+			 AR15:  LINEAR(0x0)
+			 AB15:  LINEAR(0x0)
+			 RA15:  LINEAR(0x0)
+			 BA15:  LINEAR(0x0)
+			 XR15:  LINEAR(0x0)
+			 XB15:  LINEAR(0x0)
+			 RX15:  LINEAR(0x0)
+			 BX15:  LINEAR(0x0)
+			 AR12:  LINEAR(0x0)
+			 AB12:  LINEAR(0x0)
+			 RA12:  LINEAR(0x0)
+			 BA12:  LINEAR(0x0)
+			 XR12:  LINEAR(0x0)
+			 XB12:  LINEAR(0x0)
+			 RX12:  LINEAR(0x0)
+			 BX12:  LINEAR(0x0)
+	77 zpos:
+		flags: range
+		values: 0 255
+		value: 0
+	78 alpha:
+		flags: range
+		values: 0 65535
+		value: 65535
+	79 pixel blend mode:
+		flags: enum
+		enums: None=2 Pre-multiplied=0 Coverage=1
+		value: 0
+	80 rotation:
+		flags: bitmask
+		values: rotate-0=0x1 rotate-180=0x4 reflect-x=0x10 reflect-y=0x20
+		value: 1
+
+Frame buffers:
+id	size	pitch
+
+
+=== /sys/class/drm tree ===
+total 0
+drwxr-xr-x    2 0        0                0 Jan  1 00:00 .
+drwxr-xr-x   76 0        0                0 Jan  1 00:00 ..
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 card0 -> ../../devices/platform/soc@0/ae00000.mdss/ae01000.mdp/drm/card0
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 card0-eDP-1 -> ../../devices/platform/soc@0/ae00000.mdss/ae01000.mdp/drm/card0/card0-eDP-1
+lrwxrwxrwx    1 0        0                0 Jan  1 00:00 renderD128 -> ../../devices/platform/soc@0/ae00000.mdss/ae01000.mdp/drm/renderD128
+-r--r--r--    1 0        0             4096 Jan  1 00:00 version
+--- card0-eDP-1 ---
+connected
+enabled
+1920x1080
